@@ -1,0 +1,20 @@
+[
+  {
+    "name": "The Simulated Meeting",
+    "time": "45 mins to complete",
+    "short_description": "Explore the dynamics and conversations between committee members who have gathered to assess a candidate’s profile.",
+    "your_role": "Professor serving on a committee"
+  },
+  {
+    "name": "Navigate your Career",
+    "time": "30 mins to complete",
+    "short_description": "Strategize about your academic career and make important decisions that affect your personal and professional life, and have it assessed by a promotion/tenure committee. ",
+    "your_role": "Candidate up for promotion or tenure"
+  },
+  {
+    "name": "Annotated Vitae",
+    "time": "15 mins to complete",
+    "short_description": "Explore the dynamics and conversations between committee members who have gathered to assess a candidate’s profile. ",
+    "your_role": "Candidate up for promotion or tenure"
+  }
+]

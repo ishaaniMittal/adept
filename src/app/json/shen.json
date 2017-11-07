@@ -1,0 +1,574 @@
+[
+  {
+    "statementKey": "A1",
+    "speaker": "chair of unit",
+    "next": "B1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Thanks for agreeing to serve on this year's committee. Among the cases you will consider is Patty Shen's, which is unusual in that she is one of the first faculty members to receive a year's leave under the university's active service modified duties program. Another reason she is coming up now is because I suggested to Patty, and she agreed, that she ought to come up this year and not last because of productivity issues.",
+    "references": {
+      "text": "The chair of the unit has an obligation to convey relevant information concerning particular information relevant to candidate.",
+      "reference": {
+        "url": "www.advance.gatech.edu/ptac",
+        "category": "temp",
+        "referenceID": "139",
+        "text": "The PTAC report indicates that chairs and committees can incorporate independently confirmed facts. See Best Practices. Section 7.B."
+      }
+    }
+  },
+  {
+    "statementKey": "B1",
+    "speaker": 1,
+    "next": "B2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "We'll consider Patty Shen's case first. We'll talk about the three general areas--research, teaching, and service. Let's start by considering research first."
+  },
+  {
+    "statementKey": "B2",
+    "speaker": 2,
+    "next": "B3",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "She has a reasonable but not overwhelming number of publications in good journals for a six-year record. Are we supposed to take into account all the time she's had to accumulate that record? I guess we don't count pregnancy year, but shouldn't we count the next year?",
+    "references": {
+      "text": "Committee members need to calibrate productivity during the period of time on the tenure clock as opposed to chronological time.",
+      "reference": {
+        "url": "",
+        "category": "temp",
+        "referenceID": "106",
+        "text": "Lee describes how courts resist intervening in the application of standards, while considering whether institutions have performed fair evaluations. (46)"
+      }
+    }
+  },
+  {
+    "statementKey": "B3",
+    "speaker": 3,
+    "next": "B4",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I would say that we wouldn't expect much productivity in the active service modified duties year of leave, but there should be more publications in the following year. So I'm unclear about the one-year delay.",
+    "references": {
+      "text": "Erratic productivity is difficult to discern from publication schedule alone and ought not to be inferred based on temporary delays.",
+      "reference": {
+        "url": "",
+        "category": "temp",
+        "referenceID": "124",
+        "text": "Lindsay mentions that colleagues and administrators sometimes mistakenly link family responsibilities to perceptions of a faculty member's productivity."
+      }
+    }
+  },
+  {
+    "statementKey": "B4",
+    "speaker": 1,
+    "next": "B5",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I agree with Caroline that Shen has published high quality papers in good journals. The average level of productivity compared with peers and the extra year does raise some questions, but I think there were lingering health problems."
+  },
+  {
+    "statementKey": "B5",
+    "speaker": 2,
+    "next": "B6",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "George, how do you know that?"
+  },
+  {
+    "statementKey": "B6",
+    "speaker": 1,
+    "next": "B7",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I called the reviewer who was candid about Patty's situation, because she alluded to medical issues in her letter. These appear legitimate.",
+    "references": {
+      "text": "Rumors ought to be confirmed.",
+      "reference": {
+        "url": "www.advance.gatech.edu/ptac",
+        "category": "temp",
+        "referenceID": "139",
+        "text": "See PTAC Report. Best Practices. Section 7."
+      }
+    }
+  },
+  {
+    "statementKey": "B7",
+    "speaker": 3,
+    "next": "B8",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I can't believe we didn't know she had medical problems. I'm glad you can explain that.",
+    "references": {
+      "text": "Family and medical problems may or may not be known to colleagues, members of evaluation committees, or external reviewers.",
+      "reference": {
+        "url": "",
+        "category": "temp",
+        "referenceID": "108",
+        "text": "Menges and Exum state that \"who communicates with whom is greatly influenced by the campus and the disciplinary norms that have been established by senior academics.\" (135)"
+      }
+    }
+  },
+  {
+    "statementKey": "B8",
+    "speaker": 2,
+    "next": "B9",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "If she really had severe medical problems, why didn't she ask for another leave?"
+  },
+  {
+    "statementKey": "B9",
+    "speaker": 1,
+    "next": "B10",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Initially, Patty thought it was a minor problem, but it turned out to be more severe. The evidence is that she was lined up to do this prestigious talk and had to cancel at the last minute.",
+    "references": {
+      "text": "Invited presentations are considered by many to be a significant indicator of research success.",
+      "reference": {
+        "url": "",
+        "category": "temp",
+        "referenceID": "98",
+        "text": "Park indicates that research productivity is the single most important factor for evaluators. (48)"
+      }
+    }
+  },
+  {
+    "statementKey": "B10",
+    "speaker": 0,
+    "next": "",
+    "mood-phrase": "",
+    "mood": "",
+    "statement": [
+      {
+        "statementKey": "B10a",
+        "speaker": 0,
+        "next": "B11a1",
+        "text": "Yes, she had an active services modified duty leave, which provided release from teaching. As the second year off for health problems is not documented, it counts, and we must consider her lack of productivity."
+      },
+      {
+        "statementKey": "B10b",
+        "speaker": 0,
+        "next": "B11b1",
+        "text": "It's hard to discern how productive she'll be in the future now that she's a mother with additional responsibilities. Maybe she has been active lately just to get past the tenure hurdle?"
+      },
+      {
+        "statementKey": "B10c",
+        "speaker": 0,
+        "next": "B11c1",
+        "text": "She was active and productive before pregnancy and illness. After that, she got back to a productive trajectory, writing journal articles and grant proposals."
+      },
+      {
+        "statementKey": "B10d",
+        "speaker": 0,
+        "next": "B11d1",
+        "text": "Patty's papers and grant proposals are well-received, and she is on the way to getting even more funding. She is on the right track."
+      }
+    ],
+    "references": {
+      "text": "Options for childcare affect research productivity.Women are often assumed to be the primary caregiver.",
+      "reference": [
+        {
+          "url": "www.advance.gatech.edu",
+          "category": "temp",
+          "referenceID": "139",
+          "text": "Fox's survey of GT faculty notes that women faculty are more likely to report being affected by childcare options."
+        },
+        {
+          "url": "www.advance.gatech.edu/ptac",
+          "category": "temp",
+          "referenceID": "139",
+          "text": "See PTAC Report. Bias Report on Gender, which notes significance of Valian's schemas concerning gender roles."
+        }
+      ]
+    }
+  },
+  {
+    "statementKey": "B11a1",
+    "speaker": 2,
+    "next": "B11a2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I agree that her record is erratic. We know she got a lot of time and didn't produce much."
+  },
+  {
+    "statementKey": "B11a2",
+    "speaker": 3,
+    "next": "B11a3",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Well, her overall number of publications and their general quality seem in the range of what others do."
+  },
+  {
+    "statementKey": "B11a3",
+    "speaker": 1,
+    "next": "C1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I agree, but if only two of the four of us think her research records has met the standards established by the university, then we'll have to indicate this disagreement in our letter.",
+    "references": {
+      "text": "The scope of the evaluation committee's judgment ought to be represented in their joint letter.",
+      "reference": {
+        "url": "www.advance.gatech.edu/ptac",
+        "category": "temp",
+        "referenceID": "139",
+        "text": "See PTAC Report. Best Practices."
+      }
+    }
+  },
+  {
+    "statementKey": "B11b1",
+    "speaker": 3,
+    "next": "B11b2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Not everyone can crank out the same number of publications every year, given the time delays of some journals. And, as a mother, I think it is possible to work after childbirth.",
+    "references": {
+      "text": "Assuming a standardized pattern of productivity can be an indication of bias.",
+      "reference": {
+        "url": "",
+        "category": "temp",
+        "referenceID": "126",
+        "text": "Neumann and Finaly-Neumann consider how components of support and stress affect faculty differentially depending on discipline. (576)"
+      }
+    }
+  },
+  {
+    "statementKey": "B11b2",
+    "speaker": 2,
+    "next": "B11b3",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Susan, I'm not sure Patty will be as productive as you.",
+    "references": {
+      "text": "While faculty recognize the interdependence of personal motivation, environment, and productivity, there is not a clear cut formula to predict research success.",
+      "reference": {
+        "url": "",
+        "category": "temp",
+        "referenceID": "103",
+        "text": "Olsen questions whether autonomy and intellectual engagement counterbalance some observed negative aspects of academic work."
+      }
+    }
+  },
+  {
+    "statementKey": "B11b3",
+    "speaker": 1,
+    "next": "C1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "We're digressing, so let's summarize her research record as being adequate, despite certain medical issues. Let's move on to talk about teaching.",
+    "references": {
+      "text": "Committee members ought to calibrate their assumptions concerning quality and quantity of research.",
+      "reference": {
+        "url": "",
+        "category": "temp",
+        "referenceID": "101",
+        "text": "Tien and Blackburn \"argue that the importance of promotion varies among individuals.\" (17)"
+      }
+    }
+  },
+  {
+    "statementKey": "B11c1",
+    "speaker": 3,
+    "next": "B11c2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Patty's research has been good and does appear to be back on track."
+  },
+  {
+    "statementKey": "B11c2",
+    "speaker": 1,
+    "next": "C1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I agree that her research productivity seems good. Let's consider her teaching."
+  },
+  {
+    "statementKey": "B11d1",
+    "speaker": 3,
+    "next": "B11d2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Yes, it looks like she has good prospects for getting more funding this year. And she has managed to support graduate students."
+  },
+  {
+    "statementKey": "B11d2",
+    "speaker": 1,
+    "next": "C1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "All in all, her research appears to be very good now and likely to make a big impact. Let's go on to teaching.",
+    "references": {
+      "text": "Committee members should separately evaluate research, teaching, and service.",
+      "reference": {
+        "url": "",
+        "category": "temp",
+        "referenceID": "118",
+        "text": "Linsky and Straus argue there is a weak correlation between research and teaching."
+      }
+    }
+  },
+  {
+    "statementKey": "C1",
+    "speaker": 3,
+    "next": "C2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "All indications are that Patty has been a fine teacher and has done excellent work in the classroom overall.",
+    "references": {
+      "text": "Unit-level committees should include peer review reports of teaching effectiveness to supplement the candidate's teaching portfolio and scores from standardized instruments.",
+      "reference": {
+        "url": "",
+        "category": "temp",
+        "referenceID": "109",
+        "text": "O'Hanlon and Mortensen point out that teaching evaluations assist faculty in improving and provide information for evaluators."
+      }
+    }
+  },
+  {
+    "statementKey": "C2",
+    "speaker": 2,
+    "next": "C3",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "It looks like once she had a child, her teaching scores dipped. During that period her research and her teaching both suffered.",
+    "references": {
+      "text": "Committee members should not assume that problems on one career phase will carry over to successive phases.",
+      "reference": {
+        "url": "",
+        "category": "temp",
+        "referenceID": "112",
+        "text": "Clark and Corcoran study accumulative disadvantage constraining female faculty."
+      }
+    }
+  },
+  {
+    "statementKey": "C3",
+    "speaker": 0,
+    "next": "",
+    "mood-phrase": "",
+    "mood": "",
+    "statement": [
+      {
+        "statementKey": "C3a",
+        "speaker": 0,
+        "next": "C4a1",
+        "text": "Comments from students suggest that she's a good teacher and will continue to be so."
+      },
+      {
+        "statementKey": "C3b",
+        "speaker": 0,
+        "next": "C4b",
+        "text": "Since there are low scores, I'd say evidence is not definitive regarding her future performance."
+      },
+      {
+        "statementKey": "C3c",
+        "speaker": 0,
+        "next": "C4c1",
+        "text": "Teaching scores improved after her illness, but that could be a temporary gain."
+      },
+      {
+        "statementKey": "C3d",
+        "speaker": 0,
+        "next": "D1",
+        "text": "Because our labs are close, I get to hear what Patty's students say as they are coming and going from seeing her. They seem very impressed with her attention."
+      }
+    ],
+    "references": {
+      "text": "Student comments should be taken into account in the peer review of teaching.Committee members should consider a broad range of measures of teaching effectiveness.Observations of students should be included only if confirming documented data.",
+      "reference": [
+        {
+          "url": "",
+          "category": "temp",
+          "referenceID": "99",
+          "text": "Glasman calls for the leadership of academic administrators in promoting equity in evaluation and faculty acceptance of the process (318)"
+        },
+        {
+          "url": "",
+          "category": "temp",
+          "referenceID": "122",
+          "text": "Derry considers how some data from teaching evaluations can be elevated over others."
+        },
+        {
+          "url": "",
+          "category": "temp",
+          "referenceID": "131",
+          "text": "Canada and Pringle suggest that there might be a \"lack of explicitness about what constitutes classroom interaction.\" (168)"
+        }
+      ]
+    }
+  },
+  {
+    "statementKey": "C4a1",
+    "speaker": 3,
+    "next": "C4a2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Her teaching scores are at the departmental average above. I liked the syllabus and some of the class exercises when I observed her class. Commendation from students included in the package for her teaching award are excellent.",
+    "references": {
+      "text": "Perceptions of good teaching might incorporate disciplinary, cultural, or personal bias.",
+      "reference": {
+        "url": "",
+        "category": "temp",
+        "referenceID": "115",
+        "text": "Goodwin and Stevens investigate the similarities and differences of male and female faculty concerning \"good\" teaching."
+      }
+    }
+  },
+  {
+    "statementKey": "C4a2",
+    "speaker": 1,
+    "next": "D1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Her teaching should be noted as good. What do you think of her service?"
+  },
+  {
+    "statementKey": "C4b",
+    "speaker": 1,
+    "next": "D1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "We're trying to forecast over time. She has demonstrated good teaching in the past, and right now her evaluations are fine. My prediction is she will continue to be a solid teacher. OK, it's time to talk about service."
+  },
+  {
+    "statementKey": "C4c1",
+    "speaker": 3,
+    "next": "C4c2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Since she was officially given a changed schedule because of pregnancy and illness, we should not assume she had a lot of extra time."
+  },
+  {
+    "statementKey": "C4c2",
+    "speaker": 1,
+    "next": "D1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Yes, we should not diminish the teaching portfolio she has presented, which is right in line with our general standard. Let's consider service now.",
+    "references": {
+      "text": "A candidate's teaching record ought to be considered in relation to the unit's profile of good teaching.",
+      "reference": {
+        "url": "",
+        "category": "temp",
+        "referenceID": "114",
+        "text": "Koon and Murray propose that \"measures of student motivation as well as student learning of subject matter, should be used to explain between-teacher variation\" in student ratings. (62)"
+      }
+    }
+  },
+  {
+    "statementKey": "D1",
+    "speaker": 2,
+    "next": "D2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Patty contributed good service earlier, although after her illness she has not continued because of family and health issues. It might be understandable, but is it acceptable if others have to do more?",
+    "references": {
+      "text": "Perceptions of adequate service are influenced by unit, disciplinary, and institutional contexts.",
+      "reference": {
+        "url": "",
+        "category": "temp",
+        "referenceID": "98",
+        "text": "Park notes that committee assignments and faculty workload on committees can vary significantly. (51)"
+      }
+    }
+  },
+  {
+    "statementKey": "D2",
+    "speaker": 3,
+    "next": "D3",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I think that each of us has different issues at different phases that affect choices of service. She's still working with the center she helped develop and that is useful service."
+  },
+  {
+    "statementKey": "D3",
+    "speaker": 0,
+    "next": "",
+    "mood-phrase": "",
+    "mood": "",
+    "statement": [
+      {
+        "statementKey": "D3a",
+        "speaker": 0,
+        "next": "D4a",
+        "text": "Just how important is service anyway? She's certainly made valued contributions."
+      },
+      {
+        "statementKey": "D3b",
+        "speaker": 0,
+        "next": "D4b",
+        "text": "I think everyone who is part of the community ought to do something significant. Her record could be better."
+      },
+      {
+        "statementKey": "D3c",
+        "speaker": 0,
+        "next": "E1",
+        "text": "Her reduction in service imposed costs on everyone else."
+      },
+      {
+        "statementKey": "D3d",
+        "speaker": 0,
+        "next": "E1",
+        "text": "Her service is acceptable, considering the period of leave and the illness."
+      }
+    ]
+  },
+  {
+    "statementKey": "D4a",
+    "speaker": 3,
+    "next": "E1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I agree that Patty's service is better than average."
+  },
+  {
+    "statementKey": "D4b",
+    "speaker": 2,
+    "next": "E1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "It's true that she could have done more."
+  },
+  {
+    "statementKey": "E1",
+    "speaker": 1,
+    "next": "E2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "OK, we need to conclude soon, so we can discuss other cases. Patty's research is reasonable, her teaching is acceptable or better, and her service meets the minimum expectation. The question before us is whether this \"middle of the road\" profile is at the level required for promotion to tenure. We need to turn to external letters in this case to see if they can provide further clarification on the merits of this case.",
+    "references": {
+      "text": "External letters provide a significant frame of reference that should be incorporated by committee members into their deliberations.",
+      "reference": {
+        "url": "",
+        "category": "temp",
+        "referenceID": "98",
+        "text": "Park argues that maintaining a too narrow filter based on research excellence can undermine attempts to build an institutional community."
+      }
+    }
+  },
+  {
+    "statementKey": "E2",
+    "speaker": 2,
+    "next": "E3",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "The letters go along with that description of her work as average. All of them indicate that she is a solid researcher, but there's nothing earth-shattering noted."
+  },
+  {
+    "statementKey": "E3",
+    "speaker": 3,
+    "next": "E4",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Caroline, I think that you forgot to mention that one reviewer had nominated a paper of Patty's for a prize, and another letter praised the clarity and efficiency of her publications."
+  },
+  {
+    "statementKey": "E4",
+    "speaker": 1,
+    "next": "",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Now that I'm looking at the letters again, I see that each reviewer does volunteer that Patty's achievements are worthy of promotion and tenure at his or her research university. I assume we agree?"
+  }
+]

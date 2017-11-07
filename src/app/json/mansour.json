@@ -1,0 +1,750 @@
+[
+  {
+    "statementKey": "A1",
+    "speaker": 1,
+    "next": "A2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Let's now consider Mansour's case. Keep in mind this is an early promotion and tenure case.",
+    "references": "Faculty in units ought to calibrate their standards regarding \"early\" and \"on-time\" cases."
+  },
+  {
+    "statementKey": "A2",
+    "speaker": 3,
+    "next": "A3",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Is her case different because of the time?"
+  },
+  {
+    "statementKey": "A3",
+    "speaker": 1,
+    "next": "B1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Since I've been here, we've only had one early case. To be promoted early, the candidate has to be extraordinary in all criteria. Let's start with research."
+  },
+  {
+    "statementKey": "B1",
+    "speaker": 2,
+    "next": "B2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I agree that extraordinary levels are expected and Mansour's work qualifies."
+  },
+  {
+    "statementKey": "B2",
+    "speaker": 3,
+    "next": "B3",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "From my vantage point, Samia is a good scholar. Look at this award for her research."
+  },
+  {
+    "statementKey": "B3",
+    "speaker": 2,
+    "next": "B4",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "It's an impressive award, but let's look at the sum total of research."
+  },
+  {
+    "statementKey": "B4",
+    "speaker": 1,
+    "next": "B5",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "She has more publications in top-ranked journals than any other untenured biochemistry faculty in our unit.",
+    "references": {
+      "text": "Rankings of journals are affected by perceptions of prestige and by submission and acceptance statistics.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "121",
+        "text": "Miller's and Serzan's survey of journals across fields discovered wide variation in editorial and review practices that can influence evaluation decisions."
+      }
+    }
+  },
+  {
+    "statementKey": "B5",
+    "speaker": 3,
+    "next": "B6",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "She has significant quantity, but we need to examine the quality. Does her best paper, the prizewinner, represent a significant contribution to the field?"
+  },
+  {
+    "statementKey": "B6",
+    "speaker": 2,
+    "next": "B7",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Are you suggesting that the paper isn't as good as most reviewers have noted?"
+  },
+  {
+    "statementKey": "B7",
+    "speaker": 3,
+    "next": "B8",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Let's look at the second reviewer's comments. He doesn't think it contributes much to the field."
+  },
+  {
+    "statementKey": "B8",
+    "speaker": 1,
+    "next": "B9",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "All the other reviews are positive. I wonder if the negative reviewer is impartial, given the tone of the letter and his focusing on that one paper. I heard this guy is known for writing negative letters.",
+    "references": {
+      "text": "Each unit ought to have a standard request letter containing directions to reviewers.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "555",
+        "text": "PTAC Report. Best Practices. Section 7D, notes chair's responsibilities."
+      }
+    }
+  },
+  {
+    "statementKey": "B9",
+    "speaker": 3,
+    "next": "B10",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "His review does seem like it's a response to only one of Samia's papers, but the most important consideration ought to concern the range of research products.",
+    "references": {
+      "text": "The 2003 PTAC survey asking GT faculty in different colleges to rank the value of research products revealed different preferences according to discipline.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "555",
+        "text": "PTAC 2003 Survey. Section 5."
+      }
+    }
+  },
+  {
+    "statementKey": "B10",
+    "speaker": 2,
+    "next": "B11",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I agree all reviews have to be weighed carefully. The most positive one spends more time considering Mansour's service to the profession rather than discussing her research. Do we really care that she does so much work for that disciplinary organization?",
+    "references": {
+      "text": "Research on social support systems indicates that good relationships increase productivity.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "126",
+        "text": "Neumann and Finaly-Neumann note \"relative powers of support and work stress indicators in explaining research publication may vary across academic discipline.\" (568)"
+      }
+    }
+  },
+  {
+    "statementKey": "B11",
+    "speaker": 1,
+    "next": "B12",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Good service alone will not earn promotion and tenure. An early candidate has to demonstrate a more remarkable profile in research.",
+    "references": {
+      "text": "Minority faculty may be asked to take on a variety of service roles in a majority institution.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "119",
+        "text": "Scott relates productivity to interpersonal contact."
+      }
+    }
+  },
+  {
+    "statementKey": "B12",
+    "speaker": 2,
+    "next": "B13",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "The letters don't demonstrate that profile of excellent research. The most positive one is from another former student of her mentor. Other letters praise the research without understanding it. The negative reviewer is the only one who seems to know the area.",
+    "references": {
+      "text": "External letters should be weighed carefully by committee members.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "555",
+        "text": "The PTAC Report. Best Practices. Section 7.E. Interpretation of Letters of Reference."
+      }
+    }
+  },
+  {
+    "statementKey": "B13",
+    "speaker": 3,
+    "next": "B14",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "How do you know the positive reviewer has a personal connection?",
+    "references": {
+      "text": "Candidates can accrue ascriptive advantages related to academic sponsorship.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "87",
+        "text": "Reskin describes the cumulative advantages scientists gained from graduate school advisors."
+      }
+    }
+  },
+  {
+    "statementKey": "B14",
+    "speaker": 2,
+    "next": "B15",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I sat on an NSF panel with someone who knew Samia from graduate school. I believe this letter is from her.",
+    "references": {
+      "text": "Reviewers should not have close personal ties to candidates. Relationships should be disclosed.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "555",
+        "text": "The PTAC Report. Best Practices. Section 7.B. Ethics."
+      }
+    }
+  },
+  {
+    "statementKey": "B15",
+    "speaker": 0,
+    "next": "",
+    "mood-phrase": "",
+    "mood": "",
+    "statement": [
+      {
+        "statementKey": "B15a",
+        "speaker": 0,
+        "next": "B16a1",
+        "text": "I agree that all letters count and that the negative one is salient."
+      },
+      {
+        "statementKey": "B15b",
+        "speaker": 0,
+        "next": "B16b1",
+        "text": "I think the negative reviewer is too negative about that one paper and ignores the value of the prize given to it. I don't see his argument as ultimately persuasive since the other letters demonstrate genuine and significant achievement."
+      },
+      {
+        "statementKey": "B15c",
+        "speaker": 0,
+        "next": "B16c1",
+        "text": "I think the positive one is too positive. It smacks of cronyism. The rest of the letters are more realistic and persuasive."
+      },
+      {
+        "statementKey": "B15d",
+        "speaker": 0,
+        "next": "B16d1",
+        "text": "I don't care what the reviewers say; I'll judge Mansour's scholarship based on my reading of her papers, which are quite strong."
+      }
+    ],
+    "references": {
+      "text": "Significant disagreement regarding specific claims might depend on different theoretical assumptions.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "116",
+        "text": "Toma considers the effects of disciplinary paradigms on decisions."
+      }
+    }
+  },
+  {
+    "statementKey": "B16a1",
+    "speaker": 3,
+    "next": "B16a2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "OK, if you all see the negative letter as trumping the other letters, I'll go along with that.",
+    "references": {
+      "text": "Disciplinary paradigms affect subjective evaluation and research.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "116",
+        "text": "Toma considers the effects of disciplinary paradigms on decisions."
+      }
+    }
+  },
+  {
+    "statementKey": "B16a2",
+    "speaker": 2,
+    "next": "B16a3",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Well, it seems that Mansour's work has yet to prove it's value. I say let's wait to see more from her."
+  },
+  {
+    "statementKey": "B16a3",
+    "speaker": 1,
+    "next": "C1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Her work is good, but I agree that she needs time to mature. Let's consider teaching."
+  },
+  {
+    "statementKey": "B16b1",
+    "speaker": 3,
+    "next": "B16b2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I agree that the general impression of the six letters is that her work is very good."
+  },
+  {
+    "statementKey": "B16b2",
+    "speaker": 2,
+    "next": "B16b3",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Yes, Mansour's work has clearly been recognized as significant by some in her field, but what about that very negative letter?"
+  },
+  {
+    "statementKey": "B16b3",
+    "speaker": 1,
+    "next": "C1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Mohammed is right that the general context of all the letters should be important. The quality of Mansour's work deserves recognition. Let's talk about teaching.",
+    "references": {
+      "text": "Approaching a field from a too narrow perspective could limit appreciation of other subfields, methods, etc.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "129",
+        "text": "Wilshire observes damage from such parochialism. (291)"
+      }
+    }
+  },
+  {
+    "statementKey": "B16c1",
+    "speaker": 3,
+    "next": "B16c2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Yes, even though one person finds one paper to be somewhat controversial, I think we should set aside such an extreme judgment and look at the bigger picture.",
+    "references": {
+      "text": "Intellectual conformity can inhibit the discovery of new knowledge and fair evaluation.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "117",
+        "text": "Skolnik notes that concerns about conformity are \"as old as organized intellectual activity itself.\" (620)"
+      }
+    }
+  },
+  {
+    "statementKey": "B16c2",
+    "speaker": 2,
+    "next": "B16c3",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "OK, but does that mean we discount the negative letter?"
+  },
+  {
+    "statementKey": "B16c3",
+    "speaker": 1,
+    "next": "B16c4",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "We can if the reviewer seems to be biased. His basic complaint is that in the celebrated paper Mansour was only re-doing work already done by her mentor, who really deserves credit for her ideas.",
+    "references": {
+      "text": "Proving bias held by reviewers can be difficult.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "41",
+        "text": "Merton describes \"the Matthew effect,\" the continuing accrual of recognition for those previously identified as successful."
+      }
+    }
+  },
+  {
+    "statementKey": "B16c4",
+    "speaker": 3,
+    "next": "B16c5",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I think this reviewer can't believe a young woman is capable of scientific insight.",
+    "references": {
+      "text": "Gender bias can be subtle.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "42",
+        "text": "Steinpreis how the same c.v. can be judged differently, depending upon whether it has a male or female name attached."
+      }
+    }
+  },
+  {
+    "statementKey": "B16c5",
+    "speaker": 1,
+    "next": "C1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Exactly. The excellence of Mansour's research ought to earn her promotion and tenure. Let's discuss her teaching."
+  },
+  {
+    "statementKey": "B16d1",
+    "speaker": 3,
+    "next": "B16d2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Yes, I agree that Samia's research is very visible. We need her to keep up momentum in that area. She really puts us on the map."
+  },
+  {
+    "statementKey": "B16d2",
+    "speaker": 1,
+    "next": "B16d3",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "If she doesn't get tenure early here, some other department will hire her. We have to cover her area, or we won't be able to offer the PhD in this area.",
+    "references": {
+      "text": "It is a mistake to assume that minority faculty are in high demand and subject to competitive bidding.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "555",
+        "text": "See references to Smith in PTAC Report. Report on Gender Bias."
+      }
+    }
+  },
+  {
+    "statementKey": "B16d3",
+    "speaker": 2,
+    "next": "C1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Alright, if you see this as a strong record, I won't object to a positive assessment of her research. Should we move on to teaching?"
+  },
+  {
+    "statementKey": "C1",
+    "speaker": 3,
+    "next": "C2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I can't believe that some students have the audacity to comment on her clothing. Let's make sure we judge her teaching accordingly.",
+    "references": {
+      "text": "Comments from teaching evaluations require contextual explanation.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "122",
+        "text": "Derry explains how different student preferences can mean a teacher succeeds and fails at the same moment for the same reason. (82)"
+      }
+    }
+  },
+  {
+    "statementKey": "C2",
+    "speaker": 2,
+    "next": "C3",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "The students are right. She's in America, so she should dress like an American. I'm glad she's changed her wardrobe."
+  },
+  {
+    "statementKey": "C3",
+    "speaker": 1,
+    "next": "C4",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Mansour has a teaching award. She's been a good undergraduate teacher, and she is critical to the graduate program. She attracts the best Ph.D. students.",
+    "references": {
+      "text": "Assessment of teaching ought to include a variety of measures.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "99",
+        "text": "Glasman calls for the leadership of administrators, who should determine the context of evaluations."
+      }
+    }
+  },
+  {
+    "statementKey": "C4",
+    "speaker": 3,
+    "next": "C5",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "She's a good teacher for upper-division undergraduate and graduate students, even if first- and second-year students seem less comfortable with her."
+  },
+  {
+    "statementKey": "C5",
+    "speaker": 2,
+    "next": "C6",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Maybe it's her accent that bothers students. I sat in on one intro course, and I had trouble understanding everything she said.",
+    "references": {
+      "text": "Ethnically biased comments, like gender-biased ones, ought not to enter evaluation discussions.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "73",
+        "text": "News accounts of unsuccessful cases at other institutions indicate that gender bias can be a significant factor. See Campi."
+      }
+    }
+  },
+  {
+    "statementKey": "C6",
+    "speaker": 3,
+    "next": "C7",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "We need to calibrate her teaching effectiveness. Considering all course scores, her teaching for the intro courses is average for our department. And, as Kathryn said, in graduate courses she does very well.",
+    "references": {
+      "text": "Teaching evaluations should be considered for a range of courses and in the context of other measures reporting effectiveness.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "109",
+        "text": "O'Hanlon and Mortenson argue that teaching evaluations ought to contain useful information for instructors."
+      }
+    }
+  },
+  {
+    "statementKey": "C7",
+    "speaker": 0,
+    "next": "",
+    "mood-phrase": "",
+    "mood": "",
+    "statement": [
+      {
+        "statementKey": "C7a",
+        "speaker": 0,
+        "next": "C8a",
+        "text": "Low scores reflect only cultural differences and do not serve as the most reliable indicator of good teaching."
+      },
+      {
+        "statementKey": "C7b",
+        "speaker": 0,
+        "next": "C8b1",
+        "text": "Low scores are low scores and indicate poor teaching."
+      },
+      {
+        "statementKey": "C7c",
+        "speaker": 0,
+        "next": "C8c1",
+        "text": "Our procedures require looking at a broad set of assessment tools. Numbers are only one component of evaluating teaching."
+      },
+      {
+        "statementKey": "C7d",
+        "speaker": 0,
+        "next": "D1",
+        "text": "Accent and dress negatively affect her teaching of beginning students, who are a critical constituency for us."
+      }
+    ]
+  },
+  {
+    "statementKey": "C8a",
+    "speaker": 1,
+    "next": "D1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "OK, we know she's not going to be the most effective teacher for first-year students, but we agree that in general she is a good teacher. Let's talk about service.",
+    "references": {
+      "text": "Positive characteristics of colleagues can depend on particular circumstances.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "115",
+        "text": "Goodwin and Stevens report on how gender influences university faculty members' perceptions of good teaching."
+      }
+    }
+  },
+  {
+    "statementKey": "C8b1",
+    "speaker": 3,
+    "next": "C8b2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Let's remember that her teaching scores have steadily improved over time and that other faculty also have low scores in those introductory courses.",
+    "references": {
+      "text": "Researchers disagree concerning the relation of research productivity and teaching.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "118",
+        "text": "See Linsky and Straus for a consideration of how they are inversely related."
+      }
+    }
+  },
+  {
+    "statementKey": "C8b2",
+    "speaker": 2,
+    "next": "D1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I'll concede that her teaching is currently acceptable, but I hope she improves even more. I guess we're moving on to service."
+  },
+  {
+    "statementKey": "C8c1",
+    "speaker": 3,
+    "next": "C8c2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Absolutely. Her students' written comments and the peer reviewers make it clear that Mansour has tried some innovative techniques in the classroom."
+  },
+  {
+    "statementKey": "C8c2",
+    "speaker": 1,
+    "next": "D1",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "We can note those details in our letter where we describe her general teaching record as good. Let's discuss her service."
+  },
+  {
+    "statementKey": "D1",
+    "speaker": 3,
+    "next": "D2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Clearly we don't need to say much about her service, which seems exemplary, both in the university and to the profession."
+  },
+  {
+    "statementKey": "D2",
+    "speaker": 2,
+    "next": "D3",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "But has she really contributed in any substantial way to influential committees on campus or among her disciplinary peers? All I see is her interest in women's issues.",
+    "references": {
+      "text": "Research is weighted more heavily than teaching during promotion and tenure discussions.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "108",
+        "text": "Menges and Exum consider weighting research more heavily as a factor becomes a barrier for female and minority faculty, who are more frequently invited and appointed to community service and perhaps more invested in teaching."
+      }
+    }
+  },
+  {
+    "statementKey": "D3",
+    "speaker": 1,
+    "next": "D4",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Given the underrepresentation of women in this field, women's issues are important. It was the president who put her on many of these committees, invitations she could hardly refuse.",
+    "references": {
+      "text": "Contributing to enhancing the institution should not be held against the candidate, especially if administrators have requested such participation.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "103",
+        "text": "Olsen notes untenured faculty have a more difficult time disagreeing with colleagues and administrators. (466)"
+      }
+    }
+  },
+  {
+    "statementKey": "D4",
+    "speaker": 3,
+    "next": "D5",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Her committee work has not been on the department's most important committees, but it's been useful for each committee to have a woman."
+  },
+  {
+    "statementKey": "D5",
+    "speaker": 0,
+    "next": "",
+    "mood-phrase": "",
+    "mood": "",
+    "statement": [
+      {
+        "statementKey": "D5a",
+        "speaker": 0,
+        "next": "D6a1",
+        "text": "She has been on about the same number of committees as others. Her local and national service appear fine.She is too focused on only one service issue. I question whether she has made any impact regarding the environment for women.Her service record is excellent. Working on behalf of underrepresented groups is a significant contribution to the field.Service seems like the lowest priority for all of us. I guess hers is ok."
+      },
+      {
+        "statementKey": "D5b",
+        "speaker": 0,
+        "next": "Db1",
+        "text": "She is too focused on only one service issue. I question whether she has made any impact regarding the environment for women."
+      },
+      {
+        "statementKey": "D5c",
+        "speaker": 0,
+        "next": "D6c",
+        "text": "Her service record is excellent. Working on behalf of underrepresented groups is a significant contribution to the field."
+      },
+      {
+        "statementKey": "D5d",
+        "speaker": 0,
+        "next": "D6d1",
+        "text": "Service seems like the lowest priority for all of us. I guess hers is ok."
+      }
+    ]
+  },
+  {
+    "statementKey": "D6a1",
+    "speaker": 3,
+    "next": "D6a2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Actually, I think she has been on more university-level committees than others who come up for tenure."
+  },
+  {
+    "statementKey": "D6a2",
+    "speaker": 1,
+    "next": "",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Yes, she has done a better job than most in service and has a mix of average and very good scores in teaching, while she has also made significant national impact in terms of her research. It's clear that her record justifies promotion and tenure."
+  },
+  {
+    "statementKey": "D6b2",
+    "speaker": 3,
+    "next": "",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I'm not sure if I do agree, but I don't have time to talk about it now because I have to teach. Kathryn, I guess we have to meet again before we come to a decision."
+  },
+  {
+    "statementKey": "D6c",
+    "speaker": 1,
+    "next": "",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I think her service is very valuable, like her research and teaching. I see that the majority of us agree that she should be promoted and tenured."
+  },
+  {
+    "statementKey": "D6d1",
+    "speaker": 2,
+    "next": "D6d2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "Doesn't it seem like everything is marginal?: mixed teaching scores, ambiguous service, and a research that one of the biggest names in the field thinks is imitative and overblown?"
+  },
+  {
+    "statementKey": "D6d2",
+    "speaker": 3,
+    "next": "D6d3",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I disagree with that summary. Kathryn, I think our review should reflect that we are not in accord."
+  },
+  {
+    "statementKey": "D6d3",
+    "speaker": 1,
+    "next": "",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "You and I are more enthusiastic, but three of the four of us see Mansour's record as appropriate for promotion and tenure. I think our letter should be more positive than negative, even though it will accompany a split vote."
+  },
+  {
+    "statementKey": "Db1",
+    "speaker": 2,
+    "next": "D6b2",
+    "mood-phrase": "",
+    "mood": "",
+    "text": "I agree that her service record is marginal, like her teaching. And considering the controversy about her research, don't you both agree that we must turn down her early bid for promotion and tenure?",
+    "references": {
+      "text": "Evaluation discussions ought to carefully represent the candidate's achievements.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "98",
+        "text": "Park argues that \"women's work\" (service, teaching) in institutions is often devalued in comparison with research, which ought to be valued according to its quality as much as its quantity."
+      }
+    }
+  }
+]

@@ -1,0 +1,792 @@
+[
+  {
+    "statementKey": "A1",
+    "speaker": 1,
+    "next": "A2",
+    "mood-phrase": "said",
+    "mood": "talk",
+    "text": "Let's start with Perez. Remember, what we say is confidential.",
+    "references": {
+      "text": "Depending on the context and relationship of individuals involved, the word \"confidential\" could strike an intimidating tone.",
+      "reference": {
+        "url": "http://www.apsanet.org/pubs/ethics.cfm",
+        "category": "ethics",
+        "referenceID": "52",
+        "text": "American Political Science Association (APSA) website (3.2) indicates that departments should choose fair-minded reviewers."
+      },
+      "react": {
+        "foo": 3,
+        "mood-phrase": "said passively",
+        "mood": "passive",
+        "speaker": ""
+      }
+    }
+  },
+  {
+    "statementKey": "A2",
+    "speaker": 3,
+    "next": "A3",
+    "mood-phrase": "said",
+    "mood": "talk",
+    "text": "This will be an interesting case.",
+    "react": {
+      "foo": "",
+      "mood-phrase": "",
+      "mood": "blink",
+      "speaker": 1
+    }
+  },
+  {
+    "statementKey": "A3",
+    "speaker": 2,
+    "next": "B1",
+    "mood-phrase": "said",
+    "mood": "talk",
+    "text": "Let's just go through this and see."
+  },
+  {
+    "statementKey": "B1",
+    "speaker": 1,
+    "next": "B2",
+    "mood-phrase": "said",
+    "mood": "talk",
+    "text": "Let's start with scholarship. All his current grants are interdisciplinary.",
+    "references": {
+      "text": "Perceptions of interdisciplinary and multidisciplinary work vary.",
+      "reference": [
+        {
+          "url": "http:\\\\www.gatech.edu",
+          "category": "interdisciplinary bias",
+          "referenceID": "100",
+          "text": "The GATech faculty handbook (3.2.5) indicates \"creative work must be appropriate to the individual's discipline.\""
+        },
+        {
+          "url": "http:\\\\www.advance.gatech.edu/ptac",
+          "category": "Georgia Tech Resources",
+          "referenceID": "99",
+          "text": "The PTAC report (I.8) considers evaluation of research teaming and interdisciplinary collaboration."
+        }
+      ]
+    }
+  },
+  {
+    "statementKey": "B2",
+    "speaker": 2,
+    "next": "B3",
+    "mood-phrase": "said",
+    "mood": "talk",
+    "text": "My main concern about the grants is that he's spending most of the time in chemistry."
+  },
+  {
+    "statementKey": "B3",
+    "speaker": 1,
+    "next": "B4",
+    "mood-phrase": "said",
+    "mood": "talk",
+    "text": "Gentlemen, the real issue is that Perez hasn't a clue about what our primary thrusts in materials are. He's riding the coattails of chemistry with interdisciplinary funding from NSF and I'm not sure how hard that is to get. He isn't project director on any grants listed on the c.v.",
+    "references": {
+      "text": "Perceptions of responsibility for success are affected by perceptions of past success.",
+      "reference": [
+        {
+          "url": "http://www.adept.gatech.edu/library.htm",
+          "category": "",
+          "referenceID": "29",
+          "text": "Singer's account testifies to the significance of subjective, unspecified grounds."
+        },
+        {
+          "url": "http:\\\\www.advance.gatech.edu/ptac",
+          "category": "Georgia Tech Resources",
+          "referenceID": "99",
+          "text": "See PTAC report (I.8) on interdisciplinarity."
+        },
+        {
+          "url": "http://www.adept.gatech.edu/library.htm",
+          "category": "",
+          "referenceID": "41",
+          "text": "Merton outlines \"the Matthew effect,\" whereby the accrual of greater recognition to scientific contributions goes to those with already considerable reputations."
+        }
+      ]
+    }
+  },
+  {
+    "statementKey": "B4",
+    "speaker": 3,
+    "next": "B5",
+    "mood-phrase": "said emphatically",
+    "mood": "emphatic",
+    "text": "You shouldn't discount big grants because they are interdisciplinary. Look,he's published in highly respectable journals and has six graduate students, including four PhD students. There must be some technical 'meat' in his work.",
+    "references": {
+      "text": "Rankings of journals (determined by researchers in field) and unit expectations of external funding ought to be communicated to candidates and committee members.",
+      "reference": {
+        "url": "http:\\\\www.advance.gatech.edu/ptac",
+        "category": "Georgia Tech Resources",
+        "referenceID": "99",
+        "text": "The PTAC report (I.9) considers issues related to criteria in scholarship, including clarity, familiarity with publication venues, judgment across disciplines, uniformity and consistency of standards."
+      }
+    }
+  },
+  {
+    "statementKey": "B5",
+    "speaker": 1,
+    "next": "B6",
+    "mood-phrase": "said emphatically",
+    "mood": "emphatic",
+    "text": "He has raised funding, but not for our unit. This is important now because we're coming up for outside evaluation, and we need faculty to bring major funding to us.",
+    "references": {
+      "text": "Organizational standards might not be  clearly communicated to candidates.",
+      "reference": {
+        "url": "http://www.adept.gatech.edu/library.htm",
+        "category": "",
+        "referenceID": "30",
+        "text": "Fox links organizational environment to productivity and performance."
+      }
+    }
+  },
+  {
+    "statementKey": "B6",
+    "speaker": 0,
+    "next": "",
+    "mood-phrase": "",
+    "mood": "",
+    "statement": [
+      {
+        "statementKey": "B6a",
+        "speaker": 0,
+        "next": "B7a",
+        "text": "He's been told several times to get grants in core areas. I see too little substance in materials science-oriented research."
+      },
+      {
+        "statementKey": "B6b",
+        "speaker": 0,
+        "next": "B7b",
+        "text": "I choose to remain silent at this point in the conversation."
+      },
+      {
+        "statementKey": "B6c",
+        "speaker": 0,
+        "next": "B7c",
+        "text": "Forming bridges to other disciplines is as important as bringing money into our department. The number of interdisciplinary grants confirms the value of his research."
+      },
+      {
+        "statementKey": "B6d",
+        "speaker": 0,
+        "next": "B7d1",
+        "text": "Are we discussing scholarship or funding?"
+      }
+    ]
+  },
+  {
+    "statementKey": "B7a",
+    "speaker": 1,
+    "next": "B7a2",
+    "mood-phrase": "",
+    "mood": "miffed",
+    "text": "He's publishing in chemistry journals more than engineering journals. I am the leading researcher in the same area of engineering he worked on in his graduate and post doc years. But I just don't see a prospect for collaborating with him now.",
+    "references": {
+      "text": "Credit and rewards for participating in interdisciplinary teams are not always well established.",
+      "reference": {
+        "url": "The Scientist. June 30, 2003.",
+        "category": "",
+        "referenceID": "46",
+        "text": "Russo describes the pitfalls of large interdisciplinary projects."
+      }
+    }
+  },
+  {
+    "statementKey": "B7a2",
+    "speaker": 2,
+    "next": "B7a3",
+    "mood-phrase": ", smirking, said",
+    "mood": "smirk",
+    "text": "Our school chair agrees that Perez should collaborate with us instead of chemistry faculty. Should we advise him to join chemistry?",
+    "references": {
+      "text": "Evaluation committees ought to conduct deliberations in a professional, equitable manner.",
+      "reference": {
+        "url": "http:\\\\www.advance.gatech.edu",
+        "category": "rumors",
+        "referenceID": "99",
+        "text": "The PTAC report (IV.7.B) states that unconfirmed information ought to be discounted as rumor."
+      }
+    }
+  },
+  {
+    "statementKey": "B7a3",
+    "speaker": 1,
+    "next": "C1",
+    "mood-phrase": ", self-satisfied, said",
+    "mood": "self-satisfied",
+    "text": "We should write this up to convey substandard research performance.",
+    "references": {
+      "text": "Criteria for decision should be based on clearly communicated standards.",
+      "reference": {
+        "url": "http://www.adept.gatech.edu/library.htm",
+        "category": "",
+        "referenceID": "44",
+        "text": "Lattica offers suggestions for individuals concerned with evaluation of interdisciplinary scholarship."
+      }
+    }
+  },
+  {
+    "statementKey": "B7b",
+    "speaker": 1,
+    "next": "C1",
+    "mood-phrase": "asserted",
+    "mood": "assertively",
+    "text": "Kulver, he's in a niche area that might be attractive right now, but it's not one that a lot of us in materials will soon care about. This part of our letter should say his record is not persuasive regarding his long-term funding potential. Agreed?",
+    "references": {
+      "text": "Candidates should understand that interdisciplinary scholarship is not always highly regarded by colleagues.",
+      "reference": {
+        "url": "http://www.adept.gatech.edu/library.htm",
+        "category": "",
+        "referenceID": "47",
+        "text": "Bahls and Schachter consider how interdisciplinary research has recently become more prominent."
+      }
+    }
+  },
+  {
+    "statementKey": "B7c",
+    "speaker": 2,
+    "next": "C1",
+    "mood-phrase": "thoughtfully said",
+    "mood": "thoughtfully",
+    "text": "I did notice new requests for proposals at NSF and DoD agencies that emphasize interdisciplinary connections; I have been thinking about this myself.",
+    "references": {
+      "text": "Funding agencies and institutions are adapting to interdisciplinary paradigms of research.",
+      "reference": {
+        "url": "http://www.adept.gatech.edu/library.htm",
+        "category": "",
+        "referenceID": "48",
+        "text": "Brainard describes Arizona State University's efforts to accommodate interdisciplinary research in science."
+      }
+    }
+  },
+  {
+    "statementKey": "B7d1",
+    "speaker": 1,
+    "next": "B7d2",
+    "mood-phrase": ", perplexed, said",
+    "mood": "perplexed",
+    "text": "It's just hard for me to see how to decouple scholarship and funding, how can you be a scholar in materials engineering without funding?",
+    "references": {
+      "text": "Measures of productivity regarding funding and publication ought to be communicated to all candidates in written guidelines and careful mentoring.",
+      "reference": {
+        "url": "http:\\\\www.gatech.edu",
+        "category": "Georgia Tech Resources",
+        "referenceID": "100",
+        "text": "The GATech faculty handbook (3.2.3) mandates review of \"all dimensions of performance\". . . \"teaching, creativity, and service.\""
+      }
+    }
+  },
+  {
+    "statementKey": "B7d2",
+    "speaker": 3,
+    "next": "C1",
+    "mood-phrase": "enthusiastically said",
+    "mood": "enthusiastic",
+    "text": "Perez's joint NSF grant and industry funding together are impressive, given that this is a hot new area. The collaboration outside the school and college is good because it leads to increased opportunities and leveraging of new monies to support materials engineering-related work. Perez is mining a vein that has incredible potential, one that can pay off for many of us, and our letter should reward his effort.",
+    "references": {
+      "text": "Interdisciplinary teaming can attract funding and provide momentum for funding proposals and publications.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "51",
+        "text": "Burnett characterizes how collaboration increases problem-solving."
+      },
+      "react": {
+        "foo": "",
+        "mood-phrase": ", acquiescing, said",
+        "mood": "acquiescing",
+        "speaker": 1
+      }
+    }
+  },
+  {
+    "statementKey": "C1",
+    "speaker": 1,
+    "next": "C2",
+    "mood-phrase": "said",
+    "mood": "talk",
+    "text": "Let's look at teaching now."
+  },
+  {
+    "statementKey": "C2",
+    "speaker": 3,
+    "next": "C3",
+    "mood-phrase": "said",
+    "mood": "talk",
+    "text": "His teaching scores are pretty good. Look at these evaluations for that intro course. He did as well as any other assistant professor and better than most.  I notice that he team teaches a course on surface chemistry with several other faculty, so it is very hard to judge the quality of his instruction.",
+    "references": {
+      "text": "Teaching scores are not always highly regarded by faculty evaluators.",
+      "reference": {
+        "url": "http://www.advance.gatech.edu/ptac/SUMMARY%20OF%20PTAC%20SURVEY.htm",
+        "category": "",
+        "referenceID": "68",
+        "text": "Linse describes female faculty concerns about evaluations. Respondents to the PTAC survey doubt effectiveness of certain teaching evaluation methods.  See section III of PTAC report."
+      }
+    }
+  },
+  {
+    "statementKey": "C3",
+    "speaker": 2,
+    "next": "C4",
+    "mood-phrase": "said mockingly",
+    "mood": "talk",
+    "text": "Who knows how effective he really was until we get those intro students in major courses? Does Perez have high numbers because he caters to students'sense of humor?  I've heard he shows clips from the web at the beginning of each lecture, some of them not very related to his lecture material. Sometimes students mistake that for good teaching.",
+    "references": {
+      "text": "Various studies on student evaluations report how stereotypes, expectations, student resistance to course content, and interactions affect scores.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "102",
+        "text": "See \"Gender and Student Evaluations,\" an annotated bibliography developed at the University of Michigan, for studies on bias in teaching evaluations."
+      }
+    }
+  },
+  {
+    "statementKey": "C4",
+    "speaker": 1,
+    "next": "C5",
+    "mood-phrase": "said seriously",
+    "mood": "serious",
+    "text": "Yes, if he is concerned about teaching, he ought to encourage retention of majors and appropriate pedagogies. I don't see evidence supporting his ability to attract students in materials. Who knows, as Jason says, what's really going on in the classroom.",
+    "references": {
+      "text": "Committee members should calibrate their differing expectations of what qualifies as good teaching.",
+      "reference": {
+        "url": "http://www.adept.gatech.edu/library.htm",
+        "category": "",
+        "referenceID": "102",
+        "text": "See R. A. Arreola on developing a comprehensive faculty evaluation system."
+      }
+    }
+  },
+  {
+    "statementKey": "C5",
+    "speaker": 3,
+    "next": "C6",
+    "mood-phrase": "asked",
+    "mood": "question",
+    "text": "Well, are these teaching standards--retention of majors and appropriate pedagogies--that we will invoke for everyone?\"",
+    "references": {
+      "text": "Standards ought to reflect institutional mission and be applied equitably.",
+      "reference": {
+        "url": "See PTAC Report (I. Potential Forms of Bias). www. advance.gatech.edu/ptac",
+        "category": "",
+        "referenceID": "99",
+        "text": "The 2003 ADVANCE research survey reports faculty perceptions of significant factors for promotion and salary."
+      }
+    }
+  },
+  {
+    "statementKey": "C6",
+    "speaker": 1,
+    "next": "C7",
+    "mood-phrase": "exclaimed",
+    "mood": "exclaim",
+    "text": "We should. Look at Jones' case: now there's someone who lays out a terrific teaching portfolio. Why can't Perez get help so he can get results like Jones?\"",
+    "references": {
+      "text": "Stereotypes affect perceptions of another's competence.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "38",
+        "text": "Valian discusses perceptions of leadership, competence, and assertiveness."
+      }
+    }
+  },
+  {
+    "statementKey": "C7",
+    "speaker": 0,
+    "next": "",
+    "mood-phrase": "",
+    "mood": "",
+    "statement": [
+      {
+        "statementKey": "C7a",
+        "speaker": 0,
+        "next": "C8a",
+        "text": "But we shouldn't directly compare cases. Each case is unique and needs to be seen for its own merits, if we could just find some in Perez's."
+      },
+      {
+        "statementKey": "C7b",
+        "speaker": 0,
+        "next": "C8b",
+        "text": "Yes, Jones definitely deserves his teaching awards."
+      },
+      {
+        "statementKey": "C7c",
+        "speaker": 0,
+        "next": "C8c",
+        "text": "Al, you don't like Perez because he disagrees with you about team teaching. You think every man should take of himself about teaching, while he argues for the value of faculty team-teaching intro courses. Based on the summaries of senior exit interviews provided in the dossier, Perez appears to be a gifted teacher."
+      },
+      {
+        "statementKey": "C7d",
+        "speaker": 0,
+        "next": "C8d",
+        "text": "But we shouldn't directly compare cases.  Each case is unique and with its own merits.  Perez has documented effective teaching by including the exit interviews, evaluation scores, and student letters supporting an external teaching award. [best practices document]"
+      }
+    ]
+  },
+  {
+    "statementKey": "C8a",
+    "speaker": 1,
+    "next": "D1",
+    "mood-phrase": "said seriously",
+    "mood": "serious",
+    "text": "I see three of us agree that Perez's teaching record is difficult to assess, and perhaps marginal.",
+    "references": {
+      "text": "Instructors should receive feedback on their teaching records before coming up for promotion and tenure.",
+      "reference": {
+        "url": "http:\\\\www.advance.gatech.edu",
+        "category": "",
+        "referenceID": "64",
+        "text": "PTAC report (I.5) acknowledges the significance of mentoring, citing Stanley Fish's concerns with the problems and prospects of mentoring."
+      }
+    }
+  },
+  {
+    "statementKey": "C8b",
+    "speaker": 1,
+    "next": "D1",
+    "mood-phrase": "said emphatically",
+    "mood": "emphatic",
+    "text": "Okay, so we'll give Jones great marks in the teaching department and barely pass Perez.\"",
+    "references": {
+      "text": "Evaluators ought to resist the temptation to  compare candidates' records by taking data out of context.",
+      "reference": {
+        "url": "",
+        "category": "",
+        "referenceID": "69",
+        "text": "Tierney acknowledges the need to develop appropriate rewards for teaching."
+      }
+    }
+  },
+  {
+    "statementKey": "C8c",
+    "speaker": 1,
+    "next": "D1",
+    "mood-phrase": ", somewhat annoyed, said",
+    "mood": "annoyed",
+    "text": "Team-teaching is too cumbersome to work in the intro course, and I worry about superficial treatment at that stage. But if you all agree that Perez deserves high marks for teaching. I'll go along with noting his high teaching evaluation scores.",
+    "references": {
+      "text": "Evaluators ought to avoid injecting personal bias into deliberations.",
+      "reference": {
+        "url": "http:\\\\www.advance.gatech.edu/ptac",
+        "category": "Georgia Tech Resources",
+        "referenceID": "99",
+        "text": "The PTAC report (IV.3) references the need to develop open and transparent evaluation processes."
+      }
+    }
+  },
+  {
+    "statementKey": "C8d",
+    "speaker": 1,
+    "next": "D1",
+    "mood-phrase": ", acquiescing, said",
+    "mood": "acquiescing",
+    "text": "Okay, I guess that if we really look at the documentation provided and not bring our own bias regarding team teaching into play, Perez does a reasonable job of teaching"
+  },
+  {
+    "statementKey": "D1",
+    "speaker": 2,
+    "next": "D2",
+    "mood-phrase": ", smirking, said",
+    "mood": "smirk",
+    "text": "I feel kind of silly bringing this up, but Perez seems to be adhering to that old adage 'birds of a feather'-you know? Look at who's on his grant team: Lopez, Johnson, Rodriguez, Bahouali",
+    "references": {
+      "text": "Institutional values/biases ought to be carefully characterized and criticized in the evaluation process.Institutional values/biases ought to be carefully characterized and criticized in the evaluation process.",
+      "reference": [
+        {
+          "url": "http://www.adept.gatech.edu/library.htm",
+          "category": "",
+          "referenceID": "9",
+          "text": "Long and Fox report how particularism affects perceptions of  success."
+        },
+        {
+          "url": "http://www.adept.gatech.edu/library.htm",
+          "category": "",
+          "referenceID": "10",
+          "text": "Fox and Ferri examine how men and women differently attribute success."
+        }
+      ]
+    }
+  },
+  {
+    "statementKey": "D2",
+    "speaker": 1,
+    "next": "D3",
+    "mood-phrase": ", somewhat annoyed, said",
+    "mood": "annoyed",
+    "text": "I see that too. In fact, the engineering education piece Perez wrote focuses on education of minorities. I know there are a lot of programs coming out of Washington to support this kind of thing, but I don't see much evidence that he has tried to attract funding along those lines.   But that's probably fine, as you often can't do that at the expense of being a first rate researcher.",
+    "references": {
+      "text": "Evaluators should clarify the relative importance of funding and quantity and quality of publications.",
+      "reference": {
+        "url": "www.advance.gatech.edu/ptac",
+        "category": "",
+        "referenceID": "101",
+        "text": "The PTAC report (I.2) references diversity in relation to recruitment, retention, and perceptions regarding faculty abilities and performance."
+      }
+    }
+  },
+  {
+    "statementKey": "D3",
+    "speaker": 2,
+    "next": "D4",
+    "mood-phrase": "exclaimed",
+    "mood": "exclaim",
+    "text": "Yeah, research is based purely on merit. You've got to deliver the goods before you get any respect. Bring in the money, attract attention from students. We need more people who make technical contributions rather than write scholarly articles about lack of opportunities.",
+    "references": {
+      "text": "Standards reflect cultural norms of engineering schools.",
+      "reference": {
+        "url": "http://www.adept.gatech.edu/library.htm",
+        "category": "",
+        "referenceID": "43",
+        "text": "\"Defining Culture\" identifies cultural norms observed in material culture and interactions in an engineering school."
+      }
+    }
+  },
+  {
+    "statementKey": "D4",
+    "speaker": 3,
+    "next": "D5",
+    "mood-phrase": "angrily said",
+    "mood": "angry",
+    "text": "I think there are some things being said here that are pushing the boundaries of appropriate conduct.",
+    "references": {
+      "text": "Evaluators should focus on reviewing the candidate's dossier and avoid making political pronouncements that could be interpreted as character slurs.",
+      "reference": {
+        "url": "http://www.adept.gatech.edu/library.htm",
+        "category": "",
+        "referenceID": "58",
+        "text": "Getman explains on pages 109-129 how peer review may falter."
+      }
+    }
+  },
+  {
+    "statementKey": "D5",
+    "speaker": 0,
+    "next": "",
+    "mood-phrase": "",
+    "mood": "",
+    "statement": [
+      {
+        "statementKey": "D5a",
+        "speaker": 0,
+        "next": "D6a1",
+        "text": "In my view, the education piece should be irrelevant to our judgment of his engineering scholarship because it is an opinion and not research."
+      },
+      {
+        "statementKey": "D5b",
+        "speaker": 0,
+        "next": "D6b1",
+        "text": "I don't think anything is out of bounds in a P and T discussion, this is an entirely confidential matter.  What is said here stays inside these walls."
+      },
+      {
+        "statementKey": "D5c",
+        "speaker": 0,
+        "next": "D6c1",
+        "text": "I agree with Karen that consideration of ethnicity or minority issues has no place in this discussion or in our dealings with Perez. He ought be commended for taking on the service of minority recruitment into engineering and excelling in everything else he does."
+      },
+      {
+        "statementKey": "D5d",
+        "speaker": 0,
+        "next": "D6d1",
+        "text": "Karen is right. The engineering education essay is a relevant piece of scholarship as it concerns an innovative curriculum in light of ABET 2000.  It appears in a reputable journal and provides some insight into the kind of balance in Perez's repertoire."
+      }
+    ]
+  },
+  {
+    "statementKey": "D6a1",
+    "speaker": 1,
+    "next": "D6a2",
+    "mood-phrase": "said confidently",
+    "mood": "confident",
+    "text": "So we are all agreed that Perez hasn't established the right kind of profile in research, teaching, or service for our department and our university?",
+    "references": {
+      "text": "Senior faculty members should encourage other evaluators to express their own views rather than assuming agreement.",
+      "reference": {
+        "url": "http://www.adept.gatech.edu/library.htm",
+        "category": "",
+        "referenceID": "60",
+        "text": "Nieva and Gutek consider bias toward white males in evaluation processes."
+      }
+    }
+  },
+  {
+    "statementKey": "D6a2",
+    "speaker": 3,
+    "next": "E1a",
+    "mood-phrase": "said emphatically",
+    "mood": "emphatic",
+    "text": "I disagree and ask that everyone review the scholarship and external letters of support before our next meeting.",
+    "references": {
+      "text": "Integrity of evaluation process includes the solicitation and interpretation of external letters of recommendation/review.Integrity of evaluation process includes the solicitation and interpretation of external letters of recommendation/review.",
+      "reference": [
+        {
+          "url": "http://www.adept.gatech.edu/library.htm",
+          "category": "",
+          "referenceID": "61",
+          "text": "Baron illustrates the value of external review letters for RPT committee members."
+        },
+        {
+          "url": "http://chronicle.com/prm/weekly/v48/i25/25b01401.htm",
+          "category": "",
+          "referenceID": "63",
+          "text": "Letters often remain confidential and not open to review by the candidate, but practices vary."
+        }
+      ]
+    }
+  },
+  {
+    "statementKey": "D6b1",
+    "speaker": 1,
+    "next": "D6b2",
+    "mood-phrase": "said passively",
+    "mood": "passive",
+    "text": "Yes, being on the same page with our goals is an important element, and maybe he just doesn't fit with us in terms of research, teaching, or service.\"",
+    "references": {
+      "text": "\"Fit\" can indicate predilection or bias. Reviewers should make judgments on professional, not personal, criteria.",
+      "reference": {
+        "url": "http://www.adept.gatech.edu/library.htm",
+        "category": "",
+        "referenceID": "62",
+        "text": "Allen claims social factors and environmental influences are ignored in evaluation processes."
+      }
+    }
+  },
+  {
+    "statementKey": "D6b2",
+    "speaker": 3,
+    "next": "E1a",
+    "mood-phrase": "said emphatically",
+    "mood": "emphatic",
+    "text": "We should take into account that our discipline is becoming more interdisciplinary and that Perez's work demonstrates that evolution.",
+    "references": {
+      "text": "Evaluators should keep in mind disciplinary, institutional, and professional standards.",
+      "reference": {
+        "url": "http://www.adept.gatech.edu/library.htm",
+        "category": "",
+        "referenceID": "69",
+        "text": "Tierney acknowledges the need to develop appropriate recognition of a range of scholarship."
+      }
+    }
+  },
+  {
+    "statementKey": "D6c1",
+    "speaker": 1,
+    "next": "D6c2",
+    "mood-phrase": ", somewhat annoyed, said",
+    "mood": "annoyed",
+    "text": "All I'm saying is that stuff can't make up for other areas in which his contributions are lacking.",
+    "references": {
+      "text": "Standards of achievement should be clear and not established by individual predilections.",
+      "reference": {
+        "url": "http://www.adept.gatech.edu/library.htm",
+        "category": "",
+        "referenceID": "64",
+        "text": "Fish considers subjective aspects of the promotion and tenure process."
+      }
+    }
+  },
+  {
+    "statementKey": "D6c2",
+    "speaker": 3,
+    "next": "E1b",
+    "mood-phrase": "said confidently",
+    "mood": "confident",
+    "text": "Some of us think that his contributions in research and teaching are fine and that his interest in minority education points to future contributions to departmental recruiting.",
+    "references": {
+      "text": "Standards of achievement should be clear and not established by individual predilections.",
+      "reference": {
+        "url": "http:\\\\www.advance.gatech.edu/ptac",
+        "category": "Georgia Tech Resources",
+        "referenceID": "99",
+        "text": "PTAC Report (IV.3) outlines best practices of evaluation."
+      }
+    }
+  },
+  {
+    "statementKey": "D6d1",
+    "speaker": 1,
+    "next": "D6d2",
+    "mood-phrase": ", confused, said",
+    "mood": "confused",
+    "text": "I hadn't noticed it had anything to do with ABET2000.",
+    "references": {
+      "text": "Evaluators should carefully read documents in dossier.",
+      "reference": {
+        "url": "http://www.advance.gatech.edu/ptac",
+        "category": "Georgia Tech Resources",
+        "referenceID": "99",
+        "text": "PTAC Report (IV.3) outlines best practices of evaluation."
+      }
+    }
+  },
+  {
+    "statementKey": "D6d2",
+    "speaker": 2,
+    "next": "E1c",
+    "mood-phrase": ", smirking, said",
+    "mood": "smirk",
+    "text": "The end of Perez's essay notes a connection to ABET2000, and the essay was praised by two external reviewers as a significant contribution to issues of underrepresentation.",
+    "references": {
+      "text": "Educational scholarship can be evaluated as an element of teaching portfolio.",
+      "reference": {
+        "url": "http:\\\\www.advance.gatech.edu/ptac",
+        "category": "Georgia Tech Resources",
+        "referenceID": "99",
+        "text": "PTAC Report (IV.3) outlines best practices of evaluation."
+      }
+    }
+  },
+  {
+    "statementKey": "E1a",
+    "speaker": 1,
+    "next": "",
+    "mood-phrase": "said arrogantly",
+    "mood": "arrogant",
+    "text": "Research is substandard.  Teaching is barely adequate. And there's no real service.",
+    "references": {
+      "text": "Standards of achievement should be clear and not established by individual predilections.",
+      "reference": {
+        "url": "http:\\\\www.advance.gatech.edu/ptac",
+        "category": "Georgia Tech Resources",
+        "referenceID": "99",
+        "text": "PTAC Report (IV.3) outlines best practices of evaluation."
+      }
+    }
+  },
+  {
+    "statementKey": "E1b",
+    "speaker": 1,
+    "next": "",
+    "mood-phrase": ", somewhat annoyed, said",
+    "mood": "annoyed",
+    "text": "Perez's research funding meets expectations, and his teaching is okay, but he hasn't seemed to have found his niche yet in terms of service.  That's probably ok at his stage.",
+    "references": {
+      "text": "Departments should have clear, unambiguous expectations that are communicated in writing.",
+      "reference": {
+        "url": "http:\\\\www.advance.gatech.edu",
+        "category": "Georgia Tech Resources",
+        "referenceID": "99",
+        "text": "PTAC Report (IV.3) outlines best practices of evaluation."
+      }
+    }
+  },
+  {
+    "statementKey": "E1c",
+    "speaker": 3,
+    "next": "",
+    "mood-phrase": "said seriously",
+    "mood": "serious",
+    "text": "Well, it seems to me that the majority of us agree that Perez is an outstanding researcher and teacher who has contributed to service in his efforts to improve minority recruitment. Al, you seem to be the outlier.",
+    "references": {
+      "text": "Standards of achievement should be clear and not established by individual predilections.",
+      "reference": {
+        "url": "http:\\\\www.advance.gatech.edu/ptac",
+        "category": "Georgia Tech Resources",
+        "referenceID": "99",
+        "text": "PTAC Report (IV.3) outlines best practices of evaluation."
+      }
+    }
+  }
+]
