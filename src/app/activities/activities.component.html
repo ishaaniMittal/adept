@@ -1,6 +1,3 @@
-<!--<div>
-  <img src="../../assets/top-menu.png" style="width: 1262px;">
-</div>-->
 <div class="activities">
   <h2 class="activity-instruction">ADEPT activities serve as learning tools to navigate through the promotion and tenure
     evaluation
@@ -9,7 +6,6 @@
   <div class="row activity-row">
     <!--class.selected will be added when we select one of the cards-->
     <div class="col-md-4 col-lg-4 activity-card" *ngFor="let activity of activities"
-         [class.selected]="activity === activities"
          (click)="onSelect(activity)">
       <img class="activity-img" [src]=activity.image_src>
       <div class="activity-name">{{activity.name}}</div>

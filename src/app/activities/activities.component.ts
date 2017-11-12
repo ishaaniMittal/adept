@@ -28,7 +28,14 @@ export class ActivitiesComponent implements OnInit {
     this.selectedActivity = activity;
   }
 
-  goToNextPage(){
+  goToNextPage() {
+    if (this.selectedActivity.activityId == 1) {
+
+    } else if (this.selectedActivity.activityId == 2) {
+
+    } else {
+
+    }
     //here we need to write code to redirect to different part based on the selectedActivityCode
   }
 }
