@@ -8,6 +8,8 @@ import {MainPageService} from "./simulated-meeting/main-page/main-page.service";
 import {MainPageComponent} from "./simulated-meeting/main-page/main-page.component";
 import {Routes, RouterModule} from "@angular/router";
 import {AppRoutingModule} from "./app-routing.module";
+import {SimulatedMeetingComponent} from "./simulated-meeting/game/sm-game.component";
+import {SMGameService} from "./simulated-meeting/game/sm-game.service";
 
 
 
@@ -16,13 +18,14 @@ import {AppRoutingModule} from "./app-routing.module";
     AppComponent,
     ActivitiesComponent,
     MainPageComponent,
+    SimulatedMeetingComponent
 
   ],
   imports: [
     AppRoutingModule,
     BrowserModule
   ],
-  providers: [ActivitiesService, MainPageService],
+  providers: [ActivitiesService, MainPageService, SMGameService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

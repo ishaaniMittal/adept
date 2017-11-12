@@ -1,6 +1,7 @@
 import {MainPageService} from './main-page.service';
 import {Candidate} from './candidate';
 import {OnInit, Component} from "@angular/core";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'main-page-sm',
@@ -11,9 +12,10 @@ import {OnInit, Component} from "@angular/core";
 export class MainPageComponent implements OnInit {
   candidates:Candidate[];
   selectedCandidate:Candidate;
+  router:Router;
 
-  constructor(private service:MainPageService) {
-
+  constructor(private service:MainPageService, router:Router) {
+    this.router = router;
   }
 
   getCandidates():void {
@@ -29,5 +31,9 @@ export class MainPageComponent implements OnInit {
 
   onSelect(candidate:Candidate):void {
     this.selectedCandidate = candidate;
+  }
+
+  goToNextPage() {
+    this.router.navigate(['/simulated-meeting', {id: this.selectedCandidate.candidate_id}]);
   }
 }
