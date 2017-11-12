@@ -34,6 +34,6 @@ export class MainPageComponent implements OnInit {
   }
 
   goToNextPage() {
-    this.router.navigate(['/simulated-meeting', {id: this.selectedCandidate.candidate_id}]);
+    this.router.navigate(['/simulated-meeting', this.selectedCandidate.candidate_id]);
   }
 }

@@ -45,8 +45,8 @@
 }
 
 .candidate-img {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   height: 80px;
   width: 80px;
 }
@@ -114,7 +114,7 @@
 }
 
 .panelist-name {
-  margin-top:40px;
+  margin-top:34px;
   font-size: 16px;
   font-weight: 700;
 }
