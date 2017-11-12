@@ -6,7 +6,7 @@ import {ActivitiesComponent} from "./activities/activities.component";
 import {ActivitiesService} from "./activities/activities.service";
 import {MainPageService} from "./simulated-meeting/main-page/main-page.service";
 import {MainPageComponent} from "./simulated-meeting/main-page/main-page.component";
-import { AppRoutingModule } from './app-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -15,8 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
     MainPageComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
   ],
   providers: [ActivitiesService, MainPageService],
   bootstrap: [AppComponent]
