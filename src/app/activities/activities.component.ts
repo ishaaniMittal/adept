@@ -1,6 +1,7 @@
 import {ActivitiesService} from './activities.service';
 import {Activity} from './activity';
 import {OnInit, Component} from "@angular/core";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'activities',
@@ -9,11 +10,12 @@ import {OnInit, Component} from "@angular/core";
 })
 
 export class ActivitiesComponent implements OnInit {
+  router:Router;
   activities:Activity[];
   selectedActivity:Activity;
 
-  constructor(private activitiesService:ActivitiesService) {
-
+  constructor(private activitiesService:ActivitiesService, router:Router) {
+    this.router = router;
   }
 
   getActivities():void {
@@ -28,10 +30,10 @@ export class ActivitiesComponent implements OnInit {
     this.selectedActivity = activity;
   }
 
-  goToNextPage() {
-    if (this.selectedActivity.activityId == 1) {
-
-    } else if (this.selectedActivity.activityId == 2) {
+  goToNextPage(activity) {
+    if (activity.activityId == 1) {
+      this.router.navigate(['/simulated-meeting']);
+    } else if (activity.activityId == 2) {
 
     } else {
 
