@@ -24,24 +24,15 @@ export class Candidate {
     "service":string[],
     "honors_and_awards":string[]
   };
-  "committee_member_one":{
-    "committee_id":number,
-    "name":string,
-    "image":string,
-    "description":string
-  };
-  "committee_member_two":{
-    "committee_id":number,
-    "name":string,
-    "image":string,
-    "description":string,
-  };
-  "committee_member_three":{
-    "committee_id":number,
-    "name":string,
-    "image":string,
-    "description":string
-  }
+  "committee_members":[
+    {
+      "committee_id":number,
+      "name":string,
+      "image":string,
+      "description":string
+    }
+    ];
+  
 
 }
 

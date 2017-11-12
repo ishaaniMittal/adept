@@ -9,7 +9,7 @@
           VIEW OTHER PANELIST'S BIO
         </button>
         <hr style="margin-top: 20px;">
-        <div style="margin-top:10px;font-size: 16px;text-align: center; font-weight: 700;">CANDIDATE'S PROFILE</div>
+        <!--<div style="margin-top:10px;font-size: 16px;text-align: center; font-weight: 700;">CANDIDATE'S PROFILE</div>
         <div class="candidate-card" style="margin-top: 10px; background-color: #F5F5F5">
           <div class="row">
             <div class="col-md-5">
@@ -21,22 +21,22 @@
             </div>
           </div>
           <div class="row view-details-left">
-            <!--<div style="margin-top:18px;">
+            &lt;!&ndash;<div style="margin-top:18px;">
               <ul>
                 <li>{{selectedCandidate.dossier.educational_background[0]}}</li>
                 <li>{{selectedCandidate.dossier.educational_background[1]}}</li>
               </ul>
-            </div>-->
+            </div>&ndash;&gt;
             <button style="background-color: #0D3055; width: 100%">
               <span style="color: white;font-size: 16px;text-align: center">View Curriculum Vitae</span>
             </button>
           </div>
           <div class="row view-details-left" style="margin-top: 12px;">
 
-            <!--  <div class="truncate" style="margin-top:18px;">
+            &lt;!&ndash;  <div class="truncate" style="margin-top:18px;">
                 {{selectedCandidate.career_account[0]}}
               </div>
--->
+&ndash;&gt;
             <button style="background-color: #EFB211; width: 100%">
               <span style="color: white;font-size: 16px;text-align: center;">View Case Study</span>
             </button>
@@ -44,79 +44,99 @@
 
         </div>
         <hr style="margin-top: 20px;">
+        -->
         <button style="width: 100%">
           <span style="font-size: 16px;text-align: center;"><- BACK TO MAIN PAGE</span>
         </button>
       </div>
     </div>
-     <div class="col-md-9">
-       <div class="right-panel">
-         <div class="activity-instruction">You have been appointed to serve as the fourth member of the unit-level
-           evaluation
-           committee reviewing a Promotion and Tenure case. Choose a case from below. Then read the candidate's profile
-           and
-           descriptions of fellow panelists. <i>(Character information is
-             fictional).</i>
-         </div>
+    <div class="col-md-9">
+      <div class="right-panel">
+        <div class="activity-instruction">You have been appointed to serve as the fourth member of the unit-level
+          evaluation
+          committee reviewing a Promotion and Tenure case. Choose a case from below. Then read the candidate's profile
+          and
+          descriptions of fellow panelists. <i>(Character information is
+            fictional).</i>
+        </div>
 
-         <div class="header">Choose a Candidate</div>
-         <div class="row choose-candidates">
-           <!--class.selected will be added when we select one of the cards-->
+        <div class="header">Choose a Candidate</div>
+        <div class="row choose-candidates">
+          <!--class.selected will be added when we select one of the cards-->
 
-           <div class="col-md-4 col-lg-4 choose-candidate-card" *ngFor="let candidate of candidates"
-                [class.selected]="candidate === candidates"
-                (click)="onSelect(candidate)">
-             <div class="row">
-               <div class="col-md-5">
-                 <img class="candidate-img" [src]=candidate.image>
-               </div>
-               <div class="col-md-7">
-                 <div class="candidate-name">{{candidate.name}}</div>
-                 <div class="candidate-short-desc">{{candidate.short_desc}}</div>
-               </div>
-             </div>
-           </div>
-         </div>
-         <div class="header">Details of case</div>
-         <br>
-         <div class="row details-case">
-           <div class="col-md-5 col-lg-5 view-details">
-             <div style="margin-top:18px;">
-               <ul>
-                 <li>{{selectedCandidate.dossier.educational_background[0]}}</li>
-                 <li>{{selectedCandidate.dossier.educational_background[1]}}</li>
-               </ul>
-             </div>
-             <div class="button" style="background-color: #0D3055;">
-               <span style="color: white;font-size: 16px;text-align: center">View Curriculum Vitae</span>
-             </div>
-           </div>
-           <div class="col-md-5 col-lg-5 view-details">
-             <div class="truncate" style="margin-top:18px;">
-               {{selectedCandidate.career_account[0]}}
-             </div>
-             <div class="button" style="background-color: #EFB211;">
-               <span style="color: white;font-size: 16px;text-align: center">View Case Study</span>
-             </div>
-           </div>
-         </div>
-         <!--class.selected will be added when we select one of the cards-->
+          <div class="col-md-4 col-lg-4 choose-candidate-card" *ngFor="let candidate of candidates"
+               [class.selected]="candidate === candidates"
+               (click)="onSelect(candidate)">
+            <div class="row">
+              <div class="col-md-4">
+                <img class="candidate-img" [src]=candidate.image>
+              </div>
+              <div class="col-md-8">
+                <div class="candidate-name">{{candidate.name}}</div>
+                <div class="candidate-short-desc">{{candidate.short_desc}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header">Details of case</div>
+        <br>
+        <div class="details-case">
+          <div class="row ">
+            <div class="col-md-5 col-lg-5 view-details">
+              <div style="margin-top:18px;">
+                <ul>
+                  <li>{{selectedCandidate.dossier.educational_background[0]}}</li>
+                  <li>{{selectedCandidate.dossier.educational_background[1]}}</li>
+                </ul>
+              </div>
+              <div class="button" style="background-color: #0D3055;">
+                <span style="color: white;font-size: 16px;margin-left:10px;">View Curriculum Vitae</span>
+              </div>
+            </div>
+            <div class="col-md-5 col-lg-5 view-details">
+              <div class="truncate" style="margin-top:18px;">
+                {{selectedCandidate.career_account[0]}}
+              </div>
+              <div class="button" style="background-color: #EFB211;">
+                <span style="color: white;font-size: 16px;text-align: center;margin-left:10px;">View Case Study</span>
+              </div>
+            </div>
+          </div>
+          <div class="read-about-fellows">
+            <div class="header" style="margin-top: 10px;">Read about your fellow panelists</div>
+            <div class="row" style="margin-right:0px;">
+              <div class="col-md-4 col-lg-4 other-panelists"
+                   *ngFor="let committee_member of selectedCandidate.committee_members">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img class="candidate-img" [src]=committee_member.image>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="panelist-name">{{committee_member.name}}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button  class="play-game">Play Game</button>
+        <!--class.selected will be added when we select one of the cards-->
 
-         <!--<div class="col-md-4 col-lg-4 choose-candidate-card" *ngFor="let candidate of candidates"
-              [class.selected]="candidate === candidates"
-              (click)="onSelect(candidate)">
-           <div class="row">
-             <div class="col-md-5">
-               <img class="candidate-img" [src]=candidate.image>
-             </div>
-             <div class="col-md-7">
-               <div class="candidate-name">{{candidate.name}}</div>
-               <div class="candidate-short-desc">{{candidate.short_desc}}</div>
-             </div>
-           </div>
-         </div>-->
+        <!--<div class="col-md-4 col-lg-4 choose-candidate-card" *ngFor="let candidate of candidates"
+             [class.selected]="candidate === candidates"
+             (click)="onSelect(candidate)">
+          <div class="row">
+            <div class="col-md-5">
+              <img class="candidate-img" [src]=candidate.image>
+            </div>
+            <div class="col-md-7">
+              <div class="candidate-name">{{candidate.name}}</div>
+              <div class="candidate-short-desc">{{candidate.short_desc}}</div>
+            </div>
+          </div>
+        </div>-->
 
-       </div>
-     </div>
+      </div>
+    </div>
   </div>
 </div>

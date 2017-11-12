@@ -64,24 +64,23 @@ export const CANDIDATES:Candidate[] = [
         "Certificate of merit, center for innovation in teaching, Mythical Tech"
       ]
     },
-    "committee_member_one": {
+    "committee_members": [{
       "committee_id": 1,
       "name": "Al Smith",
-      "image": "",
+      "image": "../../../assets/candidate.png",
       "description": ", chair of unit reappointment, promotion and tenure (RPT) committee for the third time, member for the tenth. Does not work in Perez' area. Has a history of research in a classical, core area of materials engineering well-funded by government and industry."
-    },
-    "committee_member_two": {
+    }, {
       "committee_id": 2,
       "name": "Jason Dayan",
-      "image": "",
+      "image": "../../../assets/candidate.png",
       "description": ", member of the committee for the second time. Works in a traditional core area of materials engineering, often as a collaborator with Smith. Fairly significant funding."
-    },
-    "committee_member_three": {
+    }, {
       "committee_id": 3,
       "name": "Karen Kulver",
-      "image": "",
+      "image": "../../../assets/candidate.png",
       "description": ", member of the committee for the third time. Works in another area of materials that allows some collaboration with chemistry faculty. Significant funding."
-    }
+    }]
+
   },
   {
     "candidate_id": 2,
@@ -146,24 +145,23 @@ export const CANDIDATES:Candidate[] = [
         "Voted Best Organized Instructor by School of Biochemistry seniors, annual honors assembly and dinner."
       ]
     },
-    "committee_member_one": {
+    "committee_members": [{
       "committee_id": 1,
       "name": "Kathryn Sloan",
-      "image": "",
+      "image": "../../../assets/candidate.png",
       "description": "chair of RPT: endowed chair, on committee many times, denied early tenure, but fair-minded about concept of early tenure"
-    },
-    "committee_member_two": {
+    }, {
       "committee_id": 2,
       "name": "Joe Wynn",
-      "image": "",
+      "image": "../../../assets/candidate.png",
       "description": "member with some experience on RPT, ill-disposed toward star system"
-    },
-    "committee_member_three": {
+    }, {
       "committee_id": 3,
       "name": "Mohammed Shaban",
-      "image": "",
+      "image": "../../../assets/candidate.png",
       "description": "newly tenured, first time on RPT, protects/upholds procedures, not tenured early"
-    }
+    }]
+
   },
   {
     "candidate_id": 3,
@@ -205,31 +203,34 @@ export const CANDIDATES:Candidate[] = [
         "opening_line": "2 Ph.D. students in-progress, 2 M.S. students graduated, 5 M.S. students in progress",
         "advisement": []
       },
-     
+
       "teaching": [
         "has taught undergraduate introductory course in computing for engineers, and undergraduate and graduate digital signal processing courses"
       ],
       "service": ["member, EE Computer Committee", "Member, EE Undergraduate Committee"],
       "honors_and_awards": ["Rhodes Scholar, Oxford University"]
     },
-    "committee_member_one": {
+    "committee_members": [{
       "committee_id": 1,
       "name": "George Green",
-      "image": "",
+      "image": "../../../assets/candidate.png",
       "description": "experienced member, RPT, committee chair for first time"
     },
-    "committee_member_two": {
-      "committee_id": 2,
-      "name": "Caroline Wong",
-      "image": "",
-      "description": "faculty star an RPT committee member for the first time"
-    },
-    "committee_member_three": {
-      "committee_id": 3,
-      "name": "Susan Tomel",
-      "image": "",
-      "description": "moderately experienced member of RPT"
-    }
+      {
+        "committee_id": 2,
+        "name": "Caroline Wong",
+        "image": "../../../assets/candidate.png",
+        "description": "faculty star an RPT committee member for the first time"
+      },
+      {
+        "committee_id": 3,
+        "name": "Susan Tomel",
+        "image": "../../../assets/candidate.png",
+        "description": "moderately experienced member of RPT"
+      }
+    ]
+
+
   }
 
 ];
