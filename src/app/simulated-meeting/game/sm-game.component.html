@@ -1,4 +1,4 @@
-<div class="main-page">
+<div class="sm-game container-fluid">
   <div class="row">
     <div class="col-md-3 left-panel">
       <div style="margin-left: 30px; margin-right:20px;">
@@ -12,31 +12,31 @@
         <div style="margin-top:10px;font-size: 16px;text-align: center; font-weight: 700;">CANDIDATE'S PROFILE</div>
         <div class="candidate-card" style="margin-top: 10px; background-color: #F5F5F5">
           <div class="row">
-            <div class="col-md-5">
-              <img class="candidate-img" src="../../../assets/candidate.png">
+            <div class="col-md-4">
+              <img class="candidate-img" src="../../../assets/candidate.png" style="margin-left: 10px;">
             </div>
-            <div class="col-md-7">
+            <div class="col-md-8">
               <div class="candidate-name">Jamie Perez</div>
               <div class="candidate-short-desc">PhD in Material Science and Engineering</div>
             </div>
           </div>
           <div class="row view-details-left">
-            <!--<div style="margin-top:18px;">
+            <div style="margin-top:18px;">
               <ul>
                 <li>{{selectedCandidate.dossier.educational_background[0]}}</li>
                 <li>{{selectedCandidate.dossier.educational_background[1]}}</li>
               </ul>
-            </div>-->
+            </div>
             <button style="background-color: #0D3055; width: 100%">
               <span style="color: white;font-size: 16px;text-align: center">View Curriculum Vitae</span>
             </button>
           </div>
           <div class="row view-details-left" style="margin-top: 12px;">
 
-            <!--  <div class="truncate" style="margin-top:18px;">
-                {{selectedCandidate.career_account[0]}}
-              </div>
--->
+            <div class="truncate" style="margin-top:18px;">
+              {{selectedCandidate.career_account[0]}}
+            </div>
+
             <button style="background-color: #EFB211; width: 100%">
               <span style="color: white;font-size: 16px;text-align: center;">View Case Study</span>
             </button>
@@ -49,6 +49,28 @@
         </button>
       </div>
     </div>
+    <div class="col-md-7 right-panel">
+      <div class="row" style="height:40%">
+        <img src="../../../assets/panel.jpg" style="width: 100%">
+      </div>
+      <div class="row"
+           style="height:35%;background-color: #F6F6F6; margin-top:20px;display: block;align-items: flex-end">
+        <div style="font-size: 17px;font-weight: 700;">Pick a statement to say to the committee</div>
+        <mat-radio-group class="example-radio-group" [(ngModel)]="answer">
+          <mat-radio-button class="example-radio-button" *ngFor="let option of options" [value]="option">
+            {{option}}
+          </mat-radio-button>
+        </mat-radio-group>
+        <div style="margin-top: 15px;">
+          <button>Submit</button>
+        </div>
 
+      </div>
+
+
+    </div>
+    <div class="offset-md-1 col-md-1">
+      <button class="rotate">Transcript</button>
+    </div>
   </div>
 </div>

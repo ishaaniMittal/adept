@@ -5,16 +5,18 @@
     evaluator. </h2>
   <div class="row activity-row">
     <!--class.selected will be added when we select one of the cards-->
-    <div class="col-md-4 col-lg-4 activity-card" *ngFor="let activity of activities">
-      <img class="activity-img" [src]=activity.image_src>
-      <div class="activity-name">{{activity.name}}</div>
-      <div class="activity-time"><i>{{activity.time}}</i></div>
-      <hr class="divider">
-      <div class="activity-desc">{{activity.short_description}}</div>
-      <div class="activity-role"><b>Your Role:</b>
-        <br>{{activity.your_role}}
+    <div class="col-md-4 col-lg-4 " *ngFor="let activity of activities">
+      <div class="activity-card">
+        <img class="activity-img" [src]=activity.image_src>
+        <div class="activity-name">{{activity.name}}</div>
+        <div class="activity-time"><i>{{activity.time}}</i></div>
+        <hr class="divider">
+        <div class="activity-desc">{{activity.short_description}}</div>
+        <div class="activity-role"><b>Your Role:</b>
+          <br>{{activity.your_role}}
+        </div>
+        <button (click)="goToNextPage(activity)">Play Game</button>
       </div>
-      <button (click)="goToNextPage(activity)">Play Game</button>
     </div>
   </div>
 

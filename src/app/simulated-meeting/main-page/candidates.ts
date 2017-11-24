@@ -6,7 +6,7 @@ export const CANDIDATES:Candidate[] = [
     "candidate_id": 1,
     "name": "Jamie Perez",
     "short_desc": "Ph.D. in Materials Science and Engineering",
-    "image": "../../../assets/candidate.png",
+    "image": "../../../assets/JP.png",
     "career_account": [
       "Jamie Perez, Ph.D. in Materials Science and Engineering from MIT, joins a prestigious research university as a tenure-track assistant professor after completing post-docs at Berkeley and Northwestern. At the time of hiring, the search committee notes a one-year gap between post-docs, a time when Perez studied as a Fulbright Scholar at a European university. Support for his faculty slot is earmarked from the Dean’s office for the first two years of the appointment by virtue of an underrepresented faculty hiring initiative.",
       "Perez’s start-up package was average for faculty in that unit, but there are some glitches in finding adequate lab space and equipment. While he had been verbally assured during his negotiations that he could share the lab of a senior professor, Perez is told upon arrival by the senior faculty member in his interest group that the senior faculty member’s group has priority, and he has limited Perez and his students to two hours per week in that lab. The chair then sent an e-mail to Perez about a change of plans, suggesting that he share a lab with another entering assistant professor until the following year, when the senior colleague moved to a new building on campus. Although somewhat constraining to the research programs of both individuals, this logistical arrangement encouraged the two new colleagues to collaborate on a small research project with some industry funding while also continuing their individual research agendas. The chair recommended at the first annual review that Perez “pay greater attention to research funding in areas more closely linked to the unit’s focus” and “try harder” to attract graduate students.",
@@ -67,18 +67,18 @@ export const CANDIDATES:Candidate[] = [
     "committee_members": [{
       "committee_id": 1,
       "name": "Al Smith",
-      "image": "../../../assets/candidate.png",
-      "description": ", chair of unit reappointment, promotion and tenure (RPT) committee for the third time, member for the tenth. Does not work in Perez' area. Has a history of research in a classical, core area of materials engineering well-funded by government and industry."
+      "image": "../../../assets/Al.png",
+      "description": "Al Smith, chair of unit reappointment, promotion and tenure (RPT) committee for the third time, member for the tenth. Does not work in Perez' area. Has a history of research in a classical, core area of materials engineering well-funded by government and industry."
     }, {
       "committee_id": 2,
       "name": "Jason Dayan",
-      "image": "../../../assets/candidate.png",
-      "description": ", member of the committee for the second time. Works in a traditional core area of materials engineering, often as a collaborator with Smith. Fairly significant funding."
+      "image": "../../../assets/JD.png",
+      "description": "Jason Dayan, member of the committee for the second time. Works in a traditional core area of materials engineering, often as a collaborator with Smith. Fairly significant funding."
     }, {
       "committee_id": 3,
       "name": "Karen Kulver",
-      "image": "../../../assets/candidate.png",
-      "description": ", member of the committee for the third time. Works in another area of materials that allows some collaboration with chemistry faculty. Significant funding."
+      "image": "../../../assets/KK.png",
+      "description": "Karen Kulver, member of the committee for the third time. Works in another area of materials that allows some collaboration with chemistry faculty. Significant funding."
     }]
 
   },
@@ -86,7 +86,7 @@ export const CANDIDATES:Candidate[] = [
     "candidate_id": 2,
     "name": "Samia Mansour",
     "short_desc": "Ph.D. in Biochemistry",
-    "image": "../../../assets/candidate.png",
+    "image": "../../../assets/SM.png",
     "career_account": [
       "Samia Mansour, Ph.D. in Biochemistry from the Johns Hopkins University, was hired as an assistant professor by the Department of Physical Sciences at a prestigious research university. Mansour’s research field has long been central to the university; she joined a number of colleagues who do similar and complementary work in the same field. Her start-up package was slightly better than average; she had four offers to consider at leading universities. Mansour was immediately asked to participate in a campus committee charged to study why so few women are employed in science during her first year. In her second and third years, she was invited to serve on two similar committees at the university level.",
       "During her first three years at the university, Mansour produced an extraordinary number of publications in the top-ranked journals in her field, including one prize-winning paper. She wrote most of her papers with a small group of faculty and graduate students, but some represented collaborations with just one or two individuals, typically graduate students.",
@@ -148,17 +148,17 @@ export const CANDIDATES:Candidate[] = [
     "committee_members": [{
       "committee_id": 1,
       "name": "Kathryn Sloan",
-      "image": "../../../assets/candidate.png",
+      "image": "../../../assets/KS.png",
       "description": "chair of RPT: endowed chair, on committee many times, denied early tenure, but fair-minded about concept of early tenure"
     }, {
       "committee_id": 2,
       "name": "Joe Wynn",
-      "image": "../../../assets/candidate.png",
+      "image": "../../../assets/JW.png",
       "description": "member with some experience on RPT, ill-disposed toward star system"
     }, {
       "committee_id": 3,
       "name": "Mohammed Shaban",
-      "image": "../../../assets/candidate.png",
+      "image": "../../../assets/MS.png",
       "description": "newly tenured, first time on RPT, protects/upholds procedures, not tenured early"
     }]
 
@@ -167,7 +167,7 @@ export const CANDIDATES:Candidate[] = [
     "candidate_id": 3,
     "name": "Patty Shen",
     "short_desc": "Ph.D. in Computational and Neural Systems",
-    "image": "../../../assets/candidate.png",
+    "image": "../../../assets/PS.png",
     "career_account": [
       "Patty Shen, Ph.D. in Computational and Neural Systems from the California Institute of Technology, entered a prestigious research university as an assistant professor. She specialized in distributed computing and computation in neural and biological systems within the biomedical engineering group. Her start-up package was higher than average as her field was relatively new and required the purchase of some fairly expensive parallel computing and visualization equipment. Because Shen considered a competing offer, the department engaged in a bidding war to induce her to accept the appointment. Three other assistant professors in closely related areas were hired in the same year with packages not as generous as Shen\\'s . At the end of Shen\\'s first year, her chair complimented her on establishing \\\"a good rapport \\\" with her graduate students and for her success in publishing two papers based on her group\\'s work, with two more in press.\r\n",
       "Publishing additional papers in Nature, Neuron, The Journal of Computational Biology, Current Biology,and elsewhere, Shen continued her steady publication record through her next two years. She also took on responsibility for teaching one of the core courses for the undergraduate program and for introducing a key new graduate course in her area, earning above average and excellent evaluation scores from students. Exit interviews of seniors conducted by the chair indicated that all students appreciated Shen’s thorough approach and that many, especially women, found her to be a valuable role model.",
@@ -213,19 +213,19 @@ export const CANDIDATES:Candidate[] = [
     "committee_members": [{
       "committee_id": 1,
       "name": "George Green",
-      "image": "../../../assets/candidate.png",
+      "image": "../../../assets/GG.png",
       "description": "experienced member, RPT, committee chair for first time"
     },
       {
         "committee_id": 2,
         "name": "Caroline Wong",
-        "image": "../../../assets/candidate.png",
+        "image": "../../../assets/CW.png",
         "description": "faculty star an RPT committee member for the first time"
       },
       {
         "committee_id": 3,
         "name": "Susan Tomel",
-        "image": "../../../assets/candidate.png",
+        "image": "../../../assets/ST.png",
         "description": "moderately experienced member of RPT"
       }
     ]

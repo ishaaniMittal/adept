@@ -41,7 +41,7 @@
 
 .activity-img {
   padding-top: 17px;
-  width: 335px;
+  width: 320px;
 }
 
 .activity-instruction {
@@ -49,12 +49,11 @@
 }
 
 .activity-card {
-  padding-right: 20px;
-  border-radius: 2px;
-  border-style: solid;
-  border-color: white;
+  padding-left: 10px;
+  padding-right:10px;
   background: #F5F5F5;
   min-height:420px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
 }
 
 .divider {
@@ -76,4 +75,5 @@ button {
 button:hover {
   background-color: #EFB211; /* Green */
   color: white;
+  cursor: pointer;
 }

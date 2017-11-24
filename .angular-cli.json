@@ -19,7 +19,14 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "./app/css/gt3-php.css",
+        "./app/css/gt_fonts.css",
+        "./app/css/gt_general.css",
+        "./app/css/gt_gt_header.css",
+        "./app/css/gt_gt_footer.css",
+        "./app/css/gt_palette_buzz.css",
+        "./app/css/gt_symbol_svg.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
