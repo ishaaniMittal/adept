@@ -14,7 +14,7 @@ import {SimulatedMeetingComponent} from "./simulated-meeting/game/sm-game.compon
 import {SMGameService} from "./simulated-meeting/game/sm-game.service";
 import {FormsModule} from "@angular/forms";
 import {PanelistDialogComponent} from "./simulated-meeting/panelist-dialog/panelist-dialog.component";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-browser/animations";
 
 
 

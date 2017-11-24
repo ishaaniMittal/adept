@@ -38,7 +38,7 @@ export class MainPageComponent implements OnInit {
 
   openDialog(name:string, description:string) {
     const dialogRef = this.dialog.open(PanelistDialogComponent, {
-      disableClose: false
+
     });
     const instance = dialogRef.componentInstance;
     instance.name = name;
@@ -53,7 +53,7 @@ export class MainPageComponent implements OnInit {
 
   onSelect(candidate:Candidate):void {
     this.selectedCandidate = candidate;
-    this.selectedCommitteeMember = 0;
+    this.selectedCommitteeMember = null;
   }
 
   goToNextPage() {
