@@ -1,0 +1,120 @@
+/*=== GT Gold Footer Bar Style Rules ===*/
+
+DIV.gt-gt-footer {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: auto;
+}
+
+
+@media all and (min-width: 966px) {
+  DIV.gt-gt-footer {
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+}
+
+
+/* Footer Utility Links / Copyright Section */
+
+DIV.gt-gt-footer DIV.gt-gt-footer-left {
+  padding: 4px 0;
+  float: left;
+}
+
+DIV.gt-gt-footer DIV.gt-gt-footer-left UL {
+  clear: both;
+  padding: 5px 0;
+  margin: 0.25em 0 0.5em 0;
+  padding-top: 4px;
+  font-size: 110%;
+}
+
+DIV.gt-gt-footer DIV.gt-gt-footer-left UL LI {
+  display: inline;
+}
+
+DIV.gt-gt-footer DIV.gt-gt-footer-left UL LI:after {
+  content: '|';
+  padding-left: 6px;
+  padding-right: 2px;
+}
+
+DIV.gt-gt-footer DIV.gt-gt-footer-left UL LI:last-child:after {
+  content: '';
+}
+
+DIV.gt-gt-footer DIV.gt-gt-footer-left UL LI A {
+  text-decoration: none;
+}
+
+DIV.gt-gt-footer P.gt-gt-footer-copyright {
+  font-size: 83%;
+  margin: 11.95px 0;
+}
+
+
+@media all and (max-width: 966px) {
+
+  DIV.gt-gt-footer DIV.gt-gt-footer-left {
+    float: none;
+  }
+
+  DIV.gt-gt-footer DIV.gt-gt-footer-left UL {
+    text-align: left;
+    clear: none;
+    font-size: 1.35em;
+    margin-left: 22px;
+  }
+
+  DIV.gt-gt-footer DIV.gt-gt-footer-left UL LI {
+    display: block;
+    padding: 10px 0;
+  }
+
+  DIV.gt-gt-footer DIV.gt-gt-footer-left UL LI:after {
+    content: '';
+    padding: 0;
+  }
+
+  DIV.gt-gt-footer P.gt-gt-footer-copyright {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 83%;
+  }
+
+}
+
+
+/* Logo Section */
+
+DIV.gt-gt-footer DIV.gt-gt-footer-right {
+  float: right;
+  padding-top: 12px;
+}
+
+DIV.gt-gt-footer DIV.gt-gt-footer-right IMG {
+  max-height: 52px;
+  max-width: 122px; /* Needed for IE 11 Compatability */
+}
+
+DIV.gt-gt-footer DIV.gt-gt-footer-right A {
+  border-bottom: none;
+}
+
+@media all and (max-width: 966px) {
+
+  DIV.gt-gt-footer DIV.gt-gt-footer-right {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+}

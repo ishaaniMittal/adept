@@ -1,0 +1,302 @@
+/*=== Standard GT Header Bar Style Ryles ===*/
+
+/*-- GT Header Bar Links Bar (the main part of the header bar) --*/
+
+DIV.gt-gt-header {
+  position: relative;
+  max-width: 1242px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-size: 86%;
+  line-height: 18px;
+}
+
+DIV.gt-gt-header DIV.gt-header-linkbar {
+  min-height: 44px;
+}
+
+
+/*-- Header Links Left Logo Area --*/
+
+DIV.gt-gt-header DIV.gt-header-logo,
+DIV.gt-gt-header DIV.gt-header-partner-logo {
+  max-height: 40px;
+  margin: 4px 6px 0 6px;
+}
+
+DIV.gt-gt-header DIV.gt-header-logo {
+  float: left;
+}
+
+DIV.gt-gt-header DIV.gt-header-partner-logo {
+  float: right;
+}
+
+DIV.gt-gt-header DIV.gt-header-logo A,
+DIV.gt-gt-header DIV.gt-header-partner-logo A {
+  border-bottom: none;
+}
+
+DIV.gt-gt-header DIV.gt-header-logo IMG,
+DIV.gt-gt-header DIV.gt-header-partner-logo IMG {
+  max-height: 36px;
+  max-width: 85px; /* Needed for IE 11 Compatability */
+}
+
+
+/*-- Header Links Right Link List Area --*/
+
+DIV.gt-gt-header DIV.gt-header-gt-right {
+  float: right;
+  margin-top: 2px;
+}
+
+DIV.gt-gt-header DIV.gt-header-gt-right UL {
+  margin: 3px 0;
+  padding: 0;
+  list-style: none;
+}
+
+DIV.gt-gt-header DIV.gt-header-gt-right LI {
+  float: left;
+  margin: 8px 0 8px 16px;
+  font-size: 120%;
+  font-weight: 500;
+}
+
+
+/*-- Customizations for Partnership Headers --*/
+
+@media all and (min-width: 630px) {
+
+  DIV.gt-gt-header NAV A.gt-campustoggle I {
+    display: none;
+  }
+
+}
+
+@media all and (max-width: 630px) {
+
+  DIV.gt-gt-header NAV A.gt-campustoggle SPAN {
+    position: absolute;
+    left: -10000px;
+  }
+
+}
+
+
+/*--- Header Links Right Link List Area:  Search Box ---*/
+
+DIV.gt-gt-header FORM.search-block-form {
+  float: left;
+  margin-right: 2px;
+  font-size: inherit;
+}
+
+DIV.gt-gt-header FORM.search-block-form LABEL {
+  display: inline;
+  font-size: inherit;
+  font-weight: 500;
+  float: left;
+  margin-right: 4px;
+}
+
+DIV.gt-gt-header FORM.search-block-form DIV.form-item {
+  margin: 0;
+}
+
+DIV.gt-gt-header FORM.search-block-form DIV {
+  display: inline;
+  font-size: inherit;
+}
+
+DIV.gt-gt-header FORM.search-block-form DIV.form-item INPUT#gt-search-field {
+  display: none;
+  margin: -3px 4px 0 0;
+  font-size: 75%;
+}
+
+DIV.gt-gt-header FORM.search-block-form A#gt-searchtoggle I {
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+
+/*-- GT Header Bar Drop Down Tray --*/
+
+DIV.gt-gt-header-tray {
+  height: 0;
+  font-size: 86%;
+  padding: 0 10px;
+  overflow: hidden;
+  transition-duration: 0.8s;
+  transition-property: all;
+}
+
+DIV.gt-gt-header-tray DIV.gt-tray-container {
+  margin: 0 auto;
+  max-width: 1230px;
+}
+
+DIV.gt-gt-header-tray DIV.gt-tech-links,
+DIV.gt-gt-header-tray DIV.gt-search-as-tray {
+  display: none;
+}
+
+DIV.gt-gt-header-tray NAV:last-child {
+  float: right;
+}
+
+@media all and (max-width: 400px) {
+
+  DIV.gt-gt-header-tray NAV:last-child {
+    float: left;
+    clear: both;
+  }
+
+}
+
+DIV.gt-gt-header-tray NAV UL.menu {
+  float: left;
+  margin: 0;
+  padding: 7px 20px;
+}
+
+@media all and (min-width: 630px) {
+
+  DIV.gt-gt-header-tray NAV UL.menu {
+    height: 22px;
+  }
+
+}
+
+DIV.gt-gt-header-tray NAV UL.menu LI {
+  float: left;
+  display: block;
+  font-size: 1.14em;
+  font-weight: 700;
+  line-height: 1.0;
+  padding: 4px 10px;
+  position: relative;
+}
+
+@media all and (max-width: 630px) {
+
+  DIV.gt-gt-header-tray NAV.partner UL.menu LI {
+    float: none;
+  }
+
+}
+
+@media all and (min-width: 400px) and (max-width: 630px) {
+
+  DIV.gt-gt-header-tray NAV:nth-child(2) UL.menu LI {
+    text-align: right;
+  }
+
+}
+
+DIV.gt-gt-header-tray FORM.search-tray-form {
+  float: right;
+}
+
+DIV.gt-gt-header-tray FORM.search-tray-form DIV.form-item {
+  margin: 1px 0;
+}
+
+DIV.gt-gt-header-tray FORM.search-tray-form LABEL {
+  position: absolute;
+  left: -10000px;
+}
+
+DIV.gt-gt-header-tray FORM.search-tray-form INPUT {
+  display: inline;
+  float: none;
+  margin-right: 2px;
+}
+
+
+@media all and (max-width: 630px) {
+
+  DIV.gt-gt-header FORM.search-block-form INPUT {
+    display: none !important;
+  }
+
+}
+
+
+@media all and (max-width: 520px) {
+
+  DIV.gt-gt-header FORM.search-block-form LABEL {
+    position: absolute;
+    left: -10000px;
+  }
+
+}
+
+
+@media all and (max-width: 450px) {
+
+  LI.gt-ctn {
+    display: none;
+  }
+
+}
+
+
+/*=== GT Partnership Header Bar Style Rules ===*/
+
+DIV.gt-gt-header DIV.gt-header-gt-left {
+  float: left;
+  margin-top: 2px;
+}
+
+DIV.gt-gt-header DIV.gt-header-gt-left UL {
+  margin: 3px 0;
+  padding: 0;
+  list-style: none;
+}
+
+DIV.gt-gt-header DIV.gt-header-gt-left LI {
+  float: left;
+  margin: 8px 0 8px 16px;
+  font-size: 120%;
+  font-weight: 500;
+}
+
+/*-- Sepecially colored right half with SVG to create a diagonal separation --*/
+DIV.gt-header-partner-split {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 50%;
+  line-height: 0;
+  text-align: center;
+}
+
+DIV.gt-header-partner-split svg.gt-header-partner-divide {
+  position: absolute;
+  left: -21px;
+}
+
+DIV.gt-header-partner-split DIV.gt-header-partner-bar {
+  padding-left: 22px;
+}
+
+DIV.gt-gt-header DIV.gt-header-partner-right {
+  margin-top: 2px;
+  float: right;
+}
+
+DIV.gt-gt-header DIV.gt-header-partner-right UL {
+  margin: 3px 0;
+  padding: 0;
+  list-style: none;
+}
+
+DIV.gt-gt-header DIV.gt-header-partner-right LI {
+  float: left;
+  margin: 8px 16px 8px 0;
+  font-size: 120%;
+  font-weight: 500;
+}

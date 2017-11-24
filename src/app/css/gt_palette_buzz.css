@@ -1,0 +1,180 @@
+/*=== Standard Buzz Gold Color Pallete ===*/
+
+HTML BODY {
+  color: black;
+  background-color: white;
+}
+
+
+/**-- GT Background Colors --**/
+
+DIV.gt-background-gt-header, DIV.gt-background-gt-footer, .gtprimarygold {
+  background-color: #ebb728;  /* Buzz Cold */
+}
+
+DIV.gt-background-site-identity, DIV.gt-background-site-footer, .gtprimarygray {
+  background-color: #404040;
+}
+
+DIV.gt-background-menu, DIV.gt-background-page {
+  background-color: white;
+}
+
+
+/**-- Primary Link Colors --**/
+
+BODY A:link, BODY A:visited {
+  color: #164679;
+}
+
+BODY A:hover, BODY A:active, BODY A:focus {
+  color: #2c6986;
+  border-bottom-color: #2c6986;
+}
+
+
+/**- Overall Header Background Color -**/
+
+HEADER#gt-header {
+  background-color: #e0e0e0;
+}
+
+
+/**-- Primary Header / Footer Text Color --**/
+
+HEADER#gt-header,
+FOOTER#gt-footer {
+  color: black;
+}
+
+HEADER#gt-header A:link, HEADER#gt-header A:visited,
+FOOTER#gt-footer A:link, FOOTER#gt-footer A:visited {
+  color: #000000;
+  border-bottom-color: black;
+}
+
+HEADER#gt-header A:hover, HEADER#gt-header A:active, HEADER#gt-header A:FOCUS,
+FOOTER#gt-footer A:hover, FOOTER#gt-footer A:active, FOOTER#gt-footer A:FOCUS {
+  color: #000000;
+  border-bottom-color: black;
+}
+
+
+/**-- GT Site Identity Bar Colors --**/
+
+HEADER#gt-header DIV.region-header {
+  color: white;
+}
+
+HEADER#gt-header DIV.region-header A:link, HEADER#gt-header DIV.region-header A:visited {
+  color: white;
+  border-bottom-color: white;
+}
+
+HEADER#gt-header DIV.region-header A:hover, HEADER#gt-header DIV.region-header A:active, HEADER#gt-header DIV.region-header A:FOCUS {
+  color: white;
+  border-bottom-color: white;
+}
+
+
+/**-- GT Header Drop-Down Tray --**/
+
+DIV.gt-gt-header-tray {
+  background-color: #dddddd;
+}
+
+
+/**-- Site Title / Subtitle Block Colors --**/
+
+DIV.gt-branding__name,
+DIV.gt-branding__name A:link,
+DIV.gt-branding__name A:visited,
+DIV.gt-branding__name A:hover,
+DIV.gt-branding__name A:active {
+  color: white;
+  border-color: #d0d0d0;
+}
+
+DIV.gt-branding__parentUnit,  /* Make subtitle line a little lighter */
+DIV.gt-branding__parentUnit A {
+  color: white !important;
+}
+
+
+
+/**-- Main Menu / Navigation Bar --**/
+
+/*- Menu Bar: Mobile Menu Activator -*/
+
+DIV.gt-mobile-menu-activator I {
+  color: black;
+  background-color: white;
+}
+
+
+/*- Menu Bar: Background Color -*/
+
+DIV.primary-menu-content {  /* Main menu bar */
+  background-color: white;
+  border-bottom: solid thin #c0c0c0;
+}
+
+DIV.region-primary-menu NAV.block-menu > UL.menu > LI > UL.menu {  /* Sub Menu Panels */
+  background-color: white;
+  border: solid thin #dddddd;
+  border-top-color: white;
+}
+
+
+/*- Menu Bar: Primary Text -*/
+
+DIV.primary-menu-content,
+DIV.region-primary-menu NAV.block-menu > UL > LI > A {
+  color: black; 
+}
+
+NAV#block-actionlinks LI A {
+  border: solid thin #b0b0b0;
+  background-color: #dddddd;
+  color: black;
+}
+
+NAV#block-actionlinks LI A:hover,
+NAV#block-actionlinks LI A:focus,
+NAV#block-actionlinks LI A:hover::after {
+  background-color: #c0c0c0;
+  color: black;
+}
+
+
+/*- Menu Bar: Highlight Color -*/
+
+DIV.region-primary-menu NAV.block-menu A:hover,
+DIV.region-primary-menu NAV.block-menu A:focus {
+  background-color: #c0c0c0;
+  color: black;
+}
+
+
+/**-- Menu Bar Border Color --**/
+
+DIV.gt-background-menu {
+  border-bottom: solid thin #c0c0c0;
+}
+
+
+/**-- Site Footer Colors --**/
+
+FOOTER#gt-footer DIV.gt-site-footer {
+  color: white;
+}
+
+FOOTER#gt-footer DIV.gt-site-footer A:link, FOOTER#gt-footer DIV.gt-site-footer A:visited {
+  color: white;
+  border-bottom-color: white;
+}
+
+FOOTER#gt-footer DIV.gt-site-footer A:hover, FOOTER#gt-footer DIV.gt-site-footer A:active, FOOTER#gt-footer DIV.gt-site-footer A:focus {
+  color: white;
+  border-bottom-color: white;
+}

@@ -1,0 +1,144 @@
+/*=== Core layout styles for the GT 3.x Theme ===*/
+
+/**-- Set standard fonts and weights --**/
+
+BODY {
+  font-family: "Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+B,STRONG {
+  font-weight: 500;  /* Default 'bolder' at level 400 doesn't look good with the Roboto font */
+}
+
+DIV#main-wrapper {
+  font-size: 110%;
+  font-weight: 300;
+}
+
+H1, H2, H3, H4, H5, H6 {
+  font-family: "Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 700;
+  margin: 0.5em 0px 0.3em 0px;
+}
+
+H1.page-title {
+  font-size: 2.0em;
+}
+
+DIV.gt-page-body {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@media all and (min-width: 966px) {
+  DIV.gt-page-body {
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+}
+
+DIV.gt-page-body H2 {
+  font-size: 1.6em;
+  margin-bottom: 0.3em;
+}
+
+DIV.gt-page-body H3 {
+  font-size: 1.45em;
+}
+
+DIV.gt-page-body H4 {
+  font-size: 1.3em;
+}
+
+DIV.gt-page-body H5 {
+  font-size: 1.2em;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+DIV.gt-page-body H6 {
+  font-size: 1.1em;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/**-- Default Indented Region / Block Formatting --**/
+/* Specifically for the Site Identity (region-header) and Site Main Menu (region-primary-menu) regions */
+
+DIV.gt-background-gt-header, DIV.gt-background-site-identity, 
+DIV.gt-background-menu, DIV.gt-background-page,
+DIV.gt-background-site-footer, DIV.gt-background-gt-footer {
+  position: relative;
+  clear: both;
+}
+
+DIV.region-header {
+  padding: 0 12px;
+}
+
+DIV.region-header, DIV.region-primary-menu {
+  max-width: 1170px;
+  margin: 0 auto;
+  line-height: 1.2;
+  clear: both;
+}
+
+@media all and (min-width: 966px) {
+
+  DIV.region-header, DIV.region-primary-menu {
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+
+}
+
+/**-- Tweak nested list margins --**/
+
+DIV.text-formatted UL, DIV.text-formatted OL {
+  padding: 0 0 0.25em 20px;
+}
+
+DIV.content UL UL {
+  margin: 4px 0;
+}
+
+CAPTION P {
+  margin: 6px 0;
+}
+
+
+/**-- Set standard link style to dotted underline --**/
+
+BODY A:link, BODY A:visited {
+  border-bottom: dotted 1px;
+  text-decoration: none;
+}
+
+BODY A:hover, BODY A:active,
+FOOTER.site-footer .content A:hover, FOOTER.site-footer .content A:focus {
+  border-bottom: solid 1px;
+  text-decoration: none;
+}
+
+/* Cancel the effect for links on the primary menu bar */
+
+DIV.primary-menu-wrapper A:link, DIV.primary-menu-wrapper A:visited {
+  border-bottom: none;
+}
+
+
+/**-- Normalize the Header and Footer Areas --**/
+
+HEADER#gt-header, FOOTER#gt-footer {
+  margin: 0;
+  background-image: none;
+}
+
+
+FOOTER#gt-footer {
+  clear: both;
+}
