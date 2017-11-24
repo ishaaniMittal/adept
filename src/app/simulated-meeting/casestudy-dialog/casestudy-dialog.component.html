@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>{{selectedCandidate.name}} : Case Study</h2>
+<hr>
+<mat-dialog-content>
+  <div>
+    <div *ngFor="let casestudy of selectedCandidate.career_account">
+      <br>
+      {{casestudy}}
+    </div>
+    <br>
+  </div>
+
+</mat-dialog-content>

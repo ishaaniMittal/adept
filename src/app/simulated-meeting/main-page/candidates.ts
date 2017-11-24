@@ -25,7 +25,7 @@ export const CANDIDATES:Candidate[] = [
         "Refereed: 17 articles, 15 co-authored with students, 11 co-authored with other faculty (7 in chemistry, 4 in MSE, dominantly in journals favored by chemists); 6 articles from PhD work, co-authored with major advisor, Dr. Sylvia Lampaninia.",
         "Two articles appeared in Journal of Engineering Education within the past 14 months, one on a controlled study of class performance with an without use of multimedia tools and videos to assist physical understanding of crystal structures and defects in solids, and the other on use of web-based media to provide a philosophical foundation for instruction based on analogies from other fields."
       ],
-      "conference proceedings": [
+      "conference_proceedings": [
         "11, 6 in past two years"
       ],
       "presentations": [
@@ -110,7 +110,7 @@ export const CANDIDATES:Candidate[] = [
         "Conference Proceedings: 14, 7 in the past two years",
         "Presentations: 12 seminars, 8 at other universities"
       ],
-      "conference proceedings": [],
+      "conference_proceedings": [],
       "presentations": [],
       "research": [
         "Mansour's doctoral advisor, Dr. Ross Pikens, is a leading expert in the measurement of electrochemical response of various cells to external stimula such as mechanical force, imposition of electrical and magnetic fields, and effects of rapid temperature change. Mansour has continued this research in a broad sense, having focused on effects of cryogenic preservation of tissue during her post doc, subsequently delving into development of in situ measurement systems for measuring cell responses under a wide range of stimuli."
@@ -190,7 +190,7 @@ export const CANDIDATES:Candidate[] = [
         "Conference Proceedings: 22,7 in past two years, 15 in first two years",
         "Presentations: 3 seminars, 2 at other universities"
       ],
-      "conference proceedings": [],
+      "conference_proceedings": [],
       "presentations": [],
       "research": [
         "Sen's work is in the areas of the interface of digital switching theory for high speed circuits and digital signal processing with application to vision systems and automatic target recognition. Her funding comes from DoD sources, and her work, combined elements of computational algorithms with hardware capabilities."

@@ -15,6 +15,8 @@ import {SMGameService} from "./simulated-meeting/game/sm-game.service";
 import {FormsModule} from "@angular/forms";
 import {PanelistDialogComponent} from "./simulated-meeting/panelist-dialog/panelist-dialog.component";
 import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-browser/animations";
+import {CvDialogComponent} from "./simulated-meeting/cv-dialog/cv-dialog.component";
+import {CaseStudyDialogComponent} from "./simulated-meeting/casestudy-dialog/casestudy-dialog.component";
 
 
 
@@ -24,11 +26,15 @@ import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-b
     ActivitiesComponent,
     MainPageComponent,
     SimulatedMeetingComponent,
-    PanelistDialogComponent
+    PanelistDialogComponent,
+    CvDialogComponent,
+    CaseStudyDialogComponent
 
   ],
   entryComponents:[
-    PanelistDialogComponent
+    PanelistDialogComponent,
+    CvDialogComponent,
+    CaseStudyDialogComponent
   ],
   imports: [
     AppRoutingModule,

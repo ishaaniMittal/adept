@@ -83,7 +83,7 @@
         <br>
         <div class="details-case">
           <div class="row">
-            <div *ngIf="selectedCandidate!=null" class="col-md-5 col-lg-5 view-details">
+            <div *ngIf="selectedCandidate!=null" class="col-md-5 col-lg-5 view-details" (click)="openCvDialog()">
               <div class="">
                 <div style="margin-top:18px;">
 
@@ -98,7 +98,7 @@
                 </div>
               </div>
             </div>
-            <div *ngIf="selectedCandidate!=null" class="col-md-5 col-lg-5 view-details">
+            <div *ngIf="selectedCandidate!=null" class="col-md-5 col-lg-5 view-details" (click)="openCasestudyDialog()">
               <div class="">
                 <div class="truncate" style="margin-top:18px;">
                   {{selectedCandidate.career_account[0]}}

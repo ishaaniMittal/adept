@@ -1,0 +1,95 @@
+<h2 mat-dialog-title>{{selectedCandidate.name}} : CV</h2>
+<hr>
+<mat-dialog-content>
+  <div>
+    <b>Educational Background</b>
+    <br>
+
+    <div *ngFor="let education of selectedCandidate.dossier.educational_background">
+      <li>{{education}}</li>
+    </div>
+    <br>
+  </div>
+
+  <div>
+    <b>Publications</b>
+    <br>
+    <div *ngFor="let publication of selectedCandidate.dossier.publications">
+      <li>{{publication}}</li>
+    </div>
+    <br>
+  </div>
+
+  <div *ngIf="selectedCandidate.dossier.conference_proceedings[0]!=null">
+    <b>Conference Proceedings</b>
+    <br>
+    <div *ngFor="let conference of selectedCandidate.dossier.conference_proceedings">
+      <li>{{conference}}</li>
+    </div>
+    <br>
+  </div>
+
+  <div *ngIf="selectedCandidate.dossier.presentations[0]!=null">
+    <b>Presentations</b>
+    <br>
+    <div *ngFor="let presentation of selectedCandidate.dossier.presentations">
+      <li>{{presentation}}</li>
+    </div>
+    <br>
+  </div>
+
+  <div>
+    <b>Research</b>
+    <br>
+    <div *ngFor="let research of selectedCandidate.dossier.research">
+      <li>{{research}}</li>
+    </div>
+  </div>
+  <br>
+  <div>
+    <b>Funding</b>
+    <br>
+    <div *ngFor="let funding of selectedCandidate.dossier.funding.funding_resources">
+      <li>{{funding}}</li>
+    </div>
+    <div>
+      {{selectedCandidate.dossier.funding.extra_funding}}
+    </div>
+  </div>
+  <br>
+  <div>
+    <b>Graduate Student Advisement</b>
+    <br>
+    <div>
+      {{selectedCandidate.dossier.graduate_student_advisement.opening_line}}
+    </div>
+    <div *ngFor="let student of selectedCandidate.dossier.graduate_student_advisement.advisement">
+      <li>{{student}}</li>
+    </div>
+  </div>
+  <br>
+  <div>
+    <b>Teaching</b>
+    <br>
+    <div *ngFor="let teaching of selectedCandidate.dossier.teaching">
+      <li>{{teaching}}</li>
+    </div>
+  </div>
+  <br>
+  <div>
+    <b>Service</b>
+    <br>
+    <div *ngFor="let service of selectedCandidate.dossier.service">
+      <li>{{service}}</li>
+    </div>
+  </div>
+  <br>
+  <div>
+    <b>Honors & Awards</b>
+    <br>
+    <div *ngFor="let award of selectedCandidate.dossier.honors_and_awards">
+      <li>{{award}}</li>
+    </div>
+  </div>
+  <br>
+</mat-dialog-content>

@@ -48,6 +48,7 @@
 
 .candidate-card:hover {
   box-shadow: 0 0 10px #EFB211;
+  cursor: pointer;
 }
 
 .other-panelists {
@@ -57,6 +58,7 @@
 
 .other-panelists:hover {
   box-shadow: 0 0 10px #EFB211;
+  cursor: pointer;
 }
 
 .selected {

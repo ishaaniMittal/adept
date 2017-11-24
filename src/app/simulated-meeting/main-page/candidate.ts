@@ -8,7 +8,7 @@ export class Candidate {
   "dossier":{
     "educational_background":string[],
     "publications":string[],
-    "conference proceedings":string[],
+    "conference_proceedings":string[],
     "presentations":string[],
     "research":string[],
     "funding":{

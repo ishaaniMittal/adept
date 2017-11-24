@@ -4,6 +4,8 @@ import {OnInit, Component} from "@angular/core";
 import {Router} from "@angular/router";
 import {MatDialog} from "@angular/material";
 import {PanelistDialogComponent} from "../panelist-dialog/panelist-dialog.component";
+import {CvDialogComponent} from "../cv-dialog/cv-dialog.component";
+import {CaseStudyDialogComponent} from "../casestudy-dialog/casestudy-dialog.component";
 
 @Component({
   selector: 'main-page-sm',
@@ -35,11 +37,20 @@ export class MainPageComponent implements OnInit {
 
   }
 
+  openCvDialog() {
+    const dialogRef = this.dialog.open(CvDialogComponent, {});
+    const instance = dialogRef.componentInstance;
+    instance.selectedCandidate = this.selectedCandidate;
+  }
+
+  openCasestudyDialog() {
+    const dialogRef = this.dialog.open(CaseStudyDialogComponent, {});
+    const instance = dialogRef.componentInstance;
+    instance.selectedCandidate = this.selectedCandidate;
+  }
 
   openDialog(name:string, description:string) {
-    const dialogRef = this.dialog.open(PanelistDialogComponent, {
-
-    });
+    const dialogRef = this.dialog.open(PanelistDialogComponent, {});
     const instance = dialogRef.componentInstance;
     instance.name = name;
     instance.description = description;
