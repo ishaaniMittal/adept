@@ -80,7 +80,7 @@
 -->
 
 <div class="main-page">
-  <div class="row" style="width:100%;">
+  <div class="row" style="width:100%; min-height:640px;">
     <div class="col-md-3 left-panel">
       <div style="margin-left: 30px; margin-right:20px;">
         <img src="../../../assets/logo_sm.png" class="logo">
@@ -94,7 +94,7 @@
         <div class="candidate-card">
           <div class="row" *ngIf="candidate!=null">
             <div class="col-md-5">
-              <img [src]="candidate.image">
+              <img [src]="candidate.image" style="padding-left: 15px;">
             </div>
             <div class="col-md-7">
               <div class="candidate-name">{{candidate.name}}</div>

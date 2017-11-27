@@ -140,7 +140,6 @@
   min-height: 100%;
 }
 
-
 .main-page .header {
   font-size: 20px;
   font-weight: 700;
@@ -150,13 +149,14 @@
 .main-page .candidate-name {
   font-size: 16px;
   font-weight: 700;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-bottom: 6px;
 }
 
 .main-page .candidate-short-desc {
   font-size: 12px;
   margin-top: 3px;
+  padding-bottom: 5px;
 }
 
 .right-panel {
@@ -181,22 +181,22 @@
 .cv-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
   transition: all 200ms ease-out;
-
+  width: 100%;
 }
 
-.cv-card:hover{
+.cv-card:hover {
   box-shadow: 0 0 10px #EFB211;
   cursor: pointer;
-
-
 }
 
 .candidate-card {
-  margin-top: 10px; background-color: #F5F5F5;padding-top:10px;padding-bottom:15px;
+  margin-top: 10px;
+  background-color: #F5F5F5;
+  padding-top: 10px;
+  padding-bottom: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
   transition: all 200ms ease-out;
 }
-
 
 .other-panelists {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
@@ -286,6 +286,12 @@
 .back-to-main-page {
   position: absolute;
   bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  border-width: 1px;
+  border-color: black;
+  box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.51), 0 6px 20px 0 rgba(164, 164, 164, 0.5);
+
 }
 
 .read-about-fellows {
@@ -378,8 +384,8 @@
 
 .panel-dialog {
   position: absolute;
-  top: 11%;
-  left: 9%;
+  top: 10%;
+  left: 8%;
   font-size: 16px;
-  width: 85%;
+  width: 87%;
 }

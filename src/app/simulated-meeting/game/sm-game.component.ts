@@ -32,6 +32,20 @@ export class SimulatedMeetingComponent implements OnInit {
   dialogesForPanelist:SMDialogue;
   dialoges:SMDialogue[];
   selectedPanelist:number;
+  currentDialog:{
+    currentDialogContent:string,
+    currentDialogSpeaker:number,
+    currentDialogStatementKey:string,
+    nextDialogStatementKey:string,
+    panelImage:string
+  };
+  dialogSequence:[{
+    currentDialogContent:string,
+    currentDialogSpeaker:number,
+    currentDialogStatementKey:string,
+    nextDialogStatementKey:string,
+    panelImage:string
+  }];
   currentDialogContent:string;
   currentDialogSpeaker:number;
   currentDialogStatementKey:string;
@@ -81,14 +95,23 @@ export class SimulatedMeetingComponent implements OnInit {
       this.dialoges = dialoges;
       this.dialogesForPanelist = this.dialoges[this.selectedPanelist];
       console.log("selectedPanelist" + this.selectedPanelist);
-      this.previousDialogStatementKey = null;
+      //    this.previousDialogStatementKey = null;
+
       this.currentDialogStatementKey = this.dialogesForPanelist.conversation[0].statementKey;
       this.currentDialogContent = this.dialogesForPanelist.conversation[0].statement[0].text;
       this.currentDialogSpeaker = this.dialogesForPanelist.conversation[0].speaker;
       this.nextDialogStatementKey = this.dialogesForPanelist.conversation[0].statement[0].next;
       this.panelImage = this.dialogesForPanelist.conversation[0].statement[0].image;
       this.answerOptions = [];
-      this.states.push(this.currentDialogStatementKey);
+      this.dialogSequence = [];
+      this.dialogSequence.push({
+        "currentDialogContent": this.currentDialogContent,
+        "currentDialogSpeaker": this.currentDialogSpeaker,
+        "currentDialogStatementKey": this.currentDialogStatementKey,
+        "nextDialogStatementKey": this.nextDialogStatementKey,
+        "panelImage": this.panelImage
+      })
+      ;
       this.progressStep = 100 / this.dialogesForPanelist.conversation.length;
       console.log("this.currentDialogStatementKey " + this.currentDialogStatementKey);
       console.log("this.currentDialogContent " + this.currentDialogContent);
@@ -101,7 +124,7 @@ export class SimulatedMeetingComponent implements OnInit {
   clickOnNextButton():void {
     this.progressValue = this.progressValue + this.progressStep;
     // this.answerOptions = null;
-    this.previousDialogStatementKey = this.currentDialogStatementKey;
+    // this.previousDialogStatementKey = this.currentDialogStatementKey;
     this.currentDialogStatementKey = this.nextDialogStatementKey;
 
     this
@@ -126,26 +149,40 @@ export class SimulatedMeetingComponent implements OnInit {
       }
 
     }
+
     console.log("this.currentDialogStatementKey " + this.currentDialogStatementKey);
     console.log("this.currentDialogContent " + this.currentDialogContent);
     console.log("this.currentDialogSpeaker " + this.currentDialogSpeaker);
     console.log("nextDialogStatementKey " + this.nextDialogStatementKey);
     console.log(this.answerOptions);
+    
+    this.dialogSequence.push({
+      "currentDialogContent": this.currentDialogContent,
+      "currentDialogSpeaker": this.currentDialogSpeaker,
+      "currentDialogStatementKey": this.currentDialogStatementKey,
+      "nextDialogStatementKey": this.nextDialogStatementKey,
+      "panelImage": this.panelImage
+    });
   }
 
   clickOnBackButton():void {
     // this.answerOptions = [];
+    console.log(this.dialogSequence);
+    this.dialogSequence.pop();
+
+    const previousDialog = this.dialogSequence.pop();
+
+    console.log(previousDialog);
     this.progressValue = this.progressValue - this.progressStep;
-    this.nextDialogStatementKey = this.currentDialogStatementKey;
-    this.currentDialogStatementKey = this.previousDialogStatementKey;
-    console.log("this.previousDialog " + this.previousDialogStatementKey);
+    this.nextDialogStatementKey = previousDialog.nextDialogStatementKey;
+    this.currentDialogStatementKey = previousDialog.currentDialogStatementKey;
     this.createOptionsList();
   }
 
   submitAnswer():void {
     // this.answerOptions = [];
     this.progressValue = this.progressValue + this.progressStep;
-    this.previousDialogStatementKey = this.currentDialogStatementKey;
+    // this.previousDialogStatementKey = this.currentDialogStatementKey;
     this.currentDialogStatementKey = this.answer.next;
     this.createOptionsList();
   }

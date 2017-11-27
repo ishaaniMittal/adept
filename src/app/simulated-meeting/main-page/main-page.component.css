@@ -140,6 +140,12 @@
 .back-to-main-page {
   position: absolute;
   bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  border-width: 1px;
+  border-color: black;
+  box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.51), 0 6px 20px 0 rgba(164, 164, 164, 0.5);
+
 }
 
 .read-about-fellows {
