@@ -1,3 +1,4 @@
+/*
 .left-panel {
   box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.51), 0 6px 20px 0 rgba(164, 164, 164, 0.5);
   padding-top: 20px;
@@ -97,10 +98,10 @@
 }
 
 .truncate {
-  /*white-space: nowrap;
+  !*white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 200px;*/
+  max-width: 200px;*!
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -127,8 +128,258 @@
   vertical-align:top;
   margin-top:23px;
   transform:rotate(7deg);
-  -ms-transform:rotate(90deg); /* IE 9 */
-  -moz-transform:rotate(90deg); /* Firefox */
-  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+  -ms-transform:rotate(90deg); !* IE 9 *!
+  -moz-transform:rotate(90deg); !* Firefox *!
+  -webkit-transform:rotate(90deg); !* Safari and Chrome *!
   -o-transform:rotate(90deg);
+}
+*/
+
+.main-page {
+  font-size: 22px;
+  min-height: 100%;
+}
+
+
+.main-page .header {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.main-page .candidate-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+
+.main-page .candidate-short-desc {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.right-panel {
+  max-width: 889px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.activity-instruction {
+  font-size: 20px;
+}
+
+.choose-candidate-card {
+  margin-top: 12px;
+  background-color: #F5F5F5;
+  border-style: solid;
+  border-width: 13px;
+  border-color: white;
+
+}
+
+.cv-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+  transition: all 200ms ease-out;
+
+}
+
+.cv-card:hover{
+  box-shadow: 0 0 10px #EFB211;
+  cursor: pointer;
+
+
+}
+
+.candidate-card {
+  margin-top: 10px; background-color: #F5F5F5;padding-top:10px;padding-bottom:15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+  transition: all 200ms ease-out;
+}
+
+
+.other-panelists {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+  transition: all 200ms ease-out;
+}
+
+.other-panelists:hover {
+  box-shadow: 0 0 10px #EFB211;
+  cursor: pointer;
+}
+
+.selected {
+  box-shadow: 0 0 10px #EFB211;
+}
+
+.choose-candidates {
+  margin-top: -15px;
+}
+
+.candidate-img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 80px;
+  width: 80px;
+}
+
+.details-case {
+  background-color: #F5F5F5;
+  margin-top: -30px;
+
+}
+
+.view-details-left {
+  background-color: white;
+  font-size: 8px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.view-details {
+  background-color: white;
+  margin-top: 18px;
+  font-size: 12px;
+  margin-left: 48px;
+  padding-left: 0px;
+  padding-right: 0px;
+  transition: all 200ms ease-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+.view-details:hover {
+  box-shadow: 0 0 10px #EFB211;
+  cursor: pointer;
+}
+
+.button-blue {
+  color: white;
+  font-size: 16px;
+  background-color: #0D3055;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.truncate {
+  padding-left: 25px;
+  padding-right: 25px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 18px;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+}
+
+.left-panel {
+  box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.51), 0 6px 20px 0 rgba(164, 164, 164, 0.5);
+  padding-top: 20px;
+  position: relative;
+}
+
+.back-to-main-page {
+  position: absolute;
+  bottom: 20px;
+}
+
+.read-about-fellows {
+  margin-left: 15px;
+}
+
+.panelist-name {
+  margin-top: 34px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.other-panelists {
+  background-color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.play-game {
+  margin-top: 10px;
+  font-weight: 700;
+  background-color: #0D3055;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 5px;
+  height: 34px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.submit {
+  font-weight: 700;
+  background-color: #0D3055;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.submit:hover {
+  background-color: #EFB211; /* Green */
+  color: white;
+  cursor: pointer;
+}
+
+.play-game:hover {
+  background-color: #EFB211; /* Green */
+  color: white;
+  cursor: pointer;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+.control-button {
+  float: right;
+  background-color: #0D3055;
+
+}
+
+.control-button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+.control-panel {
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  background-color: #F5F5F5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+.progress-bar-container {
+  padding: 8px 2px 13px 2px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+.panel-dialog {
+  position: absolute;
+  top: 11%;
+  left: 9%;
+  font-size: 16px;
+  width: 85%;
 }

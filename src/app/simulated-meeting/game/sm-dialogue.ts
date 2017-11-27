@@ -12,6 +12,7 @@ export class SMDialogue {
         "statementKey":string,
         "speaker":number,
         "next":string,
+        "image":string,
         "text":string
       }];
 

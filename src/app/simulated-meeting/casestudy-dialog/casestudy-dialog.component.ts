@@ -3,6 +3,7 @@
  */
 
 import {Component} from "@angular/core";
+import {Candidate} from "../main-page/candidate";
 
 @Component({
   selector: 'casestudy-dialog',
@@ -10,6 +11,6 @@ import {Component} from "@angular/core";
 })
 
 export class CaseStudyDialogComponent {
-
+  selectedCandidate:Candidate;
 
 }

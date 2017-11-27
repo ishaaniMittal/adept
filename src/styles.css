@@ -1,4 +1,23 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /* You can add global styles to this file, and also import other style files */
 .mat-radio-label-content {
   white-space: normal;
 }
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: #0D3055;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #0D3055;
+}
+
+.mat-progress-bar-primary {
+  background-color: #0D3055;
+}
+

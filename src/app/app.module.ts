@@ -17,6 +17,7 @@ import {PanelistDialogComponent} from "./simulated-meeting/panelist-dialog/panel
 import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-browser/animations";
 import {CvDialogComponent} from "./simulated-meeting/cv-dialog/cv-dialog.component";
 import {CaseStudyDialogComponent} from "./simulated-meeting/casestudy-dialog/casestudy-dialog.component";
+import {MatProgressBarModule} from "@angular/material";
 
 
 
@@ -42,7 +43,8 @@ import {CaseStudyDialogComponent} from "./simulated-meeting/casestudy-dialog/cas
     MatRadioModule,
     FormsModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatProgressBarModule
   ],
   providers: [ActivitiesService, MainPageService, SMGameService],
   bootstrap: [AppComponent]

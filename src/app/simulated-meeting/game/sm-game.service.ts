@@ -1,8 +1,8 @@
 import {Injectable} from '@angular/core';
-/*import {SMDialogue} from "./sm-dialogue";*/
+import {SMDialogue} from "./sm-dialogue";
 import {CANDIDATES} from "../main-page/candidates";
 import {Candidate} from "../main-page/candidate";
-/*import {SMDIALOGUES} from "./sm-dialogues";*/
+import {SMDIALOGUES} from "./sm-dialogues";
 
 @Injectable()
 export class SMGameService {
@@ -13,4 +13,8 @@ export class SMGameService {
  getCandidates():Promise<Candidate[]>{
    return Promise.resolve(CANDIDATES);
  }
+
+  getDialogues():Promise<SMDialogue[]>{
+    return Promise.resolve(SMDIALOGUES);
+  }
 }
