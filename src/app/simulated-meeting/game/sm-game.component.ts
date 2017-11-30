@@ -20,23 +20,10 @@ import {PanelistDialogComponent} from "../panelist-dialog/panelist-dialog.compon
 @Component({
   selector: 'sm-game',
   templateUrl: './sm-game.component.html',
-  styleUrls: ['./sm-game.component.css'],
-  animations: [
-    trigger('heroState', [
-      state('inactive', style({
-        transform: 'translateX(100%)'
-      })),
-      state('active', style({
-        transform: 'translateX(-100%)'
-      })),
-      transition('* => active', animate('100ms ease-in')),
-      transition('active => *', animate('100ms ease-out'))
-    ])
-  ]
+  styleUrls: ['./sm-game.component.css']
 })
 
 export class SimulatedMeetingComponent implements OnInit {
-  state:string;
   progressValue:number;
   progressStep:number;
   answer:{
@@ -53,15 +40,6 @@ export class SimulatedMeetingComponent implements OnInit {
   dialogesForPanelist:SMDialogue;
   dialoges:SMDialogue[];
   selectedPanelist:number;
-  currentDialog:{
-    currentDialogContent:string,
-    currentDialogSpeaker:number,
-    currentDialogStatementKey:string,
-    nextDialogStatementKey:string,
-    panelImage:string,
-    speaker_image:string,
-    currentId:number
-  };
   dialogSequence:[{
     currentDialogContent:string,
     currentDialogSpeaker:number,
@@ -84,7 +62,6 @@ export class SimulatedMeetingComponent implements OnInit {
       "next":string;
       "text":string;
     }];
-  states:string[];
   id:number;
   route:ActivatedRoute;
   candidateService:MainPageService;
@@ -101,10 +78,8 @@ export class SimulatedMeetingComponent implements OnInit {
   ngOnInit():void {
 
     this.progressValue = 0;
-    this.states = [];
     this.id = +this.route.snapshot.paramMap.get('id');
     this.selectedPanelist = this.id - 1;
-    this.state = 'inactive';
     this.getDialoguesForPanelist();
     this.getCandidate();
   }

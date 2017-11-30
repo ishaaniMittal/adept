@@ -149,9 +149,10 @@
           </div>
         </div>
         <div *ngIf="currentDialogSpeaker!=0" class="control-panel">
-          <button *ngIf="dialogesForPanelist!=null && currentId!=dialogesForPanelist.conversation.length"
-                  class="control-button"
-                  (click)="clickOnNextButton()"><img
+          <button
+            *ngIf="dialogesForPanelist!=null && currentId!=dialogesForPanelist.conversation.length"
+            class="control-button"
+            (click)="clickOnNextButton()"><img
             src="../../../assets/right-arrow.png" style="padding:5px;width:24px;"></button>
           <button *ngIf="dialogesForPanelist!=null && currentId!=1" class="control-button"
                   (click)="clickOnBackButton()"><img
@@ -199,8 +200,8 @@
       </div>
     </div>
     <div class="col-md-1 transcript">
-      <div [@heroState]="state"
-           (click)="toggleState()" style="width: auto;height: auto;background-color: #0D3055">
+      <div
+        style="width: auto;height: auto;background-color: #0D3055">
         TRANSCRIPT
       </div>
     </div>
