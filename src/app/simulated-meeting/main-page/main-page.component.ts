@@ -49,17 +49,15 @@ export class MainPageComponent implements OnInit {
     instance.selectedCandidate = this.selectedCandidate;
   }
 
-  openDialog(name:string, description:string) {
+  openDialog() {
     const dialogRef = this.dialog.open(PanelistDialogComponent, {});
     const instance = dialogRef.componentInstance;
-    instance.name = name;
-    instance.description = description;
+    instance.committee_members = this.selectedCandidate.committee_members;
   }
 
   setCommitteeMember(committeeMember):void {
     this.selectedCommitteeMember = committeeMember - 1;
-    this.openDialog(this.selectedCandidate.committee_members[this.selectedCommitteeMember].name,
-      this.selectedCandidate.committee_members[this.selectedCommitteeMember].description);
+    this.openDialog();
   }
 
   onSelect(candidate:Candidate):void {
@@ -69,5 +67,9 @@ export class MainPageComponent implements OnInit {
 
   goToNextPage() {
     this.router.navigate(['/simulated-meeting', this.selectedCandidate.candidate_id]);
+  }
+
+  goBack() {
+    this.router.navigate(['/activity']);
   }
 }

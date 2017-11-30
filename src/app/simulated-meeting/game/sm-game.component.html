@@ -129,7 +129,7 @@
 
         </div>
         <hr style="margin-top: 20px;">
-        <button class="back-to-main-page">
+        <button class="back-to-main-page" (click)="goBack()">
           <span style="font-size: 16px;text-align: center;"><img src="./../../../assets/left-arrow.svg"
                                                                  style="width:24px;height:24px;"> &nbsp;BACK TO MAIN PAGE</span>
         </button>
@@ -149,9 +149,11 @@
           </div>
         </div>
         <div *ngIf="currentDialogSpeaker!=0" class="control-panel">
-          <button class="control-button" (click)="clickOnNextButton()"><img
+          <button *ngIf="currentId!=dialogesForPanelist.conversation.length" class="control-button"
+                  (click)="clickOnNextButton()"><img
             src="../../../assets/right-arrow.png" style="padding:5px;width:24px;"></button>
-          <button class="control-button" (click)="clickOnBackButton()"><img
+          <button *ngIf="currentId!=1" class="control-button"
+                  (click)="clickOnBackButton()"><img
             src="../../../assets/left-arrow.png" style="padding:5px;width:24px;"></button>
 
         </div>
@@ -193,6 +195,12 @@
           </div>
         </div>-->
 
+      </div>
+    </div>
+    <div class="col-md-1 transcript">
+      <div [@heroState]="state"
+           (click)="toggleState()" style="width: auto;height: auto;background-color: #0D3055">
+        TRANSCRIPT
       </div>
     </div>
   </div>

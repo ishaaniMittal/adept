@@ -11,7 +11,11 @@ import {Component} from "@angular/core";
 
 export class PanelistDialogComponent {
 
-  name:string;
-  description:string;
+  committee_members:[{
+    "committee_id":number,
+    "name":string,
+    "image":string,
+    "description":string
+  }]
 
 }

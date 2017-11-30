@@ -9,11 +9,17 @@ export class SMDialogue {
       "mood-phrase":string,
       "mood":string,
       "statement":[{
+        "id":number;
         "statementKey":string,
         "speaker":number,
         "next":string,
         "image":string,
-        "text":string
+        "speaker_image":string,
+        "text":string,
+        "reference":[{
+          "url":string,
+          "desc":string
+        }]
       }];
 
     }

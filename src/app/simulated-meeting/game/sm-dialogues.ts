@@ -12,11 +12,22 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said",
         "mood": "talk",
         "statement": [{
-          "statementKey": "1",
+          "id": 1,
+          "statementKey": "A1",
           "speaker": 1,
           "next": "A2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Let's start with Perez. Remember, what we say is confidential."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Let's start with Perez. Remember, what we say is confidential.",
+          "reference": [{
+            "url": "",
+            "desc": "Depending on the context and relationship of individuals involved, the word \"confidential\" could strike an intimidating tone."
+          }, {
+            "url": "http://www.apsanet.org/pubs/ethics.cfm",
+            "desc": "American Political Science Association (APSA) website (3.2) indicates that departments should choose fair-minded reviewers."
+          }
+          ]
+
         }
         ]
       },
@@ -27,11 +38,18 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said",
         "mood": "talk",
         "statement": [{
+          "id": 2,
           "statementKey": "A2",
           "speaker": 3,
           "next": "A3",
           "image": "../../../assets/perez/perez_panel_3.png",
-          "text": "This will be an interesting case."
+          "speaker_image": "../../../assets/KK.png",
+          "text": "This will be an interesting case.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }
+          ]
         }
         ]
       },
@@ -42,11 +60,18 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said",
         "mood": "talk",
         "statement": [{
+          "id": 3,
           "statementKey": "A3",
           "speaker": 2,
           "next": "B1",
           "image": "../../../assets/perez/perez_panel_2.png",
-          "text": "Let's just go through this and see."
+          "speaker_image": "../../../assets/JD.png",
+          "text": "Let's just go through this and see.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }
+          ]
         }
         ]
       },
@@ -57,12 +82,25 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said",
         "mood": "talk",
         "statement": [{
-          "statementKey": "B1",
+          "id": 4, "statementKey": "B1",
           "speaker": 1,
           "next": "B2",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Let's start with scholarship. All his current grants are interdisciplinary.",
+          "reference": [{
+            "url": "",
+            "desc": "Perceptions of interdisciplinary and multidisciplinary work vary."
+          }, {
+            "url": "http:\\www.gatech.edu",
+            "desc": "The GATech faculty handbook (3.2.5) indicates creative work must be appropriate to the individual's discipline."
 
-          "text": "Let's start with scholarship. All his current grants are interdisciplinary."
+          }, {
+            "url": "http:\\www.advance.gatech.edu/ptac",
+            "desc": "The PTAC report (I.8) considers evaluation of research teaming and interdisciplinary collaboration."
+          }
+          ]
+
         }
         ]
 
@@ -74,12 +112,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said",
         "mood": "talk",
         "statement": [{
-          "statementKey": "B2",
+          "id": 5, "statementKey": "B2",
           "speaker": 2,
           "next": "B3",
           "image": "../../../assets/perez/perez_panel_2.png",
-
-          "text": "My main concern about the grants is that he's spending most of the time in chemistry."
+          "speaker_image": "../../../assets/JD.png",
+          "text": "My main concern about the grants is that he's spending most of the time in chemistry.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }
+          ]
         }
         ]
       },
@@ -90,12 +133,30 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said",
         "mood": "talk",
         "statement": [{
-          "statementKey": "B3",
+          "id": 6, "statementKey": "B3",
           "speaker": 1,
           "next": "B4",
           "image": "../../../assets/perez/perez_panel_1.png",
 
-          "text": "Gentlemen, the real issue is that Perez hasn't a clue about what our primary thrusts in materials are. He's riding the coattails of chemistry with interdisciplinary funding from NSF and I'm not sure how hard that is to get. He isn't project director on any grants listed on the c.v."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Gentlemen, the real issue is that Perez hasn't a clue about what our primary thrusts in materials are. He's riding the coattails of chemistry with interdisciplinary funding from NSF and I'm not sure how hard that is to get. He isn't project director on any grants listed on the c.v.",
+          "reference": [{
+            "url": "",
+            "desc": "Perceptions of responsibility for success are affected by perceptions of past success."
+          },
+            {
+              "url": "http://www.adept.gatech.edu/library.htm",
+              "desc": "Singer's account testifies to the significance of subjective, unspecified grounds."
+            },
+            {
+              "url": "http:\\www.advance.gatech.edu/ptac",
+              "desc": "See PTAC report (I.8) on interdisciplinarity."
+            },
+            {
+              "url": "http://www.adept.gatech.edu/library.htm",
+              "desc": "Merton outlines \"the Matthew effect,\" whereby the accrual of greater recognition to scientific contributions goes to those with already considerable reputations."
+            }
+          ]
         }
         ]
       },
@@ -106,12 +167,20 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said emphatically",
         "mood": "emphatic",
         "statement": [{
-          "statementKey": "B4",
+          "id": 7, "statementKey": "B4",
           "speaker": 3,
           "next": "B5",
           "image": "../../../assets/perez/perez_panel_3.png",
-
-          "text": "You shouldn't discount big grants because they are interdisciplinary. Look,he's published in highly respectable journals and has six graduate students, including four PhD students. There must be some technical 'meat' in his work."
+          "speaker_image": "../../../assets/KK.png",
+          "text": "You shouldn't discount big grants because they are interdisciplinary. Look,he's published in highly respectable journals and has six graduate students, including four PhD students. There must be some technical 'meat' in his work.",
+          "reference": [{
+            "url": "",
+            "desc": "Rankings of journals (determined by researchers in field) and unit expectations of external funding ought to be communicated to candidates and committee members."
+          },
+            {
+              "url": "http:\\www.advance.gatech.edu/ptac",
+              "desc": "The PTAC report (I.9) considers issues related to criteria in scholarship, including clarity, familiarity with publication venues, judgment across disciplines, uniformity and consistency of standards."
+            }]
         }
         ]
       },
@@ -122,12 +191,20 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said emphatically",
         "mood": "emphatic",
         "statement": [{
-          "statementKey": "B5",
+          "id": 8, "statementKey": "B5",
           "speaker": 1,
           "next": "B6",
           "image": "../../../assets/perez/perez_panel_1.png",
-
-          "text": "He has raised funding, but not for our unit. This is important now because we're coming up for outside evaluation, and we need faculty to bring major funding to us."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "He has raised funding, but not for our unit. This is important now because we're coming up for outside evaluation, and we need faculty to bring major funding to us.",
+          "reference": [{
+            "url": "",
+            "desc": "Organizational standards might not be clearly communicated to candidates."
+          },
+            {
+              "url": "http://www.adept.gatech.edu/library.htm",
+              "desc": "Fox links organizational environment to productivity and performance."
+            }]
         }
         ]
       },
@@ -139,30 +216,53 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood": "",
         "statement": [
           {
+            "id": 9,
             "statementKey": "B6a",
             "speaker": 0,
             "next": "B7a",
             "image": "../../../assets/perez/perez_panel.png",
-
-            "text": "He's been told several times to get grants in core areas. I see too little substance in materials science-oriented research."
+            "speaker_image": "../../../assets/JP.png",
+            "text": "He's been told several times to get grants in core areas. I see too little substance in materials science-oriented research.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 9,
             "statementKey": "B6b",
             "speaker": 0,
             "next": "B7b",
-            "text": "I choose to remain silent at this point in the conversation."
+            "speaker_image": "../../../assets/JP.png",
+            "text": "I choose to remain silent at this point in the conversation.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 9,
             "statementKey": "B6c",
             "speaker": 0,
             "next": "B7c",
-            "text": "Forming bridges to other disciplines is as important as bringing money into our department. The number of interdisciplinary grants confirms the value of his research."
+            "speaker_image": "../../../assets/JP.png",
+            "text": "Forming bridges to other disciplines is as important as bringing money into our department. The number of interdisciplinary grants confirms the value of his research.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 9,
             "statementKey": "B6d",
             "speaker": 0,
             "next": "B7d1",
-            "text": "Are we discussing scholarship or funding?"
+            "speaker_image": "../../../assets/JP.png",
+            "text": "Are we discussing scholarship or funding?",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           }
         ]
       },
@@ -173,11 +273,19 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "miffed",
         "statement": [{
-          "statementKey": "B7a",
+          "id": 10, "statementKey": "B7a",
           "speaker": 1,
           "next": "B7a2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "He's publishing in chemistry journals more than engineering journals. I am the leading researcher in the same area of engineering he worked on in his graduate and post doc years. But I just don't see a prospect for collaborating with him now."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "He's publishing in chemistry journals more than engineering journals. I am the leading researcher in the same area of engineering he worked on in his graduate and post doc years. But I just don't see a prospect for collaborating with him now.",
+          "reference": [{
+            "url": "",
+            "desc": "Credit and rewards for participating in interdisciplinary teams are not always well established."
+          },
+            {
+              "url": "", "desc": "Russo describes the pitfalls of large interdisciplinary projects."
+            }]
         }
         ]
       },
@@ -188,11 +296,19 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": ", smirking, said",
         "mood": "smirk",
         "statement": [{
-          "statementKey": "B7a2",
+          "id": 11, "statementKey": "B7a2",
           "speaker": 2,
           "next": "B7a3",
           "image": "../../../assets/perez/perez_panel_2.png",
-          "text": "Our school chair agrees that Perez should collaborate with us instead of chemistry faculty. Should we advise him to join chemistry?"
+          "speaker_image": "../../../assets/JD.png",
+          "text": "Our school chair agrees that Perez should collaborate with us instead of chemistry faculty. Should we advise him to join chemistry?",
+          "reference": [{
+            "url": "",
+            "desc": "Evaluation committees ought to conduct deliberations in a professional, equitable manner."
+          }, {
+            "url": "http:\\www.advance.gatech.edu",
+            "desc": "The PTAC report (IV.7.B) states that unconfirmed information ought to be discounted as rumor."
+          }]
         }
         ]
       },
@@ -203,11 +319,20 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": ", self-satisfied, said",
         "mood": "self-satisfied",
         "statement": [{
-          "statementKey": "B7a3",
+          "id": 12, "statementKey": "B7a3",
           "speaker": 1,
           "next": "C1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "We should write this up to convey substandard research performance."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "We should write this up to convey substandard research performance.",
+          "reference": [{
+            "url": "",
+            "desc": "Criteria for decision should be based on clearly communicated standards."
+          },
+            {
+              "url": "http://www.adept.gatech.edu/library.htm",
+              "desc": "Lattica offers suggestions for individuals concerned with evaluation of interdisciplinary scholarship."
+            }]
         }
         ]
 
@@ -219,12 +344,20 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "asserted",
         "mood": "assertively",
         "statement": [{
-          "statementKey": "B7b",
+          "id": 13, "statementKey": "B7b",
           "speaker": 1,
           "next": "C1",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Kulver, he's in a niche area that might be attractive right now, but it's not one that a lot of us in materials will soon care about. This part of our letter should say his " +
-          "record is not persuasive regarding his long-term funding potential. Agreed?"
+          "record is not persuasive regarding his long-term funding potential. Agreed?",
+          "reference": [{
+            "url": "",
+            "desc": "Candidates should understand that interdisciplinary scholarship is not always highly regarded by colleagues."
+          }, {
+            "url": "http://www.adept.gatech.edu/library.htm",
+            "desc": "Bahls and Schachter consider how interdisciplinary research has recently become more prominent."
+          }]
         }
         ]
 
@@ -236,12 +369,20 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "thoughtfully said",
         "mood": "thoughtfully",
         "statement": [{
-          "statementKey": "B7c",
+          "id": 14, "statementKey": "B7c",
           "speaker": 2,
           "next": "C1",
           "image": "../../../assets/perez/perez_panel_2.png",
+          "speaker_image": "../../../assets/JD.png",
           "text": "I did notice new requests for proposals at NSF and DoD agencies that emphasize " +
-          "interdisciplinary connections; I have been thinking about this myself."
+          "interdisciplinary connections; I have been thinking about this myself.",
+          "reference": [{
+            "url": "",
+            "desc": "Funding agencies and institutions are adapting to interdisciplinary paradigms of research."
+          }, {
+            "url": "http://www.adept.gatech.edu/library.htm",
+            "desc": "Brainard describes Arizona State University's efforts to accommodate interdisciplinary research in science."
+          }]
         }
         ]
 
@@ -253,12 +394,20 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": ", perplexed, said",
         "mood": "perplexed",
         "statement": [{
-          "statementKey": "B7d1",
+          "id": 15, "statementKey": "B7d1",
           "speaker": 1,
           "next": "B7d2",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "It's just hard for me to see how to decouple scholarship and funding, " +
           "how can you be a scholar in materials engineering without funding?"
+          , "reference": [{
+            "url": "",
+            "desc": "Measures of productivity regarding funding and publication ought to be communicated to all candidates in written guidelines and careful mentoring."
+          }, {
+            "url": "http:\\www.gatech.edu",
+            "desc": "The GATech faculty handbook (3.2.3) mandates review of \"all dimensions of performance\". . . \"teaching, creativity, and service.\""
+          }]
         }
         ]
       },
@@ -269,14 +418,21 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "enthusiastically said",
         "mood": "enthusiastic",
         "statement": [{
-          "statementKey": "B7d2",
+          "id": 16, "statementKey": "B7d2",
           "speaker": 3,
           "next": "C1",
           "image": "../../../assets/perez/perez_panel_3.png",
+          "speaker_image": "../../../assets/KK.png",
           "text": "Perez's joint NSF grant and industry funding together are impressive, given that this is a hot new area. " +
           "The collaboration outside the school and college is good because it leads to increased opportunities and " +
           "leveraging of new monies to support materials engineering-related work. Perez is mining a vein that has " +
-          "incredible potential, one that can pay off for many of us, and our letter should reward his effort."
+          "incredible potential, one that can pay off for many of us, and our letter should reward his effort.",
+          "reference": [{
+            "url": "",
+            "desc": "Interdisciplinary teaming can attract funding and provide momentum for funding proposals and publications."
+          }, {
+            "url": "", "desc": "Burnett characterizes how collaboration increases problem-solving."
+          }]
         }
         ]
       },
@@ -287,11 +443,15 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said",
         "mood": "talk",
         "statement": [{
-          "statementKey": "C1",
+          "id": 17, "statementKey": "C1",
           "speaker": 1,
           "next": "C2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Let's look at teaching now."
+          "speaker_image": "../../../assets/Al.png", "text": "Let's look at teaching now.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
 
@@ -303,15 +463,24 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said",
         "mood": "talk",
         "statement": [{
-          "statementKey": "C2",
+          "id": 18, "statementKey": "C2",
           "speaker": 3,
           "next": "C3",
           "image": "../../../assets/perez/perez_panel_3.png",
 
+          "speaker_image": "../../../assets/KK.png",
           "text": "His teaching scores are pretty good. Look at these evaluations for that intro course. " +
           "He did as well as any other assistant professor and better than most.  " +
           "I notice that he team teaches a course on surface chemistry with several other faculty, " +
-          "so it is very hard to judge the quality of his instruction."
+          "so it is very hard to judge the quality of his instruction.",
+          "reference": [{
+            "url": "",
+            "desc": "Teaching scores are not always highly regarded by faculty evaluators."
+          },
+            {
+              "url": "http://www.advance.gatech.edu/ptac/SUMMARY%20OF%20PTAC%20SURVEY.htm",
+              "desc": "Linse describes female faculty concerns about evaluations. Respondents to the PTAC survey doubt effectiveness of certain teaching evaluation methods. See section III of PTAC report."
+            }]
         }
         ]
 
@@ -323,14 +492,22 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said mockingly",
         "mood": "talk",
         "statement": [{
-          "statementKey": "C3",
+          "id": 19, "statementKey": "C3",
           "speaker": 2,
           "next": "C4",
           "image": "../../../assets/perez/perez_panel_2.png",
+          "speaker_image": "../../../assets/JD.png",
           "text": "Who knows how effective he really was until we get those intro students in major courses? " +
           "Does Perez have high numbers because he caters to students'sense of humor?  " +
           "I've heard he shows clips from the web at the beginning of each lecture, " +
-          "some of them not very related to his lecture material. Sometimes students mistake that for good teaching."
+          "some of them not very related to his lecture material. Sometimes students mistake that for good teaching.",
+          "reference": [{
+            "url": "",
+            "desc": "Various studies on student evaluations report how stereotypes, expectations, student resistance to course content, and interactions affect scores."
+          }, {
+            "url": "",
+            "desc": "See \"Gender and Student Evaluations,\" an annotated bibliography developed at the University of Michigan, for studies on bias in teaching evaluations."
+          }]
         }
         ]
 
@@ -342,13 +519,21 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said seriously",
         "mood": "serious",
         "statement": [{
-          "statementKey": "C4",
+          "id": 20, "statementKey": "C4",
           "speaker": 1,
           "next": "C5",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Yes, if he is concerned about teaching, he ought to encourage retention of majors and appropriate pedagogies." +
           " I don't see evidence supporting his ability to attract students in materials. Who knows, as Jason says, " +
-          "what's really going on in the classroom."
+          "what's really going on in the classroom.",
+          "reference": [{
+            "url": "",
+            "desc": "Committee members should calibrate their differing expectations of what qualifies as good teaching."
+          }, {
+            "url": "http://www.adept.gatech.edu/library.htm",
+            "desc": "See R. A. Arreola on developing a comprehensive faculty evaluation system."
+          }]
         }
         ]
       },
@@ -359,12 +544,20 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "asked",
         "mood": "question",
         "statement": [{
-          "statementKey": "C5",
+          "id": 21, "statementKey": "C5",
           "speaker": 3,
           "next": "C6",
           "image": "../../../assets/perez/perez_panel_3.png",
+          "speaker_image": "../../../assets/KK.png",
           "text": "Well, are these teaching standards--retention of majors and appropriate pedagogies--that we will " +
-          "invoke for everyone?"
+          "invoke for everyone?",
+          "reference": [{
+            "url": "",
+            "desc": "Standards ought to reflect institutional mission and be applied equitably."
+          }, {
+            "url": "www. advance.gatech.edu/ptac",
+            "desc": "The 2003 ADVANCE research survey reports faculty perceptions of significant factors for promotion and salary."
+          }]
         }
         ]
 
@@ -376,12 +569,20 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "exclaimed",
         "mood": "exclaim",
         "statement": [{
-          "statementKey": "C6",
+          "id": 22, "statementKey": "C6",
           "speaker": 1,
           "next": "C7",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "We should. Look at Jones' case: now there's someone who lays out a terrific teaching portfolio. " +
-          "Why can't Perez get help so he can get results like Jones?"
+          "Why can't Perez get help so he can get results like Jones?",
+          "reference": [{
+            "url": "",
+            "desc": "Stereotypes affect perceptions of another's competence."
+          }, {
+            "url": "",
+            "desc": "Valian discusses perceptions of leadership, competence, and assertiveness."
+          }]
         }
         ]
 
@@ -394,32 +595,56 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood": "",
         "statement": [
           {
+            "id": 23,
             "statementKey": "C7a",
             "speaker": 0,
             "next": "C8a",
             "image": "../../../assets/perez/perez_panel.png",
-            "text": "But we shouldn't directly compare cases. Each case is unique and needs to be seen for its own merits, if we could just find some in Perez's."
+            "speaker_image": "../../../assets/JP.png",
+            "text": "But we shouldn't directly compare cases. Each case is unique and needs to be seen for its own merits, if we could just find some in Perez's.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 23,
             "statementKey": "C7b",
             "speaker": 0,
             "next": "C8b",
             "image": "",
-            "text": "Yes, Jones definitely deserves his teaching awards."
+            "speaker_image": "../../../assets/JP.png",
+            "text": "Yes, Jones definitely deserves his teaching awards.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 23,
             "statementKey": "C7c",
             "speaker": 0,
             "next": "C8c",
             "image": "",
-            "text": "Al, you don't like Perez because he disagrees with you about team teaching. You think every man should take of himself about teaching, while he argues for the value of faculty team-teaching intro courses. Based on the summaries of senior exit interviews provided in the dossier, Perez appears to be a gifted teacher."
+            "speaker_image": "../../../assets/JP.png",
+            "text": "Al, you don't like Perez because he disagrees with you about team teaching. You think every man should take of himself about teaching, while he argues for the value of faculty team-teaching intro courses. Based on the summaries of senior exit interviews provided in the dossier, Perez appears to be a gifted teacher.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 23,
             "statementKey": "C7d",
             "speaker": 0,
             "next": "C8d",
             "image": "",
-            "text": "But we shouldn't directly compare cases.  Each case is unique and with its own merits.  Perez has documented effective teaching by including the exit interviews, evaluation scores, and student letters supporting an external teaching award. [best practices document]"
+            "speaker_image": "../../../assets/JP.png",
+            "text": "But we shouldn't directly compare cases.  Each case is unique and with its own merits.  Perez has documented effective teaching by including the exit interviews, evaluation scores, and student letters supporting an external teaching award. [best practices document]",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           }
         ]
       },
@@ -430,11 +655,19 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said seriously",
         "mood": "serious",
         "statement": [{
-          "statementKey": "C8a",
+          "id": 24, "statementKey": "C8a",
           "speaker": 1,
           "next": "D1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I see three of us agree that Perez's teaching record is difficult to assess, and perhaps marginal."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I see three of us agree that Perez's teaching record is difficult to assess, and perhaps marginal.",
+          "reference": [{
+            "url": "",
+            "desc": "Instructors should receive feedback on their teaching records before coming up for promotion and tenure."
+          }, {
+            "url": "http:\\www.advance.gatech.edu",
+            "desc": "PTAC report (I.5) acknowledges the significance of mentoring, citing Stanley Fish's concerns with the problems and prospects of mentoring."
+          }]
         }
         ]
 
@@ -446,11 +679,19 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said emphatically",
         "mood": "emphatic",
         "statement": [{
-          "statementKey": "C8b",
+          "id": 25, "statementKey": "C8b",
           "speaker": 1,
           "next": "D1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Okay, so we'll give Jones great marks in the teaching department and barely pass Perez."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Okay, so we'll give Jones great marks in the teaching department and barely pass Perez.",
+          "reference": [{
+            "url": "",
+            "desc": "Evaluators ought to resist the temptation to compare candidates' records by taking data out of context."
+          }, {
+            "url": "",
+            "desc": "Tierney acknowledges the need to develop appropriate rewards for teaching."
+          }]
         }
         ]
       },
@@ -461,13 +702,21 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": ", somewhat annoyed, said",
         "mood": "annoyed",
         "statement": [{
-          "statementKey": "C8c",
+          "id": 26, "statementKey": "C8c",
           "speaker": 1,
           "next": "D1",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Team-teaching is too cumbersome to work in the intro course, " +
           "and I worry about superficial treatment at that stage. But if you all agree that Perez " +
-          "deserves high marks for teaching. I'll go along with noting his high teaching evaluation scores."
+          "deserves high marks for teaching. I'll go along with noting his high teaching evaluation scores.",
+          "reference": [{
+            "url": "",
+            "desc": "Evaluators ought to avoid injecting personal bias into deliberations."
+          }, {
+            "url": "http:\\www.advance.gatech.edu/ptac",
+            "desc": "The PTAC report (IV.3) references the need to develop open and transparent evaluation processes."
+          }]
         }
         ]
 
@@ -479,11 +728,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": ", acquiescing, said",
         "mood": "acquiescing",
         "statement": [{
-          "statementKey": "C8d",
+          "id": 27, "statementKey": "C8d",
           "speaker": 1,
           "next": "D1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Okay, I guess that if we really look at the documentation provided and not bring our own bias regarding team teaching into play, Perez does a reasonable job of teaching"
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Okay, I guess that if we really look at the documentation provided and not bring our own bias regarding team teaching into play, Perez does a reasonable job of teaching",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -494,12 +748,25 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": ", smirking, said",
         "mood": "smirk",
         "statement": [{
-          "statementKey": "D1",
+          "id": 28, "statementKey": "D1",
           "speaker": 2,
           "next": "D2",
           "image": "../../../assets/perez/perez_panel_2.png",
+          "speaker_image": "../../../assets/JD.png",
           "text": "I feel kind of silly bringing this up, but Perez seems to be adhering to that old adage " +
-          "'birds of a feather'-you know? Look at who's on his grant team: Lopez, Johnson, Rodriguez, Bahouali"
+          "'birds of a feather'-you know? Look at who's on his grant team: Lopez, Johnson, Rodriguez, Bahouali",
+          "reference": [{
+            "url": "",
+            "desc": "Institutional values/biases ought to be carefully characterized and criticized in the evaluation process.Institutional values/biases ought to be carefully characterized and criticized in the evaluation process."
+          },
+            {
+              "url": "http://www.adept.gatech.edu/library.htm",
+              "desc": "Long and Fox report how particularism affects perceptions of success."
+            },
+            {
+              "url": "http://www.adept.gatech.edu/library.htm",
+              "desc": "Fox and Ferri examine how men and women differently attribute success."
+            }]
         }
         ]
 
@@ -511,14 +778,22 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": ", somewhat annoyed, said",
         "mood": "annoyed",
         "statement": [{
-          "statementKey": "D2",
+          "id": 29, "statementKey": "D2",
           "speaker": 1,
           "next": "D3",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "I see that too. In fact, the engineering education piece Perez wrote focuses on education of minorities." +
           " I know there are a lot of programs coming out of Washington to support this kind of thing, " +
           "but I don't see much evidence that he has tried to attract funding along those lines.  " +
-          " But that's probably fine, as you often can't do that at the expense of being a first rate researcher."
+          " But that's probably fine, as you often can't do that at the expense of being a first rate researcher.",
+          "reference": [{
+            "url": "",
+            "desc": "Evaluators should clarify the relative importance of funding and quantity and quality of publications."
+          }, {
+            "url": "http:\\www.advance.gatech.edu/ptac",
+            "desc": "The PTAC report (I.2) references diversity in relation to recruitment, retention, and perceptions regarding faculty abilities and performance."
+          }]
         }
         ]
 
@@ -530,13 +805,21 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "exclaimed",
         "mood": "exclaim",
         "statement": [{
-          "statementKey": "D3",
+          "id": 30, "statementKey": "D3",
           "speaker": 2,
           "next": "D4",
           "image": "../../../assets/perez/perez_panel_2.png",
+          "speaker_image": "../../../assets/JD.png",
           "text": "Yeah, research is based purely on merit. You've got to deliver the goods before you get any " +
           "respect. Bring in the money, attract attention from students. We need more people who make technical " +
-          "contributions rather than write scholarly articles about lack of opportunities."
+          "contributions rather than write scholarly articles about lack of opportunities.",
+          "reference": [{
+            "url": "",
+            "desc": "Standards reflect cultural norms of engineering schools."
+          }, {
+            "url": "http://www.adept.gatech.edu/library.htm",
+            "desc": "\"Defining Culture\" identifies cultural norms observed in material culture and interactions in an engineering school."
+          }]
         }
         ]
 
@@ -548,11 +831,19 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "angrily said",
         "mood": "angry",
         "statement": [{
-          "statementKey": "D4",
+          "id": 31, "statementKey": "D4",
           "speaker": 3,
           "next": "D5",
           "image": "../../../assets/perez/perez_panel_3.png",
-          "text": "I think there are some things being said here that are pushing the boundaries of appropriate conduct."
+          "speaker_image": "../../../assets/KK.png",
+          "text": "I think there are some things being said here that are pushing the boundaries of appropriate conduct.",
+          "reference": [{
+            "url": "",
+            "desc": "Evaluators should focus on reviewing the candidate's dossier and avoid making political pronouncements that could be interpreted as character slurs."
+          }, {
+            "url": "http://www.adept.gatech.edu/library.htm",
+            "desc": "Getman explains on pages 109-129 how peer review may falter."
+          }]
         }
         ]
 
@@ -565,32 +856,56 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood": "",
         "statement": [
           {
+            "id": 32,
             "statementKey": "D5a",
             "speaker": 0,
             "next": "D6a1",
             "image": "../../../assets/perez/perez_panel.png",
-            "text": "In my view, the education piece should be irrelevant to our judgment of his engineering scholarship because it is an opinion and not research."
+            "speaker_image": "../../../assets/JP.png",
+            "text": "In my view, the education piece should be irrelevant to our judgment of his engineering scholarship because it is an opinion and not research.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 32,
             "statementKey": "D5b",
             "speaker": 0,
             "next": "D6b1",
             "image": "",
-            "text": "I don't think anything is out of bounds in a P and T discussion, this is an entirely confidential matter.  What is said here stays inside these walls."
+            "speaker_image": "../../../assets/JP.png",
+            "text": "I don't think anything is out of bounds in a P and T discussion, this is an entirely confidential matter.  What is said here stays inside these walls.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 32,
             "statementKey": "D5c",
             "speaker": 0,
             "next": "D6c1",
             "image": "",
-            "text": "I agree with Karen that consideration of ethnicity or minority issues has no place in this discussion or in our dealings with Perez. He ought be commended for taking on the service of minority recruitment into engineering and excelling in everything else he does."
+            "speaker_image": "../../../assets/JP.png",
+            "text": "I agree with Karen that consideration of ethnicity or minority issues has no place in this discussion or in our dealings with Perez. He ought be commended for taking on the service of minority recruitment into engineering and excelling in everything else he does.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 32,
             "statementKey": "D5d",
             "speaker": 0,
             "next": "D6d1",
             "image": "",
-            "text": "Karen is right. The engineering education essay is a relevant piece of scholarship as it concerns an innovative curriculum in light of ABET 2000.  It appears in a reputable journal and provides some insight into the kind of balance in Perez's repertoire."
+            "speaker_image": "../../../assets/JP.png",
+            "text": "Karen is right. The engineering education essay is a relevant piece of scholarship as it concerns an innovative curriculum in light of ABET 2000.  It appears in a reputable journal and provides some insight into the kind of balance in Perez's repertoire.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           }
         ]
       },
@@ -601,11 +916,19 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said confidently",
         "mood": "confident",
         "statement": [{
-          "statementKey": "D6a1",
+          "id": 33, "statementKey": "D6a1",
           "speaker": 1,
           "next": "D6a2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "So we are all agreed that Perez hasn't established the right kind of profile in research, teaching, or service for our department and our university?"
+          "speaker_image": "../../../assets/Al.png",
+          "text": "So we are all agreed that Perez hasn't established the right kind of profile in research, teaching, or service for our department and our university?",
+          "reference": [{
+            "url": "",
+            "desc": "Senior faculty members should encourage other evaluators to express their own views rather than assuming agreement."
+          }, {
+            "url": "http://www.adept.gatech.edu/library.htm",
+            "desc": "Nieva and Gutek consider bias toward white males in evaluation processes."
+          }]
         }
         ]
       },
@@ -616,11 +939,22 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said emphatically",
         "mood": "emphatic",
         "statement": [{
-          "statementKey": "D6a2",
+          "id": 34, "statementKey": "D6a2",
           "speaker": 3,
           "next": "E1a",
           "image": "../../../assets/perez/perez_panel_3.png",
-          "text": "I disagree and ask that everyone review the scholarship and external letters of support before our next meeting."
+          "speaker_image": "../../../assets/KK.png",
+          "text": "I disagree and ask that everyone review the scholarship and external letters of support before our next meeting.",
+          "reference": [{
+            "url": "",
+            "desc": "Integrity of evaluation process includes the solicitation and interpretation of external letters of recommendation/review.Integrity of evaluation process includes the solicitation and interpretation of external letters of recommendation/review."
+          }, {
+            "url": "http://www.adept.gatech.edu/library.htm",
+            "desc": "Baron illustrates the value of external review letters for RPT committee members."
+          }, {
+            "url": "http://chronicle.com/prm/weekly/v48/i25/25b01401.htm",
+            "desc": "Letters often remain confidential and not open to review by the candidate, but practices vary."
+          }]
         }
         ]
       },
@@ -631,12 +965,20 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said passively",
         "mood": "passive",
         "statement": [{
-          "statementKey": "D6b1",
+          "id": 35, "statementKey": "D6b1",
           "speaker": 1,
           "next": "D6b2",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Yes, being on the same page with our goals is an important element, " +
-          "and maybe he just doesn't fit with us in terms of research, teaching, or service."
+          "and maybe he just doesn't fit with us in terms of research, teaching, or service.",
+          "reference": [{
+            "url": "",
+            "desc": "Yes, being on the same page with our goals is an important element, and maybe he just doesn't fit with us in terms of research, teaching, or service."
+          }, {
+            "url": "http://www.adept.gatech.edu/library.htm",
+            "desc": "Allen claims social factors and environmental influences are ignored in evaluation processes."
+          }]
         }
         ]
 
@@ -648,12 +990,20 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said emphatically",
         "mood": "emphatic",
         "statement": [{
-          "statementKey": "D6b2",
+          "id": 36, "statementKey": "D6b2",
           "speaker": 3,
           "next": "E1a",
           "image": "../../../assets/perez/perez_panel_3.png",
+          "speaker_image": "../../../assets/KK.png",
           "text": "We should take into account that our discipline is becoming more interdisciplinary and that " +
-          "Perez's work demonstrates that evolution."
+          "Perez's work demonstrates that evolution.",
+          "reference": [{
+            "url": "",
+            "desc": "Evaluators should keep in mind disciplinary, institutional, and professional standards."
+          }, {
+            "url": "http://www.adept.gatech.edu/library.htm",
+            "desc": "Tierney acknowledges the need to develop appropriate recognition of a range of scholarship."
+          }]
         }
         ]
       },
@@ -664,11 +1014,19 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": ", somewhat annoyed, said",
         "mood": "annoyed",
         "statement": [{
-          "statementKey": "D6c1",
+          "id": 37, "statementKey": "D6c1",
           "speaker": 1,
           "next": "D6c2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "All I'm saying is that stuff can't make up for other areas in which his contributions are lacking."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "All I'm saying is that stuff can't make up for other areas in which his contributions are lacking.",
+          "reference": [{
+            "url": "",
+            "desc": "Standards of achievement should be clear and not established by individual predilections."
+          }, {
+            "url": "http://www.adept.gatech.edu/library.htm",
+            "desc": "Fish considers subjective aspects of the promotion and tenure process."
+          }]
         }
         ]
 
@@ -680,12 +1038,20 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said confidently",
         "mood": "confident",
         "statement": [{
-          "statementKey": "D6c2",
+          "id": 38, "statementKey": "D6c2",
           "speaker": 3,
           "next": "E1b",
           "image": "../../../assets/perez/perez_panel_3.png",
+          "speaker_image": "../../../assets/KK.png",
           "text": "Some of us think that his contributions in research and teaching are fine and that" +
-          " his interest in minority education points to future contributions to departmental recruiting."
+          " his interest in minority education points to future contributions to departmental recruiting.",
+          "reference": [{
+            "url": "",
+            "desc": "Standards of achievement should be clear and not established by individual predilections."
+          }, {
+            "url": "http:\\www.advance.gatech.edu/ptac",
+            "desc": "PTAC Report (IV.3) outlines best practices of evaluation."
+          }]
         }
         ]
 
@@ -697,11 +1063,19 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": ", confused, said",
         "mood": "confused",
         "statement": [{
-          "statementKey": "D6d1",
+          "id": 39, "statementKey": "D6d1",
           "speaker": 1,
           "next": "D6d2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I hadn't noticed it had anything to do with ABET2000."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I hadn't noticed it had anything to do with ABET2000.",
+          "reference": [{
+            "url": "",
+            "desc": "Evaluators should carefully read documents in dossier."
+          }, {
+            "url": "http://www.advance.gatech.edu/ptac",
+            "desc": "PTAC Report (IV.3) outlines best practices of evaluation."
+          }]
         }
         ]
 
@@ -713,12 +1087,20 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": ", smirking, said",
         "mood": "smirk",
         "statement": [{
-          "statementKey": "D6d2",
+          "id": 40, "statementKey": "D6d2",
           "speaker": 2,
           "next": "E1c",
           "image": "../../../assets/perez/perez_panel_2.png",
+          "speaker_image": "../../../assets/JD.png",
           "text": "The end of Perez's essay notes a connection to ABET2000, and the essay was praised by " +
-          "two external reviewers as a significant contribution to issues of underrepresentation."
+          "two external reviewers as a significant contribution to issues of underrepresentation.",
+          "reference": [{
+            "url": "",
+            "desc": "Educational scholarship can be evaluated as an element of teaching portfolio."
+          }, {
+            "url": "http:\\www.advance.gatech.edu/ptac",
+            "desc": "PTAC Report (IV.3) outlines best practices of evaluation."
+          }]
         }
         ]
       },
@@ -729,11 +1111,19 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said arrogantly",
         "mood": "arrogant",
         "statement": [{
-          "statementKey": "E1a",
+          "id": 43, "statementKey": "E1a",
           "speaker": 1,
           "next": "",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Research is substandard.  Teaching is barely adequate. And there's no real service."
+          , "reference": [{
+            "url": "",
+            "desc": "Standards of achievement should be clear and not established by individual predilections."
+          }, {
+            "url": "http:\\www.advance.gatech.edu/ptac",
+            "desc": "PTAC Report (IV.3) outlines best practices of evaluation."
+          }]
         }
         ]
 
@@ -745,12 +1135,20 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": ", somewhat annoyed, said",
         "mood": "annoyed",
         "statement": [{
-          "statementKey": "E1b",
+          "id": 43, "statementKey": "E1b",
           "speaker": 1,
           "next": "",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Perez's research funding meets expectations, and his teaching is okay, " +
-          "but he hasn't seemed to have found his niche yet in terms of service.  That's probably ok at his stage."
+          "but he hasn't seemed to have found his niche yet in terms of service.  That's probably ok at his stage.",
+          "reference": [{
+            "url": "",
+            "desc": "Departments should have clear, unambiguous expectations that are communicated in writing."
+          }, {
+            "url": "http:\\www.advance.gatech.edu/ptac",
+            "desc": "PTAC Report (IV.3) outlines best practices of evaluation."
+          }]
         }
         ]
       },
@@ -761,13 +1159,21 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said seriously",
         "mood": "serious",
         "statement": [{
-          "statementKey": "E1c",
+          "id": 43, "statementKey": "E1c",
           "speaker": 3,
           "next": "",
           "image": "../../../assets/perez/perez_panel_3.png",
+          "speaker_image": "../../../assets/KK.png",
           "text": "Well, it seems to me that the majority of us agree that Perez is an outstanding " +
           "researcher and teacher who has contributed to service in his efforts to improve minority recruitment." +
-          " Al, you seem to be the outlier."
+          " Al, you seem to be the outlier.",
+          "reference": [{
+            "url": "",
+            "desc": "Standards of achievement should be clear and not established by individual predilections."
+          }, {
+            "url": "http:\\www.advance.gatech.edu/ptac",
+            "desc": "PTAC Report (IV.3) outlines best practices of evaluation."
+          }]
         }
         ]
 
@@ -785,11 +1191,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "A1",
+          "id": 1, "statementKey": "A1",
           "speaker": 1,
           "next": "A2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Let's now consider Mansour's case. Keep in mind this is an early promotion and tenure case."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Let's now consider Mansour's case. Keep in mind this is an early promotion and tenure case.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -800,10 +1211,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "A2",
+          "id": 2, "statementKey": "A2",
           "speaker": 3,
           "next": "A3",
-          "image": "../../../assets/perez/perez_panel_1.png", "text": "Is her case different because of the time?"
+          "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Is her case different because of the time?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
 
@@ -815,11 +1232,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "A3",
+          "id": 3, "statementKey": "A3",
           "speaker": 1,
           "next": "B1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Since I've been here, we've only had one early case. To be promoted early, the candidate has to be extraordinary in all criteria. Let's start with research."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Since I've been here, we've only had one early case. To be promoted early, the candidate has to be extraordinary in all criteria. Let's start with research.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -830,11 +1252,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B1",
+          "id": 4, "statementKey": "B1",
           "speaker": 2,
           "next": "B2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I agree that extraordinary levels are expected and Mansour's work qualifies."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I agree that extraordinary levels are expected and Mansour's work qualifies.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
 
@@ -846,11 +1273,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B2",
+          "id": 5, "statementKey": "B2",
           "speaker": 3,
           "next": "B3",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "From my vantage point, Samia is a good scholar. Look at this award for her research."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "From my vantage point, Samia is a good scholar. Look at this award for her research.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
 
@@ -862,11 +1294,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B3",
+          "id": 6, "statementKey": "B3",
           "speaker": 2,
           "next": "B4",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "It's an impressive award, but let's look at the sum total of research."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "It's an impressive award, but let's look at the sum total of research.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -877,11 +1314,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B4",
+          "id": 7, "statementKey": "B4",
           "speaker": 1,
           "next": "B5",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "She has more publications in top-ranked journals than any other untenured biochemistry faculty in our unit."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "She has more publications in top-ranked journals than any other untenured biochemistry faculty in our unit.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
 
         }
         ]
@@ -893,11 +1335,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B5",
+          "id": 8, "statementKey": "B5",
           "speaker": 3,
           "next": "B6",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "She has significant quantity, but we need to examine the quality. Does her best paper, the prizewinner, represent a significant contribution to the field?"
+          "speaker_image": "../../../assets/Al.png",
+          "text": "She has significant quantity, but we need to examine the quality. Does her best paper, the prizewinner, represent a significant contribution to the field?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -908,11 +1355,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B6",
+          "id": 9, "statementKey": "B6",
           "speaker": 2,
           "next": "B7",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Are you suggesting that the paper isn't as good as most reviewers have noted?"
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Are you suggesting that the paper isn't as good as most reviewers have noted?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -923,11 +1375,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B7",
+          "id": 10, "statementKey": "B7",
           "speaker": 3,
           "next": "B8",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Let's look at the second reviewer's comments. He doesn't think it contributes much to the field."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Let's look at the second reviewer's comments. He doesn't think it contributes much to the field.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -938,13 +1395,18 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B8",
+          "id": 11, "statementKey": "B8",
           "speaker": 1,
           "next": "B9",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "All the other reviews are positive. I wonder if the negative reviewer is impartial, " +
           "given the tone of the letter and his focusing on that one paper. I heard this guy is known for " +
-          "writing negative letters."
+          "writing negative letters.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -955,12 +1417,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B9",
+          "id": 12, "statementKey": "B9",
           "speaker": 3,
           "next": "B10",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "His review does seem like it's a response to only one of Samia's papers, but the most" +
-          " important consideration ought to concern the range of research products."
+          " important consideration ought to concern the range of research products.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -971,13 +1438,18 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B10",
+          "id": 13, "statementKey": "B10",
           "speaker": 2,
           "next": "B11",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "I agree all reviews have to be weighed carefully. The most positive one spends more time " +
           "considering Mansour's service to the profession rather than discussing her research. " +
-          "Do we really care that she does so much work for that disciplinary organization?"
+          "Do we really care that she does so much work for that disciplinary organization?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -988,12 +1460,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B11",
+          "id": 14, "statementKey": "B11",
           "speaker": 1,
           "next": "B12",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Good service alone will not earn promotion and tenure. An early candidate has to " +
-          "demonstrate a more remarkable profile in research."
+          "demonstrate a more remarkable profile in research.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1004,14 +1481,19 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B12",
+          "id": 15, "statementKey": "B12",
           "speaker": 2,
           "next": "B13",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "The letters don't demonstrate that profile of excellent research. " +
           "The most positive one is from another former student of her mentor. " +
           "Other letters praise the research without understanding it. The negative reviewer " +
-          "is the only one who seems to know the area."
+          "is the only one who seems to know the area.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1022,11 +1504,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B13",
+          "id": 16, "statementKey": "B13",
           "speaker": 3,
           "next": "B14",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "How do you know the positive reviewer has a personal connection?"
+          "speaker_image": "../../../assets/Al.png",
+          "text": "How do you know the positive reviewer has a personal connection?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1037,12 +1524,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B14",
+          "id": 17, "statementKey": "B14",
           "speaker": 2,
           "next": "B15",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "I sat on an NSF panel with someone who knew Samia from graduate school. " +
-          "I believe this letter is from her."
+          "I believe this letter is from her.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1054,32 +1546,56 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood": "",
         "statement": [
           {
+            "id": 18,
             "statementKey": "B15a",
             "speaker": 0,
             "next": "B16a1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "I agree that all letters count and that the negative one is salient."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "I agree that all letters count and that the negative one is salient.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 18,
             "statementKey": "B15b",
             "speaker": 0,
             "next": "B16b1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "I think the negative reviewer is too negative about that one paper and ignores the value of the prize given to it. I don't see his argument as ultimately persuasive since the other letters demonstrate genuine and significant achievement."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "I think the negative reviewer is too negative about that one paper and ignores the value of the prize given to it. I don't see his argument as ultimately persuasive since the other letters demonstrate genuine and significant achievement.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 18,
             "statementKey": "B15c",
             "speaker": 0,
             "next": "B16c1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "I think the positive one is too positive. It smacks of cronyism. The rest of the letters are more realistic and persuasive."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "I think the positive one is too positive. It smacks of cronyism. The rest of the letters are more realistic and persuasive.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 18,
             "statementKey": "B15d",
             "speaker": 0,
             "next": "B16d1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "I don't care what the reviewers say; I'll judge Mansour's scholarship based on my reading of her papers, which are quite strong."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "I don't care what the reviewers say; I'll judge Mansour's scholarship based on my reading of her papers, which are quite strong.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           }
         ]
       },
@@ -1090,11 +1606,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B16a1",
+          "id": 19, "statementKey": "B16a1",
           "speaker": 3,
           "next": "B16a2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "OK, if you all see the negative letter as trumping the other letters, I'll go along with that."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "OK, if you all see the negative letter as trumping the other letters, I'll go along with that.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1105,11 +1626,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B16a2",
+          "id": 20, "statementKey": "B16a2",
           "speaker": 2,
           "next": "B16a3",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Well, it seems that Mansour's work has yet to prove it's value. I say let's wait to see more from her."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Well, it seems that Mansour's work has yet to prove it's value. I say let's wait to see more from her.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1120,11 +1646,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B16a3",
+          "id": 21, "statementKey": "B16a3",
           "speaker": 1,
           "next": "C1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Her work is good, but I agree that she needs time to mature. Let's consider teaching."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Her work is good, but I agree that she needs time to mature. Let's consider teaching.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1135,11 +1666,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B16b1",
+          "id": 22, "statementKey": "B16b1",
           "speaker": 3,
           "next": "B16b2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I agree that the general impression of the six letters is that her work is very good."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I agree that the general impression of the six letters is that her work is very good.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1150,11 +1686,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B16b2",
+          "id": 23, "statementKey": "B16b2",
           "speaker": 2,
           "next": "B16b3",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Yes, Mansour's work has clearly been recognized as significant by some in her field, but what about that very negative letter?"
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Yes, Mansour's work has clearly been recognized as significant by some in her field, but what about that very negative letter?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1165,12 +1706,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B16b3",
+          "id": 24, "statementKey": "B16b3",
           "speaker": 1,
           "next": "C1",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Mohammed is right that the general context of all the letters should be important. " +
-          "The quality of Mansour's work deserves recognition. Let's talk about teaching."
+          "The quality of Mansour's work deserves recognition. Let's talk about teaching.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1181,12 +1727,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B16c1",
+          "id": 25, "statementKey": "B16c1",
           "speaker": 3,
           "next": "B16c2",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Yes, even though one person finds one paper to be somewhat controversial, " +
-          "I think we should set aside such an extreme judgment and look at the bigger picture."
+          "I think we should set aside such an extreme judgment and look at the bigger picture.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1197,11 +1748,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B16c2",
+          "id": 26, "statementKey": "B16c2",
           "speaker": 2,
           "next": "B16c3",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "OK, but does that mean we discount the negative letter?"
+          "speaker_image": "../../../assets/Al.png",
+          "text": "OK, but does that mean we discount the negative letter?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1212,12 +1768,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B16c3",
+          "id": 27, "statementKey": "B16c3",
           "speaker": 1,
           "next": "B16c4",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "We can if the reviewer seems to be biased. His basic complaint is that in the" +
-          " celebrated paper Mansour was only re-doing work already done by her mentor, who really deserves credit for her ideas."
+          " celebrated paper Mansour was only re-doing work already done by her mentor, who really deserves credit for her ideas.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1228,11 +1789,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B16c4",
+          "id": 28, "statementKey": "B16c4",
           "speaker": 3,
           "next": "B16c5",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I think this reviewer can't believe a young woman is capable of scientific insight."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I think this reviewer can't believe a young woman is capable of scientific insight.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1243,11 +1809,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B16c5",
+          "id": 29, "statementKey": "B16c5",
           "speaker": 1,
           "next": "C1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Exactly. The excellence of Mansour's research ought to earn her promotion and tenure. Let's discuss her teaching."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Exactly. The excellence of Mansour's research ought to earn her promotion and tenure. Let's discuss her teaching.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1258,11 +1829,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B16d1",
+          "id": 30, "statementKey": "B16d1",
           "speaker": 3,
           "next": "B16d2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Yes, I agree that Samia's research is very visible. We need her to keep up momentum in that area. She really puts us on the map."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Yes, I agree that Samia's research is very visible. We need her to keep up momentum in that area. She really puts us on the map.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1273,12 +1849,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B16d2",
+          "id": 31, "statementKey": "B16d2",
           "speaker": 1,
           "next": "B16d3",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "If she doesn't get tenure early here, some other department will hire her. " +
-          "We have to cover her area, or we won't be able to offer the PhD in this area."
+          "We have to cover her area, or we won't be able to offer the PhD in this area.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1289,11 +1870,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B16d3",
+          "id": 32, "statementKey": "B16d3",
           "speaker": 2,
           "next": "C1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Alright, if you see this as a strong record, I won't object to a positive assessment of her research. Should we move on to teaching?"
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Alright, if you see this as a strong record, I won't object to a positive assessment of her research. Should we move on to teaching?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1304,12 +1890,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C1",
+          "id": 33, "statementKey": "C1",
           "speaker": 3,
           "next": "C2",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "I can't believe that some students have the audacity to comment on her clothing. " +
-          "Let's make sure we judge her teaching accordingly."
+          "Let's make sure we judge her teaching accordingly.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1320,11 +1911,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C2",
+          "id": 34, "statementKey": "C2",
           "speaker": 2,
           "next": "C3",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "The students are right. She's in America, so she should dress like an American. I'm glad she's changed her wardrobe."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "The students are right. She's in America, so she should dress like an American. I'm glad she's changed her wardrobe.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1335,12 +1931,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C3",
+          "id": 35, "statementKey": "C3",
           "speaker": 1,
           "next": "C4",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Mansour has a teaching award. She's been a good undergraduate teacher, and she is critical " +
-          "to the graduate program. She attracts the best Ph.D. students."
+          "to the graduate program. She attracts the best Ph.D. students.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1351,11 +1952,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C4",
+          "id": 36, "statementKey": "C4",
           "speaker": 3,
           "next": "C5",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "She's a good teacher for upper-division undergraduate and graduate students, even if first- and second-year students seem less comfortable with her."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "She's a good teacher for upper-division undergraduate and graduate students, even if first- and second-year students seem less comfortable with her.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1366,11 +1972,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C5",
+          "id": 37, "statementKey": "C5",
           "speaker": 2,
           "next": "C6",
-          "image": "../../../assets/perez/perez_panel_1.png", "text": "Maybe it's her accent that bothers students. " +
-          "I sat in on one intro course, and I had trouble understanding everything she said."
+          "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Maybe it's her accent that bothers students. " +
+          "I sat in on one intro course, and I had trouble understanding everything she said.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1381,13 +1993,18 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C6",
+          "id": 38, "statementKey": "C6",
           "speaker": 3,
           "next": "C7",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "We need to calibrate her teaching effectiveness. Considering all course scores, " +
           "her teaching for the intro courses is average for our department. And, as Kathryn said, " +
-          "in graduate courses she does very well."
+          "in graduate courses she does very well.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1399,32 +2016,56 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood": "",
         "statement": [
           {
+            "id": 39,
             "statementKey": "C7a",
             "speaker": 0,
             "next": "C8a",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "Low scores reflect only cultural differences and do not serve as the most reliable indicator of good teaching."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "Low scores reflect only cultural differences and do not serve as the most reliable indicator of good teaching.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 39,
             "statementKey": "C7b",
             "speaker": 0,
             "next": "C8b1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "Low scores are low scores and indicate poor teaching."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "Low scores are low scores and indicate poor teaching.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 39,
             "statementKey": "C7c",
             "speaker": 0,
             "next": "C8c1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "Our procedures require looking at a broad set of assessment tools. Numbers are only one component of evaluating teaching."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "Our procedures require looking at a broad set of assessment tools. Numbers are only one component of evaluating teaching.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 39,
             "statementKey": "C7d",
             "speaker": 0,
             "next": "D1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "Accent and dress negatively affect her teaching of beginning students, who are a critical constituency for us."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "Accent and dress negatively affect her teaching of beginning students, who are a critical constituency for us.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           }
         ]
       },
@@ -1435,11 +2076,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C8a",
+          "id": 40, "statementKey": "C8a",
           "speaker": 1,
           "next": "D1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "OK, we know she's not going to be the most effective teacher for first-year students, but we agree that in general she is a good teacher. Let's talk about service."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "OK, we know she's not going to be the most effective teacher for first-year students, but we agree that in general she is a good teacher. Let's talk about service.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1450,11 +2096,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C8b1",
+          "id": 41, "statementKey": "C8b1",
           "speaker": 3,
           "next": "C8b2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Let's remember that her teaching scores have steadily improved over time and that other faculty also have low scores in those introductory courses."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Let's remember that her teaching scores have steadily improved over time and that other faculty also have low scores in those introductory courses.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1465,11 +2116,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C8b2",
+          "id": 42, "statementKey": "C8b2",
           "speaker": 2,
           "next": "D1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I'll concede that her teaching is currently acceptable, but I hope she improves even more. I guess we're moving on to service."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I'll concede that her teaching is currently acceptable, but I hope she improves even more. I guess we're moving on to service.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1480,11 +2136,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C8c1",
+          "id": 43, "statementKey": "C8c1",
           "speaker": 3,
           "next": "C8c2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Absolutely. Her students' written comments and the peer reviewers make it clear that Mansour has tried some innovative techniques in the classroom."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Absolutely. Her students' written comments and the peer reviewers make it clear that Mansour has tried some innovative techniques in the classroom.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1495,11 +2156,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C8c2",
+          "id": 44, "statementKey": "C8c2",
           "speaker": 1,
           "next": "D1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "We can note those details in our letter where we describe her general teaching record as good. Let's discuss her service."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "We can note those details in our letter where we describe her general teaching record as good. Let's discuss her service.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1510,11 +2176,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "D1",
+          "id": 45, "statementKey": "D1",
           "speaker": 3,
           "next": "D2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Clearly we don't need to say much about her service, which seems exemplary, both in the university and to the profession."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Clearly we don't need to say much about her service, which seems exemplary, both in the university and to the profession.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1525,12 +2196,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "D2",
+          "id": 46, "statementKey": "D2",
           "speaker": 2,
           "next": "D3",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "But has she really contributed in any substantial way to influential committees on campus " +
-          "or among her disciplinary peers? All I see is her interest in women's issues."
+          "or among her disciplinary peers? All I see is her interest in women's issues.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1541,12 +2217,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "D3",
+          "id": 47, "statementKey": "D3",
           "speaker": 1,
           "next": "D4",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Given the underrepresentation of women in this field, women's issues are important. " +
-          "It was the president who put her on many of these committees, invitations she could hardly refuse."
+          "It was the president who put her on many of these committees, invitations she could hardly refuse.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1557,11 +2238,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "D4",
+          "id": 48, "statementKey": "D4",
           "speaker": 3,
           "next": "D5",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Her committee work has not been on the department's most important committees, but it's been useful for each committee to have a woman."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Her committee work has not been on the department's most important committees, but it's been useful for each committee to have a woman.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1573,32 +2259,56 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood": "",
         "statement": [
           {
+            "id": 49,
             "statementKey": "D5a",
             "speaker": 0,
             "next": "D6a1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "She has been on about the same number of committees as others. Her local and national service appear fine.She is too focused on only one service issue. I question whether she has made any impact regarding the environment for women.Her service record is excellent. Working on behalf of underrepresented groups is a significant contribution to the field.Service seems like the lowest priority for all of us. I guess hers is ok."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "She has been on about the same number of committees as others. Her local and national service appear fine.She is too focused on only one service issue. I question whether she has made any impact regarding the environment for women.Her service record is excellent. Working on behalf of underrepresented groups is a significant contribution to the field.Service seems like the lowest priority for all of us. I guess hers is ok.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 49,
             "statementKey": "D5b",
             "speaker": 0,
             "next": "Db1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "She is too focused on only one service issue. I question whether she has made any impact regarding the environment for women."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "She is too focused on only one service issue. I question whether she has made any impact regarding the environment for women.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 49,
             "statementKey": "D5c",
             "speaker": 0,
             "next": "D6c",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "Her service record is excellent. Working on behalf of underrepresented groups is a significant contribution to the field."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "Her service record is excellent. Working on behalf of underrepresented groups is a significant contribution to the field.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 49,
             "statementKey": "D5d",
             "speaker": 0,
             "next": "D6d1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "Service seems like the lowest priority for all of us. I guess hers is ok."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "Service seems like the lowest priority for all of us. I guess hers is ok.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           }
         ]
       },
@@ -1609,11 +2319,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "D6a1",
+          "id": 50, "statementKey": "D6a1",
           "speaker": 3,
           "next": "D6a2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Actually, I think she has been on more university-level committees than others who come up for tenure."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Actually, I think she has been on more university-level committees than others who come up for tenure.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1624,11 +2339,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "D6a2",
+          "id": 51, "statementKey": "D6a2",
           "speaker": 1,
           "next": "",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Yes, she has done a better job than most in service and has a mix of average and very good scores in teaching, while she has also made significant national impact in terms of her research. It's clear that her record justifies promotion and tenure."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Yes, she has done a better job than most in service and has a mix of average and very good scores in teaching, while she has also made significant national impact in terms of her research. It's clear that her record justifies promotion and tenure.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1639,11 +2359,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "D6b2",
+          "id": 52, "statementKey": "D6b2",
           "speaker": 3,
           "next": "",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I'm not sure if I do agree, but I don't have time to talk about it now because I have to teach. Kathryn, I guess we have to meet again before we come to a decision."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I'm not sure if I do agree, but I don't have time to talk about it now because I have to teach. Kathryn, I guess we have to meet again before we come to a decision.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1654,11 +2379,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "D6c",
+          "id": 53, "statementKey": "D6c",
           "speaker": 1,
           "next": "",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I think her service is very valuable, like her research and teaching. I see that the majority of us agree that she should be promoted and tenured."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I think her service is very valuable, like her research and teaching. I see that the majority of us agree that she should be promoted and tenured.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1669,11 +2399,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "D6d1",
+          "id": 54, "statementKey": "D6d1",
           "speaker": 2,
           "next": "D6d2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Doesn't it seem like everything is marginal?: mixed teaching scores, ambiguous service, and a research that one of the biggest names in the field thinks is imitative and overblown?"
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Doesn't it seem like everything is marginal?: mixed teaching scores, ambiguous service, and a research that one of the biggest names in the field thinks is imitative and overblown?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1684,11 +2419,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "D6d2",
+          "id": 55, "statementKey": "D6d2",
           "speaker": 3,
           "next": "D6d3",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I disagree with that summary. Kathryn, I think our review should reflect that we are not in accord."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I disagree with that summary. Kathryn, I think our review should reflect that we are not in accord.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1699,11 +2439,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "D6d3",
+          "id": 56, "statementKey": "D6d3",
           "speaker": 1,
           "next": "",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "You and I are more enthusiastic, but three of the four of us see Mansour's record as appropriate for promotion and tenure. I think our letter should be more positive than negative, even though it will accompany a split vote."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "You and I are more enthusiastic, but three of the four of us see Mansour's record as appropriate for promotion and tenure. I think our letter should be more positive than negative, even though it will accompany a split vote.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1714,11 +2459,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "Db1",
+          "id": 57, "statementKey": "Db1",
           "speaker": 2,
           "next": "D6b2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I agree that her service record is marginal, like her teaching. And considering the controversy about her research, don't you both agree that we must turn down her early bid for promotion and tenure?"
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I agree that her service record is marginal, like her teaching. And considering the controversy about her research, don't you both agree that we must turn down her early bid for promotion and tenure?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       }
@@ -1735,14 +2485,19 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "A1",
+          "id": 1, "statementKey": "A1",
           "speaker": 1,  //TODO: need to ask about this. it was previously "chair of unit"
           "next": "B1",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Thanks for agreeing to serve on this year's committee. Among the cases you will consider is Patty Shen's, " +
           "which is unusual in that she is one of the first faculty members to receive a year's leave under the university's " +
           "active service modified duties program. Another reason she is coming up now is because I suggested to Patty," +
-          " and she agreed, that she ought to come up this year and not last because of productivity issues."
+          " and she agreed, that she ought to come up this year and not last because of productivity issues.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1753,11 +2508,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B1",
+          "id": 2, "statementKey": "B1",
           "speaker": 1,
           "next": "B2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "We'll consider Patty Shen's case first. We'll talk about the three general areas--research, teaching, and service. Let's start by considering research first."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "We'll consider Patty Shen's case first. We'll talk about the three general areas--research, teaching, and service. Let's start by considering research first.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1768,13 +2528,18 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B2",
+          "id": 3, "statementKey": "B2",
           "speaker": 2,
           "next": "B3",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "She has a reasonable but not overwhelming number of publications in good journals for a six-year record. " +
           "Are we supposed to take into account all the time she's had to accumulate that record? I guess we don't count " +
-          "pregnancy year, but shouldn't we count the next year?"
+          "pregnancy year, but shouldn't we count the next year?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1785,12 +2550,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B3",
+          "id": 4, "statementKey": "B3",
           "speaker": 3,
           "next": "B4",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "I would say that we wouldn't expect much productivity in the active service modified duties year of leave, " +
-          "but there should be more publications in the following year. So I'm unclear about the one-year delay."
+          "but there should be more publications in the following year. So I'm unclear about the one-year delay.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1801,11 +2571,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B4",
+          "id": 5, "statementKey": "B4",
           "speaker": 1,
           "next": "B5",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I agree with Caroline that Shen has published high quality papers in good journals. The average level of productivity compared with peers and the extra year does raise some questions, but I think there were lingering health problems."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I agree with Caroline that Shen has published high quality papers in good journals. The average level of productivity compared with peers and the extra year does raise some questions, but I think there were lingering health problems.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1816,10 +2591,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B5",
+          "id": 6, "statementKey": "B5",
           "speaker": 2,
           "next": "B6",
-          "image": "../../../assets/perez/perez_panel_1.png", "text": "George, how do you know that?"
+          "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
+          "text": "George, how do you know that?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1830,12 +2611,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B6",
+          "id": 7, "statementKey": "B6",
           "speaker": 1,
           "next": "B7",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "I called the reviewer who was candid about Patty's situation, because she alluded to " +
-          "medical issues in her letter. These appear legitimate."
+          "medical issues in her letter. These appear legitimate.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1846,11 +2632,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B7",
+          "id": 8, "statementKey": "B7",
           "speaker": 3,
           "next": "B8",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I can't believe we didn't know she had medical problems. I'm glad you can explain that."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I can't believe we didn't know she had medical problems. I'm glad you can explain that.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1861,11 +2652,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B8",
+          "id": 9, "statementKey": "B8",
           "speaker": 2,
           "next": "B9",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "If she really had severe medical problems, why didn't she ask for another leave?"
+          "speaker_image": "../../../assets/Al.png",
+          "text": "If she really had severe medical problems, why didn't she ask for another leave?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1876,12 +2672,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B9",
+          "id": 10, "statementKey": "B9",
           "speaker": 1,
           "next": "B10",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Initially, Patty thought it was a minor problem, but it turned out to be more severe. " +
           "The evidence is that she was lined up to do this prestigious talk and had to cancel at the last minute.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1893,32 +2694,56 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood": "",
         "statement": [
           {
+            "id": 11,
             "statementKey": "B10a",
             "speaker": 0,
             "next": "B11a1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "Yes, she had an active services modified duty leave, which provided release from teaching. As the second year off for health problems is not documented, it counts, and we must consider her lack of productivity."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "Yes, she had an active services modified duty leave, which provided release from teaching. As the second year off for health problems is not documented, it counts, and we must consider her lack of productivity.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 11,
             "statementKey": "B10b",
             "speaker": 0,
             "next": "B11b1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "It's hard to discern how productive she'll be in the future now that she's a mother with additional responsibilities. Maybe she has been active lately just to get past the tenure hurdle?"
+            "speaker_image": "../../../assets/Al.png",
+            "text": "It's hard to discern how productive she'll be in the future now that she's a mother with additional responsibilities. Maybe she has been active lately just to get past the tenure hurdle?",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 11,
             "statementKey": "B10c",
             "speaker": 0,
             "next": "B11c1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "She was active and productive before pregnancy and illness. After that, she got back to a productive trajectory, writing journal articles and grant proposals."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "She was active and productive before pregnancy and illness. After that, she got back to a productive trajectory, writing journal articles and grant proposals.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 11,
             "statementKey": "B10d",
             "speaker": 0,
             "next": "B11d1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "Patty's papers and grant proposals are well-received, and she is on the way to getting even more funding. She is on the right track."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "Patty's papers and grant proposals are well-received, and she is on the way to getting even more funding. She is on the right track.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           }
         ]
       },
@@ -1929,11 +2754,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B11a1",
+          "id": 12, "statementKey": "B11a1",
           "speaker": 1,
           "next": "B11a2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I agree that her record is erratic. We know she got a lot of time and didn't produce much."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I agree that her record is erratic. We know she got a lot of time and didn't produce much.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1944,11 +2774,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B11a2",
+          "id": 13, "statementKey": "B11a2",
           "speaker": 3,
           "next": "B11a3",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Well, her overall number of publications and their general quality seem in the range of what others do."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Well, her overall number of publications and their general quality seem in the range of what others do.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1959,12 +2794,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B11a3",
+          "id": 14, "statementKey": "B11a3",
           "speaker": 1,
           "next": "C1",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "I agree, but if only two of the four of us think her research records has met the standards established " +
-          "by the university, then we'll have to indicate this disagreement in our letter."
+          "by the university, then we'll have to indicate this disagreement in our letter.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1975,12 +2815,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B11b1",
+          "id": 15, "statementKey": "B11b1",
           "speaker": 3,
           "next": "B11b2",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Not everyone can crank out the same number of publications every year, given the time delays of some journals. " +
-          "And, as a mother, I think it is possible to work after childbirth."
+          "And, as a mother, I think it is possible to work after childbirth.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -1991,11 +2836,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B11b2",
+          "id": 16, "statementKey": "B11b2",
           "speaker": 2,
           "next": "B11b3",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Susan, I'm not sure Patty will be as productive as you."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Susan, I'm not sure Patty will be as productive as you.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2006,12 +2856,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B11b3",
+          "id": 17, "statementKey": "B11b3",
           "speaker": 1,
           "next": "C1",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "We're digressing, so let's summarize her research record as being adequate, despite certain medical issues. " +
-          "Let's move on to talk about teaching."
+          "Let's move on to talk about teaching.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2022,11 +2877,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B11c1",
+          "id": 18, "statementKey": "B11c1",
           "speaker": 3,
           "next": "B11c2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Patty's research has been good and does appear to be back on track."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Patty's research has been good and does appear to be back on track.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2037,11 +2897,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B11c2",
+          "id": 19, "statementKey": "B11c2",
           "speaker": 1,
           "next": "C1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I agree that her research productivity seems good. Let's consider her teaching."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I agree that her research productivity seems good. Let's consider her teaching.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2052,11 +2917,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B11d1",
+          "id": 20, "statementKey": "B11d1",
           "speaker": 3,
           "next": "B11d2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Yes, it looks like she has good prospects for getting more funding this year. And she has managed to support graduate students."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Yes, it looks like she has good prospects for getting more funding this year. And she has managed to support graduate students.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2067,11 +2937,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "B11d2",
+          "id": 21, "statementKey": "B11d2",
           "speaker": 1,
           "next": "C1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "All in all, her research appears to be very good now and likely to make a big impact. Let's go on to teaching."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "All in all, her research appears to be very good now and likely to make a big impact. Let's go on to teaching.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2082,11 +2957,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C1",
+          "id": 22, "statementKey": "C1",
           "speaker": 3,
           "next": "C2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "All indications are that Patty has been a fine teacher and has done excellent work in the classroom overall."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "All indications are that Patty has been a fine teacher and has done excellent work in the classroom overall.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2097,12 +2977,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C2",
+          "id": 23, "statementKey": "C2",
           "speaker": 2,
           "next": "C3",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "It looks like once she had a child, her teaching scores dipped. During that period her research and her " +
-          "teaching both suffered."
+          "teaching both suffered.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2114,32 +2999,56 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood": "",
         "statement": [
           {
+            "id": 24,
             "statementKey": "C3a",
             "speaker": 0,
             "next": "C4a1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "Comments from students suggest that she's a good teacher and will continue to be so."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "Comments from students suggest that she's a good teacher and will continue to be so.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 24,
             "statementKey": "C3b",
             "speaker": 0,
             "next": "C4b",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "Since there are low scores, I'd say evidence is not definitive regarding her future performance."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "Since there are low scores, I'd say evidence is not definitive regarding her future performance.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 24,
             "statementKey": "C3c",
             "speaker": 0,
             "next": "C4c1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "Teaching scores improved after her illness, but that could be a temporary gain."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "Teaching scores improved after her illness, but that could be a temporary gain.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 24,
             "statementKey": "C3d",
             "speaker": 0,
             "next": "D1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "Because our labs are close, I get to hear what Patty's students say as they are coming and going from seeing her. They seem very impressed with her attention."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "Because our labs are close, I get to hear what Patty's students say as they are coming and going from seeing her. They seem very impressed with her attention.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           }
         ]
       },
@@ -2150,13 +3059,18 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C4a1",
+          "id": 25, "statementKey": "C4a1",
           "speaker": 3,
           "next": "C4a2",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Her teaching scores are at the departmental average above. " +
           "I liked the syllabus and some of the class exercises when I observed her class. " +
-          "Commendation from students included in the package for her teaching award are excellent."
+          "Commendation from students included in the package for her teaching award are excellent.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2167,11 +3081,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C4a2",
+          "id": 26, "statementKey": "C4a2",
           "speaker": 1,
           "next": "D1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Her teaching should be noted as good. What do you think of her service?"
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Her teaching should be noted as good. What do you think of her service?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2182,11 +3101,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C4b",
+          "id": 27, "statementKey": "C4b",
           "speaker": 1,
           "next": "D1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "We're trying to forecast over time. She has demonstrated good teaching in the past, and right now her evaluations are fine. My prediction is she will continue to be a solid teacher. OK, it's time to talk about service."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "We're trying to forecast over time. She has demonstrated good teaching in the past, and right now her evaluations are fine. My prediction is she will continue to be a solid teacher. OK, it's time to talk about service.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2197,11 +3121,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C4c1",
+          "id": 28, "statementKey": "C4c1",
           "speaker": 3,
           "next": "C4c2",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Since she was officially given a changed schedule because of pregnancy and illness, we should not assume she had a lot of extra time."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Since she was officially given a changed schedule because of pregnancy and illness, we should not assume she had a lot of extra time.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2212,12 +3141,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "C4c2",
+          "id": 29, "statementKey": "C4c2",
           "speaker": 1,
           "next": "D1",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Yes, we should not diminish the teaching portfolio she has presented, which is right in " +
-          "line with our general standard. Let's consider service now."
+          "line with our general standard. Let's consider service now.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2228,12 +3162,17 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "D1",
+          "id": 30, "statementKey": "D1",
           "speaker": 2,
           "next": "D2",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "Patty contributed good service earlier, although after her illness she has not continued because of family " +
-          "and health issues. It might be understandable, but is it acceptable if others have to do more?"
+          "and health issues. It might be understandable, but is it acceptable if others have to do more?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2244,11 +3183,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "D2",
+          "id": 31, "statementKey": "D2",
           "speaker": 3,
           "next": "D3",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I think that each of us has different issues at different phases that affect choices of service. She's still working with the center she helped develop and that is useful service."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I think that each of us has different issues at different phases that affect choices of service. She's still working with the center she helped develop and that is useful service.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2260,32 +3204,56 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood": "",
         "statement": [
           {
+            "id": 32,
             "statementKey": "D3a",
             "speaker": 0,
             "next": "D4a",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "Just how important is service anyway? She's certainly made valued contributions."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "Just how important is service anyway? She's certainly made valued contributions.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 32,
             "statementKey": "D3b",
             "speaker": 0,
             "next": "D4b",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "I think everyone who is part of the community ought to do something significant. Her record could be better."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "I think everyone who is part of the community ought to do something significant. Her record could be better.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 32,
             "statementKey": "D3c",
             "speaker": 0,
             "next": "E1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "Her reduction in service imposed costs on everyone else."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "Her reduction in service imposed costs on everyone else.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           },
           {
+            "id": 32,
             "statementKey": "D3d",
             "speaker": 0,
             "next": "E1",
             "image": "../../../assets/perez/perez_panel_1.png",
-            "text": "Her service is acceptable, considering the period of leave and the illness."
+            "speaker_image": "../../../assets/Al.png",
+            "text": "Her service is acceptable, considering the period of leave and the illness.",
+            "reference": [{
+              "url": "",
+              "desc": ""
+            }]
           }
         ]
       },
@@ -2296,11 +3264,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "D4a",
+          "id": 33, "statementKey": "D4a",
           "speaker": 3,
           "next": "E1",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "I agree that Patty's service is better than average."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "I agree that Patty's service is better than average.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2311,10 +3284,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "D4b",
+          "id": 34, "statementKey": "D4b",
           "speaker": 2,
           "next": "E1",
-          "image": "../../../assets/perez/perez_panel_1.png", "text": "It's true that she could have done more."
+          "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
+          "text": "It's true that she could have done more.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2325,15 +3304,20 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "E1",
+          "id": 35, "statementKey": "E1",
           "speaker": 1,
           "next": "E2",
           "image": "../../../assets/perez/perez_panel_1.png",
+          "speaker_image": "../../../assets/Al.png",
           "text": "OK, we need to conclude soon, so we can discuss other cases. Patty's research is reasonable, " +
           "her teaching is acceptable or better, and her service meets the minimum expectation. " +
           "The question before us is whether this \"middle of the road\" profile is at the level required for promotion to tenure. " +
           "We need to turn to external letters in this case to see if they can provide further clarification on the merits of " +
-          "this case."
+          "this case.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2344,11 +3328,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "E2",
+          "id": 36, "statementKey": "E2",
           "speaker": 2,
           "next": "E3",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "The letters go along with that description of her work as average. All of them indicate that she is a solid researcher, but there's nothing earth-shattering noted."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "The letters go along with that description of her work as average. All of them indicate that she is a solid researcher, but there's nothing earth-shattering noted.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2359,11 +3348,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "E3",
+          "id": 37, "statementKey": "E3",
           "speaker": 3,
           "next": "E4",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Caroline, I think that you forgot to mention that one reviewer had nominated a paper of Patty's for a prize, and another letter praised the clarity and efficiency of her publications."
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Caroline, I think that you forgot to mention that one reviewer had nominated a paper of Patty's for a prize, and another letter praised the clarity and efficiency of her publications.",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       },
@@ -2374,11 +3368,16 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "",
         "mood": "",
         "statement": [{
-          "statementKey": "E4",
+          "id": 38, "statementKey": "E4",
           "speaker": 1,
           "next": "",
           "image": "../../../assets/perez/perez_panel_1.png",
-          "text": "Now that I'm looking at the letters again, I see that each reviewer does volunteer that Patty's achievements are worthy of promotion and tenure at his or her research university. I assume we agree?"
+          "speaker_image": "../../../assets/Al.png",
+          "text": "Now that I'm looking at the letters again, I see that each reviewer does volunteer that Patty's achievements are worthy of promotion and tenure at his or her research university. I assume we agree?",
+          "reference": [{
+            "url": "",
+            "desc": ""
+          }]
         }
         ]
       }

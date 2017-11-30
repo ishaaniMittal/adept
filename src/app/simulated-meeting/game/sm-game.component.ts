@@ -8,14 +8,34 @@ import {MainPageService} from "../main-page/main-page.service";
 import {CvDialogComponent} from "../cv-dialog/cv-dialog.component";
 import {MatDialog} from "@angular/material";
 import {CaseStudyDialogComponent} from "../casestudy-dialog/casestudy-dialog.component";
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+} from '@angular/animations';
 
 @Component({
   selector: 'sm-game',
   templateUrl: './sm-game.component.html',
-  styleUrls: ['./sm-game.component.css']
+  styleUrls: ['./sm-game.component.css'],
+  animations: [
+    trigger('heroState', [
+      state('inactive', style({
+        transform: 'translateX(100%)'
+      })),
+      state('active', style({
+        transform: 'translateX(-100%)'
+      })),
+      transition('* => active', animate('100ms ease-in')),
+      transition('active => *', animate('100ms ease-out'))
+    ])
+  ]
 })
 
 export class SimulatedMeetingComponent implements OnInit {
+  state:string;
   progressValue:number;
   progressStep:number;
   answer:{
@@ -37,20 +57,24 @@ export class SimulatedMeetingComponent implements OnInit {
     currentDialogSpeaker:number,
     currentDialogStatementKey:string,
     nextDialogStatementKey:string,
-    panelImage:string
+    panelImage:string,
+    speaker_image:string,
+    currentId:number
   };
   dialogSequence:[{
     currentDialogContent:string,
     currentDialogSpeaker:number,
     currentDialogStatementKey:string,
     nextDialogStatementKey:string,
-    panelImage:string
+    panelImage:string,
+    speaker_image:string,
+    currentId:number
   }];
+  currentId:number;
   currentDialogContent:string;
   currentDialogSpeaker:number;
   currentDialogStatementKey:string;
   nextDialogStatementKey:string;
-  previousDialogStatementKey:string;
   service:SMGameService;
   answerOptions:[
     {
@@ -79,6 +103,7 @@ export class SimulatedMeetingComponent implements OnInit {
     this.states = [];
     this.id = +this.route.snapshot.paramMap.get('id');
     this.selectedPanelist = this.id - 1;
+    this.state = 'inactive';
     this.getDialoguesForPanelist();
     this.getCandidate();
   }
@@ -94,9 +119,7 @@ export class SimulatedMeetingComponent implements OnInit {
     this.service.getDialogues().then(dialoges=> {
       this.dialoges = dialoges;
       this.dialogesForPanelist = this.dialoges[this.selectedPanelist];
-      console.log("selectedPanelist" + this.selectedPanelist);
-      //    this.previousDialogStatementKey = null;
-
+      this.currentId = this.dialogesForPanelist.conversation[0].statement[0].id;
       this.currentDialogStatementKey = this.dialogesForPanelist.conversation[0].statementKey;
       this.currentDialogContent = this.dialogesForPanelist.conversation[0].statement[0].text;
       this.currentDialogSpeaker = this.dialogesForPanelist.conversation[0].speaker;
@@ -113,18 +136,12 @@ export class SimulatedMeetingComponent implements OnInit {
       })
       ;
       this.progressStep = 100 / this.dialogesForPanelist.conversation.length;
-      console.log("this.currentDialogStatementKey " + this.currentDialogStatementKey);
-      console.log("this.currentDialogContent " + this.currentDialogContent);
-      console.log("this.currentDialogSpeaker " + this.currentDialogSpeaker);
-      console.log("nextDialogStatementKey " + this.nextDialogStatementKey);
+      this.progressValue = this.currentId * this.progressStep;
     });
   }
 
 
   clickOnNextButton():void {
-    this.progressValue = this.progressValue + this.progressStep;
-    // this.answerOptions = null;
-    // this.previousDialogStatementKey = this.currentDialogStatementKey;
     this.currentDialogStatementKey = this.nextDialogStatementKey;
 
     this
@@ -136,6 +153,8 @@ export class SimulatedMeetingComponent implements OnInit {
     this.answerOptions = [];
     for (let conversation of this.dialogesForPanelist.conversation) {
       if (conversation.statementKey === this.currentDialogStatementKey) {
+        this.currentId = conversation.statement[0].id;
+        this.progressValue = this.currentId * this.progressStep;
         this.currentDialogContent = conversation.statement[0].text;
         this.currentDialogSpeaker = conversation.speaker;
         this.nextDialogStatementKey = conversation.statement[0].next;
@@ -149,40 +168,32 @@ export class SimulatedMeetingComponent implements OnInit {
       }
 
     }
-
-    console.log("this.currentDialogStatementKey " + this.currentDialogStatementKey);
-    console.log("this.currentDialogContent " + this.currentDialogContent);
-    console.log("this.currentDialogSpeaker " + this.currentDialogSpeaker);
-    console.log("nextDialogStatementKey " + this.nextDialogStatementKey);
     console.log(this.answerOptions);
-    
+
     this.dialogSequence.push({
       "currentDialogContent": this.currentDialogContent,
       "currentDialogSpeaker": this.currentDialogSpeaker,
       "currentDialogStatementKey": this.currentDialogStatementKey,
       "nextDialogStatementKey": this.nextDialogStatementKey,
-      "panelImage": this.panelImage
-    });
+      "panelImage": this.panelImage,
+      "currentId": this.currentId
+    })
+    ;
   }
 
   clickOnBackButton():void {
-    // this.answerOptions = [];
     console.log(this.dialogSequence);
     this.dialogSequence.pop();
 
     const previousDialog = this.dialogSequence.pop();
 
     console.log(previousDialog);
-    this.progressValue = this.progressValue - this.progressStep;
     this.nextDialogStatementKey = previousDialog.nextDialogStatementKey;
     this.currentDialogStatementKey = previousDialog.currentDialogStatementKey;
     this.createOptionsList();
   }
 
   submitAnswer():void {
-    // this.answerOptions = [];
-    this.progressValue = this.progressValue + this.progressStep;
-    // this.previousDialogStatementKey = this.currentDialogStatementKey;
     this.currentDialogStatementKey = this.answer.next;
     this.createOptionsList();
   }
@@ -200,4 +211,11 @@ export class SimulatedMeetingComponent implements OnInit {
     instance.selectedCandidate = this.candidate;
   }
 
+  toggleState() {
+    this.state = this.state === 'active' ? 'inactive' : 'active';
+  }
+
+  goBack() {
+    this.router.navigate(['/simulated-meeting']);
+  }
 }

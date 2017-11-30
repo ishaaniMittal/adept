@@ -14,10 +14,11 @@ import {SimulatedMeetingComponent} from "./simulated-meeting/game/sm-game.compon
 import {SMGameService} from "./simulated-meeting/game/sm-game.service";
 import {FormsModule} from "@angular/forms";
 import {PanelistDialogComponent} from "./simulated-meeting/panelist-dialog/panelist-dialog.component";
-import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-browser/animations";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {CvDialogComponent} from "./simulated-meeting/cv-dialog/cv-dialog.component";
 import {CaseStudyDialogComponent} from "./simulated-meeting/casestudy-dialog/casestudy-dialog.component";
 import {MatProgressBarModule} from "@angular/material";
+import {SimulatedMeetingTranscriptComponent} from "./simulated-meeting/game/transcript/sm-transcript.component";
 
 
 
@@ -29,7 +30,8 @@ import {MatProgressBarModule} from "@angular/material";
     SimulatedMeetingComponent,
     PanelistDialogComponent,
     CvDialogComponent,
-    CaseStudyDialogComponent
+    CaseStudyDialogComponent,
+    SimulatedMeetingTranscriptComponent
 
   ],
   entryComponents:[

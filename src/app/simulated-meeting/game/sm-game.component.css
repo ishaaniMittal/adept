@@ -389,3 +389,14 @@
   font-size: 16px;
   width: 87%;
 }
+
+.transcript {
+  font-size: 20px;
+  writing-mode: vertical-rl;
+  text-align: center;
+  color: white;
+}
+
+.back-to-main-page:hover {
+  cursor: pointer;
+}

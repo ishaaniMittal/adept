@@ -1,4 +1,9 @@
-<h2 mat-dialog-title>{{name}}</h2>
-<mat-dialog-content>
-  {{description}}
-</mat-dialog-content>
+<div *ngFor="let member of committee_members">
+  <h2 mat-dialog-title>{{member.name}}</h2>
+  <mat-dialog-content>
+    {{member.description}}
+  </mat-dialog-content>
+  <br>
+  <br>
+  <br>
+</div>
