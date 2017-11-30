@@ -15,6 +15,7 @@ import {
   animate,
   transition
 } from '@angular/animations';
+import {PanelistDialogComponent} from "../panelist-dialog/panelist-dialog.component";
 
 @Component({
   selector: 'sm-game',
@@ -198,6 +199,11 @@ export class SimulatedMeetingComponent implements OnInit {
     this.createOptionsList();
   }
 
+  openPanelistBio() {
+    const dialogRef = this.dialog.open(PanelistDialogComponent, {});
+    const instance = dialogRef.componentInstance;
+    instance.committee_members = this.candidate.committee_members;
+  }
 
   openCvDialog() {
     const dialogRef = this.dialog.open(CvDialogComponent, {});

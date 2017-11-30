@@ -86,7 +86,7 @@
         <img src="../../../assets/logo_sm.png" class="logo">
         <hr style="margin-top: 20px;">
         <div style="font-size: 16px;"><b>YOU ARE: </b>PANELIST 4</div>
-        <button class="button-blue">
+        <button class="button-blue" (click)="openPanelistBio()">
           PANELISTS BIO
         </button>
         <hr style="margin-top: 20px;">
@@ -149,10 +149,11 @@
           </div>
         </div>
         <div *ngIf="currentDialogSpeaker!=0" class="control-panel">
-          <button *ngIf="currentId!=dialogesForPanelist.conversation.length" class="control-button"
+          <button *ngIf="dialogesForPanelist!=null && currentId!=dialogesForPanelist.conversation.length"
+                  class="control-button"
                   (click)="clickOnNextButton()"><img
             src="../../../assets/right-arrow.png" style="padding:5px;width:24px;"></button>
-          <button *ngIf="currentId!=1" class="control-button"
+          <button *ngIf="dialogesForPanelist!=null && currentId!=1" class="control-button"
                   (click)="clickOnBackButton()"><img
             src="../../../assets/left-arrow.png" style="padding:5px;width:24px;"></button>
 
