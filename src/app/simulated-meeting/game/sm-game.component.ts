@@ -16,6 +16,7 @@ import {
   transition
 } from '@angular/animations';
 import {PanelistDialogComponent} from "../panelist-dialog/panelist-dialog.component";
+import {SimulatedMeetingTranscriptComponent} from "./transcript/sm-transcript.component";
 
 @Component({
   selector: 'sm-game',
@@ -33,6 +34,7 @@ export class SimulatedMeetingComponent implements OnInit {
     "text":string;
   };
   panelImage:string;
+  speakerImage:string;
   candidates:Candidate[];
   selectedCandidate:Candidate;
   router:Router;
@@ -47,13 +49,21 @@ export class SimulatedMeetingComponent implements OnInit {
     nextDialogStatementKey:string,
     panelImage:string,
     speaker_image:string,
-    currentId:number
+    currentId:number,
+    reference:[{
+      url:string,
+      desc:string
+    }]
   }];
   currentId:number;
   currentDialogContent:string;
   currentDialogSpeaker:number;
   currentDialogStatementKey:string;
   nextDialogStatementKey:string;
+  reference:[
+    {url:string,
+      desc:string}
+    ];
   service:SMGameService;
   answerOptions:[
     {
@@ -101,6 +111,8 @@ export class SimulatedMeetingComponent implements OnInit {
       this.currentDialogSpeaker = this.dialogesForPanelist.conversation[0].speaker;
       this.nextDialogStatementKey = this.dialogesForPanelist.conversation[0].statement[0].next;
       this.panelImage = this.dialogesForPanelist.conversation[0].statement[0].image;
+      this.reference = this.dialogesForPanelist.conversation[0].statement[0].reference;
+      this.speakerImage = this.dialogesForPanelist.conversation[0].statement[0].speaker_image;
       this.answerOptions = [];
       this.dialogSequence = [];
       this.dialogSequence.push({
@@ -108,7 +120,9 @@ export class SimulatedMeetingComponent implements OnInit {
         "currentDialogSpeaker": this.currentDialogSpeaker,
         "currentDialogStatementKey": this.currentDialogStatementKey,
         "nextDialogStatementKey": this.nextDialogStatementKey,
-        "panelImage": this.panelImage
+        "panelImage": this.panelImage,
+        "reference": this.reference,
+        "speaker_image": this.speakerImage
       })
       ;
       this.progressStep = 100 / this.dialogesForPanelist.conversation.length;
@@ -118,6 +132,9 @@ export class SimulatedMeetingComponent implements OnInit {
 
 
   clickOnNextButton():void {
+    if (this.currentId === this.dialogesForPanelist.conversation.length) {
+      this.openTranscriptDialog();
+    }
     this.currentDialogStatementKey = this.nextDialogStatementKey;
 
     this
@@ -135,6 +152,8 @@ export class SimulatedMeetingComponent implements OnInit {
         this.currentDialogSpeaker = conversation.speaker;
         this.nextDialogStatementKey = conversation.statement[0].next;
         this.panelImage = conversation.statement[0].image;
+        this.reference = conversation.statement[0].reference;
+        this.speakerImage = conversation.statement[0].speaker_image;
         if (conversation.statement.length != 1) {
           this.currentDialogContent = null;
           for (let i of conversation.statement) {
@@ -144,7 +163,6 @@ export class SimulatedMeetingComponent implements OnInit {
       }
 
     }
-    console.log(this.answerOptions);
 
     this.dialogSequence.push({
       "currentDialogContent": this.currentDialogContent,
@@ -152,7 +170,9 @@ export class SimulatedMeetingComponent implements OnInit {
       "currentDialogStatementKey": this.currentDialogStatementKey,
       "nextDialogStatementKey": this.nextDialogStatementKey,
       "panelImage": this.panelImage,
-      "currentId": this.currentId
+      "currentId": this.currentId,
+      "reference": this.reference,
+      "speaker_image": this.speakerImage
     })
     ;
   }
@@ -170,8 +190,31 @@ export class SimulatedMeetingComponent implements OnInit {
   }
 
   submitAnswer():void {
+    this.currentDialogContent = this.answer.text;
+
+    this.dialogSequence.pop();
+    this.dialogSequence.push({
+      "currentDialogContent": this.currentDialogContent,
+      "currentDialogSpeaker": 0,
+      "currentDialogStatementKey": this.currentDialogStatementKey,
+      "nextDialogStatementKey": this.nextDialogStatementKey,
+      "panelImage": this.panelImage,
+      "currentId": this.currentId,
+      "reference": this.reference,
+      "speaker_image": this.speakerImage
+    })
+    ;
     this.currentDialogStatementKey = this.answer.next;
     this.createOptionsList();
+  }
+
+  openTranscriptDialog() {
+    const dialogRef = this.dialog.open(SimulatedMeetingTranscriptComponent, {});
+    const instance = dialogRef.componentInstance;
+    instance.dialogSequence = this.dialogSequence;
+    instance.name = this.candidate.name;
+    instance.currentId = this.currentId;
+    instance.maxLength = this.dialogesForPanelist.conversation.length;
   }
 
   openPanelistBio() {

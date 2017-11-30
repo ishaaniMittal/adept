@@ -1,4 +1,5 @@
 import {Component, OnInit} from "@angular/core";
+import {SMDialog} from "../../sm-dialog";
 
 @Component({
   selector: 'sm-transcript',
@@ -6,16 +7,33 @@ import {Component, OnInit} from "@angular/core";
   styleUrls: ['./sm-transcript.component.css']
 })
 
-export class SimulatedMeetingTranscriptComponent implements OnInit {
+export class SimulatedMeetingTranscriptComponent {
   name:string;
-  dialogSequence:[{ currentDialogContent:string,
+  maxLength:number;
+  currentId;
+  dialogSequence:[{
+    currentDialogContent:string,
     currentDialogSpeaker:number,
     currentDialogStatementKey:string,
     nextDialogStatementKey:string,
     panelImage:string,
-    speaker_image:string}];
+    speaker_image:string,
+    currentId:number,
+    reference:[{
+      url:string,
+      desc:string
+    }],
+    clicked:boolean
+  }];
 
-  constructor() {
 
+  changeState(dialog:SMDialog) {
+    console.log(dialog);
+    if (dialog.clicked == true) {
+      dialog.clicked = false;
+    }
+    else if (dialog.clicked == null || dialog.clicked == false)
+      dialog.clicked = true;
   }
+
 }

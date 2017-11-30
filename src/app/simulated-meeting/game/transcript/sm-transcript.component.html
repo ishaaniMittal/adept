@@ -1,28 +1,44 @@
-<div class="row">
-  <div class="col-md-9">
-    <div class="title">Simulated Meeting Transcript: {{name}}
-      <hr>
-    </div>
+<h2 mat-dialog-title>Simulated Meeting Transcript: {{name}}</h2>
+<h5 style="font-size:12px;font-weight:300;"><i>Return to this transcript at the end of the game to see references.</i>
+</h5>
+<hr>
 
-    <div>
-      <div class="row" *ngFor="let dialog of dialogSequence">
-        <div *ngIf="dialog.currentDialogSpeaker!=0">
-          <div class="col-md-1">
-            <img [src]=dialog.speaker_image>
-          </div>
-          <div class="col-md-6">
-            {{dialog.currentDialogContent}}
-          </div>
-        </div>
-        <div *ngIf="dialog.currentDialogSpeaker==0">
-          <div class="col-md-offset-3 col-md-1">
-            <img [src]=dialog.speaker_image>
-          </div>
-          <div class="col-md-6">
-            {{dialog.currentDialogContent}}
+<mat-dialog-content>
+  <div>
+    <div class="row" *ngFor="let dialog of dialogSequence">
+
+      <div *ngIf="dialog.currentDialogSpeaker!=0" class="col-md-1">
+        <img [src]=dialog.speaker_image class="image">
+      </div>
+      <div *ngIf="dialog.currentDialogSpeaker!=0" class="col-md-8 dialog" style="border-color: #0D3055"
+           (click)="changeState(dialog)">
+        {{dialog.currentDialogContent}}
+        <!---->
+        <img *ngIf="currentId==maxLength && dialog.reference[0].desc.length!=0" src="../../../../assets/info.png"
+             style="position: absolute;right: 10px;top: 6px;width:15px;height:15px;">
+
+        <div *ngIf="dialog.clicked==true" style="font-size: 12px;
+    padding-bottom: 10px;
+    padding-top: 10px;">
+          <div *ngFor="let reference of dialog.reference">
+
+            <div *ngIf="reference.url!=null"><a href={{reference.url}}><i>{{reference.desc}}</i></a>
+            </div>
+            <div *ngIf="reference.url==null"><i>{{reference.desc}}</i>
+
+            </div>
           </div>
         </div>
       </div>
+
+      <div *ngIf="dialog.currentDialogSpeaker==0" class="offset-md-5 col-md-6 dialog" style="border-color: #EFB211">
+        {{dialog.currentDialogContent}}
+      </div>
+      <div *ngIf="dialog.currentDialogSpeaker==0" class=" col-md-1">
+        <img [src]=dialog.speaker_image class="image">
+      </div>
     </div>
   </div>
-</div>
+</mat-dialog-content>
+
+

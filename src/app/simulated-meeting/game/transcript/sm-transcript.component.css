@@ -1,3 +1,22 @@
 .title {
 
 }
+
+.dialog {
+  min-height: 50px;
+  text-align: left;
+  /* width: inherit; */
+  border-radius: 5px;
+  border: solid;
+  border-color: #979797;
+  border-width: 1px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2), 0 1px 0px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+}
+
+.image{
+  height:40px;
+  width:40px;
+}

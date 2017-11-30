@@ -1087,7 +1087,8 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": ", smirking, said",
         "mood": "smirk",
         "statement": [{
-          "id": 40, "statementKey": "D6d2",
+          "id": 40,
+          "statementKey": "D6d2",
           "speaker": 2,
           "next": "E1c",
           "image": "../../../assets/perez/perez_panel_2.png",
@@ -1111,7 +1112,8 @@ export const SMDIALOGUES:SMDialogue[] = [
         "mood-phrase": "said arrogantly",
         "mood": "arrogant",
         "statement": [{
-          "id": 43, "statementKey": "E1a",
+          "id": 43,
+          "statementKey": "E1a",
           "speaker": 1,
           "next": "",
           "image": "../../../assets/perez/perez_panel_1.png",

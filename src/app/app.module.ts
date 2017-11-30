@@ -37,7 +37,8 @@ import {SimulatedMeetingTranscriptComponent} from "./simulated-meeting/game/tran
   entryComponents:[
     PanelistDialogComponent,
     CvDialogComponent,
-    CaseStudyDialogComponent
+    CaseStudyDialogComponent,
+    SimulatedMeetingTranscriptComponent
   ],
   imports: [
     AppRoutingModule,
