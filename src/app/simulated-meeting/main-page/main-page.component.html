@@ -2,11 +2,11 @@
   <div class="row" style="width:100%;">
     <div class="col-md-3 left-panel">
       <div style="margin-left: 30px; margin-right:20px;">
-        <img src="../../../assets/logo_sm.png" class="logo">
+       <img src="../../../assets/logo_sm.png" class="logo">
         <hr style="margin-top: 20px;">
-        <div style="font-size: 16px;"><b>YOU ARE: </b>PANELIST 4</div>
+        <div style="font-size: 16px;"><b>YOU ARE: </b>Committee Member 4</div>
         <button class="button-blue" (click)="openDialog()">
-          PANELISTS BIO
+          COMMITTEE MEMBERS' BIO
         </button>
         <hr style="margin-top: 20px;">
 
@@ -48,7 +48,7 @@
         -->
         <button class="back-to-main-page" (click)="goBack()">
           <span style="text-align: center;"><img src="./../../../assets/left-arrow.svg"
-                                                                 style="width:20px;height:20px;"> &nbsp;BACK TO MAIN PAGE</span>
+                                                 style="width:20px;height:20px;"> &nbsp;BACK TO MAIN PAGE</span>
         </button>
       </div>
     </div>
@@ -86,6 +86,9 @@
           <div class="row">
             <div *ngIf="selectedCandidate!=null" class="col-md-5 col-lg-5 view-details" (click)="openCvDialog()">
               <div class="">
+                <div class="button" style="background-color: #0D3055;">
+                  <span style="color: white;font-size: 16px;margin-left:10px;">View Curriculum Vitae</span>
+                </div>
                 <div style="margin-top:18px;">
 
                   <ul>
@@ -94,24 +97,23 @@
                   </ul>
 
                 </div>
-                <div class="button" style="background-color: #0D3055;">
-                  <span style="color: white;font-size: 16px;margin-left:10px;">View Curriculum Vitae</span>
-                </div>
+
               </div>
             </div>
             <div *ngIf="selectedCandidate!=null" class="col-md-5 col-lg-5 view-details" (click)="openCasestudyDialog()">
               <div class="">
-                <div class="truncate" style="margin-top:18px;">
-                  {{selectedCandidate.career_account[0]}}
-                </div>
                 <div class="button" style="background-color: #EFB211;">
                   <span style="color: white;font-size: 16px;text-align: center;margin-left:10px;">View Case Study</span>
                 </div>
+                <div class="truncate" style="margin-top:18px;">
+                  {{selectedCandidate.career_account[0]}}
+                </div>
+
               </div>
             </div>
           </div>
           <div class="read-about-fellows" *ngIf="selectedCandidate!=null">
-            <div class="header" style="margin-top: 20px;">Read about your fellow panelists</div>
+            <div class="header" style="margin-top: 20px;">Read about your fellow committee members</div>
             <div class="row" style="margin-right:0px;">
               <div class="col-md-4 col-lg-4"
                    *ngFor="let committee_member of selectedCandidate.committee_members"

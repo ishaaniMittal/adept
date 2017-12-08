@@ -8,13 +8,6 @@ import {MainPageService} from "../main-page/main-page.service";
 import {CvDialogComponent} from "../cv-dialog/cv-dialog.component";
 import {MatDialog} from "@angular/material";
 import {CaseStudyDialogComponent} from "../casestudy-dialog/casestudy-dialog.component";
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition
-} from '@angular/animations';
 import {PanelistDialogComponent} from "../panelist-dialog/panelist-dialog.component";
 import {SimulatedMeetingTranscriptComponent} from "./transcript/sm-transcript.component";
 

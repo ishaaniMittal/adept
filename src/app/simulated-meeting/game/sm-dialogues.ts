@@ -139,7 +139,7 @@ export const SMDIALOGUES:SMDialogue[] = [
           "image": "../../../assets/perez/perez_panel_1.png",
 
           "speaker_image": "../../../assets/Al.png",
-          "text": "Gentlemen, the real issue is that Perez hasn't a clue about what our primary thrusts in materials are. He's riding the coattails of chemistry with interdisciplinary funding from NSF and I'm not sure how hard that is to get. He isn't project director on any grants listed on the c.v.",
+          "text": "Perez hasn't a clue about our primary thrusts in materials. He's riding the coattails of chemistry with interdisciplinary NSF funding, which isn't hard to get, and he isn't project director on any grants on the c.v.",
           "reference": [{
             "url": "",
             "desc": "Perceptions of responsibility for success are affected by perceptions of past success."
@@ -172,7 +172,7 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "B5",
           "image": "../../../assets/perez/perez_panel_3.png",
           "speaker_image": "../../../assets/KK.png",
-          "text": "You shouldn't discount big grants because they are interdisciplinary. Look,he's published in highly respectable journals and has six graduate students, including four PhD students. There must be some technical 'meat' in his work.",
+          "text": "Don't discount big grants because they are interdisciplinary. He's published in highly respected journals and has six graduate students, including four PhD students. There's technical 'meat' in his work.",
           "reference": [{
             "url": "",
             "desc": "Rankings of journals (determined by researchers in field) and unit expectations of external funding ought to be communicated to candidates and committee members."
@@ -246,7 +246,7 @@ export const SMDIALOGUES:SMDialogue[] = [
             "speaker": 0,
             "next": "B7c",
             "speaker_image": "../../../assets/JP.png",
-            "text": "Forming bridges to other disciplines is as important as bringing money into our department. The number of interdisciplinary grants confirms the value of his research.",
+            "text": "Forming bridges to other disciplines is as important as bringing money in. The number of interdisciplinary grants confirms the value of his research.",
             "reference": [{
               "url": "",
               "desc": ""
@@ -278,7 +278,9 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "B7a2",
           "image": "../../../assets/perez/perez_panel_1.png",
           "speaker_image": "../../../assets/Al.png",
-          "text": "He's publishing in chemistry journals more than engineering journals. I am the leading researcher in the same area of engineering he worked on in his graduate and post doc years. But I just don't see a prospect for collaborating with him now.",
+          "text": "He's publishing in chemistry journals more than engineering journals. " +
+          "I am the leading researcher in the same area of engineering he was in as a grad " +
+          "student and post doc. But I won't collaborate with him now.",
           "reference": [{
             "url": "",
             "desc": "Credit and rewards for participating in interdisciplinary teams are not always well established."
@@ -349,8 +351,8 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "C1",
           "image": "../../../assets/perez/perez_panel_1.png",
           "speaker_image": "../../../assets/Al.png",
-          "text": "Kulver, he's in a niche area that might be attractive right now, but it's not one that a lot of us in materials will soon care about. This part of our letter should say his " +
-          "record is not persuasive regarding his long-term funding potential. Agreed?",
+          "text": "He's in a niche area that might be attractive now, but a lot of us in materials don't care about it. " +
+          "Our letter should say his record is not persuasive regarding his long-term funding potential. Agreed?",
           "reference": [{
             "url": "",
             "desc": "Candidates should understand that interdisciplinary scholarship is not always highly regarded by colleagues."
@@ -423,10 +425,9 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "C1",
           "image": "../../../assets/perez/perez_panel_3.png",
           "speaker_image": "../../../assets/KK.png",
-          "text": "Perez's joint NSF grant and industry funding together are impressive, given that this is a hot new area. " +
-          "The collaboration outside the school and college is good because it leads to increased opportunities and " +
-          "leveraging of new monies to support materials engineering-related work. Perez is mining a vein that has " +
-          "incredible potential, one that can pay off for many of us, and our letter should reward his effort.",
+          "text": "Perez's NSF and industry funding are impressive." +
+          " External collaboration in a hot area is good, with more opportunities and new monies " +
+          "for materials engineering. He has incredible potential, and our letter should reward his effort.",
           "reference": [{
             "url": "",
             "desc": "Interdisciplinary teaming can attract funding and provide momentum for funding proposals and publications."
@@ -469,10 +470,9 @@ export const SMDIALOGUES:SMDialogue[] = [
           "image": "../../../assets/perez/perez_panel_3.png",
 
           "speaker_image": "../../../assets/KK.png",
-          "text": "His teaching scores are pretty good. Look at these evaluations for that intro course. " +
-          "He did as well as any other assistant professor and better than most.  " +
-          "I notice that he team teaches a course on surface chemistry with several other faculty, " +
-          "so it is very hard to judge the quality of his instruction.",
+          "text": "His teaching evaluations are better than most assistant professors in the intro course. " +
+          "He team teaches a course on surface chemistry with other faculty, " +
+          "so it's hard to judge the quality of his instruction.",
           "reference": [{
             "url": "",
             "desc": "Teaching scores are not always highly regarded by faculty evaluators."
@@ -497,10 +497,8 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "C4",
           "image": "../../../assets/perez/perez_panel_2.png",
           "speaker_image": "../../../assets/JD.png",
-          "text": "Who knows how effective he really was until we get those intro students in major courses? " +
-          "Does Perez have high numbers because he caters to students'sense of humor?  " +
-          "I've heard he shows clips from the web at the beginning of each lecture, " +
-          "some of them not very related to his lecture material. Sometimes students mistake that for good teaching.",
+          "text": "Did those intro students really learn? Does Perez have high numbers because he is amusing? " +
+          "I heard he shows unrelated clips from the web in class. Sometimes students mistake that for good teaching.",
           "reference": [{
             "url": "",
             "desc": "Various studies on student evaluations report how stereotypes, expectations, student resistance to course content, and interactions affect scores."
@@ -524,9 +522,9 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "C5",
           "image": "../../../assets/perez/perez_panel_1.png",
           "speaker_image": "../../../assets/Al.png",
-          "text": "Yes, if he is concerned about teaching, he ought to encourage retention of majors and appropriate pedagogies." +
-          " I don't see evidence supporting his ability to attract students in materials. Who knows, as Jason says, " +
-          "what's really going on in the classroom.",
+          "text": "If he's concerned about teaching, he ought to use appropriate pedagogies. " +
+          "I don't see evidence of his ability to retain students in materials. " +
+          "As Jason says, what's really going on in the classroom?",
           "reference": [{
             "url": "",
             "desc": "Committee members should calibrate their differing expectations of what qualifies as good teaching."
@@ -627,7 +625,9 @@ export const SMDIALOGUES:SMDialogue[] = [
             "next": "C8c",
             "image": "",
             "speaker_image": "../../../assets/JP.png",
-            "text": "Al, you don't like Perez because he disagrees with you about team teaching. You think every man should take of himself about teaching, while he argues for the value of faculty team-teaching intro courses. Based on the summaries of senior exit interviews provided in the dossier, Perez appears to be a gifted teacher.",
+            "text": "Al, you don't like that Perez argues for faculty team-teaching " +
+            "intro courses instead of solo teaching. Based on the summaries of senior exit " +
+            "interviews provided in the dossier, Perez appears to be a gifted teacher.",
             "reference": [{
               "url": "",
               "desc": ""
@@ -640,7 +640,9 @@ export const SMDIALOGUES:SMDialogue[] = [
             "next": "C8d",
             "image": "",
             "speaker_image": "../../../assets/JP.png",
-            "text": "But we shouldn't directly compare cases.  Each case is unique and with its own merits.  Perez has documented effective teaching by including the exit interviews, evaluation scores, and student letters supporting an external teaching award. [best practices document]",
+            "text": "We shouldn't directly compare cases because each has its own merits. " +
+            " Perez documents effective teaching by including exit interviews, " +
+            "evaluation scores, and student letters supporting an external teaching award. ",
             "reference": [{
               "url": "",
               "desc": ""
@@ -707,9 +709,9 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "D1",
           "image": "../../../assets/perez/perez_panel_1.png",
           "speaker_image": "../../../assets/Al.png",
-          "text": "Team-teaching is too cumbersome to work in the intro course, " +
-          "and I worry about superficial treatment at that stage. But if you all agree that Perez " +
-          "deserves high marks for teaching. I'll go along with noting his high teaching evaluation scores.",
+          "text": " Team-teaching is too cumbersome to work in the intro course. " +
+          "But if you all agree that Perez deserves high marks for teaching, " +
+          "I'll go along with noting his high teaching evaluation scores.",
           "reference": [{
             "url": "",
             "desc": "Evaluators ought to avoid injecting personal bias into deliberations."
@@ -783,10 +785,9 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "D3",
           "image": "../../../assets/perez/perez_panel_1.png",
           "speaker_image": "../../../assets/Al.png",
-          "text": "I see that too. In fact, the engineering education piece Perez wrote focuses on education of minorities." +
-          " I know there are a lot of programs coming out of Washington to support this kind of thing, " +
-          "but I don't see much evidence that he has tried to attract funding along those lines.  " +
-          " But that's probably fine, as you often can't do that at the expense of being a first rate researcher.",
+          "text": "I see that too. Perez wrote about minority engineering education. " +
+          "I don't see that he has tried to get funding along those lines.   " +
+          "But that's probably fine. You can't do that at the expense of first rate research.",
           "reference": [{
             "url": "",
             "desc": "Evaluators should clarify the relative importance of funding and quantity and quality of publications."
@@ -810,9 +811,8 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "D4",
           "image": "../../../assets/perez/perez_panel_2.png",
           "speaker_image": "../../../assets/JD.png",
-          "text": "Yeah, research is based purely on merit. You've got to deliver the goods before you get any " +
-          "respect. Bring in the money, attract attention from students. We need more people who make technical " +
-          "contributions rather than write scholarly articles about lack of opportunities.",
+          "text": "Yeah, research is based on merit. To get respect, you need to bring in money, attract student attention." +
+          " People should make technical contributions rather than write articles about lack of opportunities.",
           "reference": [{
             "url": "",
             "desc": "Standards reflect cultural norms of engineering schools."
@@ -888,7 +888,8 @@ export const SMDIALOGUES:SMDialogue[] = [
             "next": "D6c1",
             "image": "",
             "speaker_image": "../../../assets/JP.png",
-            "text": "I agree with Karen that consideration of ethnicity or minority issues has no place in this discussion or in our dealings with Perez. He ought be commended for taking on the service of minority recruitment into engineering and excelling in everything else he does.",
+            "text": "I agree with Karen that consideration of ethnicity or minority issues has no place in this discussion. " +
+            "We should thank him for caring about minority recruitment in engineering and excelling in everything he does.",
             "reference": [{
               "url": "",
               "desc": ""
@@ -901,7 +902,8 @@ export const SMDIALOGUES:SMDialogue[] = [
             "next": "D6d1",
             "image": "",
             "speaker_image": "../../../assets/JP.png",
-            "text": "Karen is right. The engineering education essay is a relevant piece of scholarship as it concerns an innovative curriculum in light of ABET 2000.  It appears in a reputable journal and provides some insight into the kind of balance in Perez's repertoire.",
+            "text": "Karen is right. The engineering education essay is relevant as it concerns an innovative curriculum for ABET. " +
+            " It appears in a reputable journal and provides some insight into the kind of balance in Perez's repertoire.",
             "reference": [{
               "url": "",
               "desc": ""
@@ -1068,7 +1070,7 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "D6d2",
           "image": "../../../assets/perez/perez_panel_1.png",
           "speaker_image": "../../../assets/Al.png",
-          "text": "I hadn't noticed it had anything to do with ABET2000.",
+          "text": "I hadn't noticed it had anything to do with ABET.",
           "reference": [{
             "url": "",
             "desc": "Evaluators should carefully read documents in dossier."
@@ -1093,7 +1095,7 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "E1c",
           "image": "../../../assets/perez/perez_panel_2.png",
           "speaker_image": "../../../assets/JD.png",
-          "text": "The end of Perez's essay notes a connection to ABET2000, and the essay was praised by " +
+          "text": "The end of Perez's essay notes a connection to ABET, and the essay was praised by " +
           "two external reviewers as a significant contribution to issues of underrepresentation.",
           "reference": [{
             "url": "",
@@ -1166,7 +1168,7 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "",
           "image": "../../../assets/perez/perez_panel_3.png",
           "speaker_image": "../../../assets/KK.png",
-          "text": "Well, it seems to me that the majority of us agree that Perez is an outstanding " +
+          "text": "It seems to me that the majority of us agree that Perez is an outstanding " +
           "researcher and teacher who has contributed to service in his efforts to improve minority recruitment." +
           " Al, you seem to be the outlier.",
           "reference": [{
@@ -1445,9 +1447,9 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "B11",
           "image": "../../../assets/perez/perez_panel_1.png",
           "speaker_image": "../../../assets/Al.png",
-          "text": "I agree all reviews have to be weighed carefully. The most positive one spends more time " +
-          "considering Mansour's service to the profession rather than discussing her research. " +
-          "Do we really care that she does so much work for that disciplinary organization?",
+          "text": "All reviews have to be weighed carefully. " +
+          "The most positive one considers Mansour's service to the profession rather than discussing her research. " +
+          "Do we care that she works for that society?",
           "reference": [{
             "url": "",
             "desc": ""
@@ -1488,10 +1490,8 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "B13",
           "image": "../../../assets/perez/perez_panel_1.png",
           "speaker_image": "../../../assets/Al.png",
-          "text": "The letters don't demonstrate that profile of excellent research. " +
-          "The most positive one is from another former student of her mentor. " +
-          "Other letters praise the research without understanding it. The negative reviewer " +
-          "is the only one who seems to know the area.",
+          "text": "The letters don't prove excellent research. One is from another former student of her mentor. " +
+          "Others praise research without understanding it. The negative reviewer is the only one who knows the area.",
           "reference": [{
             "url": "",
             "desc": ""
@@ -1567,7 +1567,8 @@ export const SMDIALOGUES:SMDialogue[] = [
             "next": "B16b1",
             "image": "../../../assets/perez/perez_panel_1.png",
             "speaker_image": "../../../assets/Al.png",
-            "text": "I think the negative reviewer is too negative about that one paper and ignores the value of the prize given to it. I don't see his argument as ultimately persuasive since the other letters demonstrate genuine and significant achievement.",
+            "text": "One reviewer is too negative about that one paper and ignores the prize given to it. " +
+            "His argument is not persuasive since the other letters demonstrate genuine and significant achievement.",
             "reference": [{
               "url": "",
               "desc": ""
@@ -2267,7 +2268,9 @@ export const SMDIALOGUES:SMDialogue[] = [
             "next": "D6a1",
             "image": "../../../assets/perez/perez_panel_1.png",
             "speaker_image": "../../../assets/Al.png",
-            "text": "She has been on about the same number of committees as others. Her local and national service appear fine.She is too focused on only one service issue. I question whether she has made any impact regarding the environment for women.Her service record is excellent. Working on behalf of underrepresented groups is a significant contribution to the field.Service seems like the lowest priority for all of us. I guess hers is ok.",
+            "text": "She has been on about the same number of committees as others. " +
+            "Her local and national service appear fine. Service seems like the lowest priority for all of us. " +
+            "I guess hers is ok.",
             "reference": [{
               "url": "",
               "desc": ""
@@ -2346,7 +2349,8 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "",
           "image": "../../../assets/perez/perez_panel_1.png",
           "speaker_image": "../../../assets/Al.png",
-          "text": "Yes, she has done a better job than most in service and has a mix of average and very good scores in teaching, while she has also made significant national impact in terms of her research. It's clear that her record justifies promotion and tenure.",
+          "text": "Yes, she has done a better job than most in service, and has generally good teaching scores, " +
+          "and she has also made significant national impact in her research. Her record justifies promotion and tenure.",
           "reference": [{
             "url": "",
             "desc": ""
@@ -2446,7 +2450,7 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "",
           "image": "../../../assets/perez/perez_panel_1.png",
           "speaker_image": "../../../assets/Al.png",
-          "text": "You and I are more enthusiastic, but three of the four of us see Mansour's record as appropriate for promotion and tenure. I think our letter should be more positive than negative, even though it will accompany a split vote.",
+          "text": "Three of the four of us see Mansour's record as appropriate for promotion and tenure. I think our letter should be more positive than negative, even though it will accompany a split vote.",
           "reference": [{
             "url": "",
             "desc": ""
@@ -2482,20 +2486,19 @@ export const SMDIALOGUES:SMDialogue[] = [
     "conversation": [
       {
         "statementKey": "A1",
-        "speaker": 1, //TODO: need to ask about this. it was previously "chair of unit"
+        "speaker": 1, 
         "next": "B1",
         "mood-phrase": "",
         "mood": "",
         "statement": [{
           "id": 1, "statementKey": "A1",
-          "speaker": 1,  //TODO: need to ask about this. it was previously "chair of unit"
+          "speaker": 1,  
           "next": "B1",
           "image": "../../../assets/perez/perez_panel_1.png",
           "speaker_image": "../../../assets/Al.png",
-          "text": "Thanks for agreeing to serve on this year's committee. Among the cases you will consider is Patty Shen's, " +
-          "which is unusual in that she is one of the first faculty members to receive a year's leave under the university's " +
-          "active service modified duties program. Another reason she is coming up now is because I suggested to Patty," +
-          " and she agreed, that she ought to come up this year and not last because of productivity issues.",
+          "text": "Patty Shen's case is unusual. She is one of the first faculty members to receive a year's leave " +
+          "under the university's active service modified duties program. " +
+          "I suggested she delay because of low productivity.",
           "reference": [{
             "url": "",
             "desc": ""

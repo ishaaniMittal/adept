@@ -83,11 +83,11 @@
   <div class="row" style="width:100%; min-height:640px;">
     <div class="col-md-3 left-panel">
       <div style="margin-left: 30px; margin-right:20px;">
-        <img src="../../../assets/logo_sm.png" class="logo">
+        <a href="/simulated-meeting"><img src="../../../assets/logo_sm.png" class="logo"></a>
         <hr style="margin-top: 20px;">
-        <div style="font-size: 16px;"><b>YOU ARE: </b>PANELIST 4</div>
+        <div style="font-size: 16px;"><b>YOU ARE: </b>Committee Member 4</div>
         <button class="button-blue" (click)="openPanelistBio()">
-          PANELISTS BIO
+          COMMITTEE MEMBERS' BIO
         </button>
         <hr style="margin-top: 20px;">
         <div style="margin-top:10px;font-size: 16px;text-align: center; font-weight: 700;">CANDIDATE'S PROFILE</div>
@@ -103,6 +103,9 @@
           </div>
           <div class="row view-details-left" *ngIf="candidate!=null">
             <div class="cv-card" (click)="openCvDialog()">
+              <div style="background-color: #0D3055; width: 100%;padding-left:10px;">
+                <span style="color: white;font-size: 16px;text-align: center;">View Curriculum Vitae</span>
+              </div>
               <div style="margin-top:18px;">
 
                 <ul>
@@ -110,20 +113,19 @@
                   <li>{{candidate.dossier.educational_background[1]}}</li>
                 </ul>
 
-                <div style="background-color: #0D3055; width: 100%;padding-left:10px;">
-                  <span style="color: white;font-size: 16px;text-align: center;">View Curriculum Vitae</span>
-                </div>
+
               </div>
             </div>
           </div>
           <div class="row view-details-left" style="margin-top: 12px;" *ngIf="candidate!=null">
             <div class="cv-card" (click)="openCasestudyDialog()">
-              <div class="truncate" style="margin-top:18px;margin-bottom: 18px;">
-                {{candidate.career_account[0]}}
-              </div>
               <div style="background-color: #EFB211; width: 100%;padding-left:10px;">
                 <span style="color: white;font-size: 16px;text-align: center;">View Case Study</span>
               </div>
+              <div class="truncate" style="margin-top:18px;margin-bottom: 18px;">
+                {{candidate.career_account[0]}}
+              </div>
+
             </div>
           </div>
 
