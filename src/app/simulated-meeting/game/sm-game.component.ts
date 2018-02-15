@@ -10,6 +10,8 @@ import {MatDialog} from "@angular/material";
 import {CaseStudyDialogComponent} from "../casestudy-dialog/casestudy-dialog.component";
 import {PanelistDialogComponent} from "../panelist-dialog/panelist-dialog.component";
 import {SimulatedMeetingTranscriptComponent} from "./transcript/sm-transcript.component";
+import {ExitDialogComponent} from "../../exit/exit-component";
+import {CompleteActivityDialogComponent} from "../../complete-activity/complete-activity.component";
 
 @Component({
   selector: 'sm-game',
@@ -20,6 +22,7 @@ import {SimulatedMeetingTranscriptComponent} from "./transcript/sm-transcript.co
 export class SimulatedMeetingComponent implements OnInit {
   progressValue:number;
   progressStep:number;
+  panelSpeakerName:string;
   answer:{
     "statementKey":string;
     "speaker":number;
@@ -85,6 +88,8 @@ export class SimulatedMeetingComponent implements OnInit {
     this.selectedPanelist = this.id - 1;
     this.getDialoguesForPanelist();
     this.getCandidate();
+    this.getSpeakerName(this.currentDialogSpeaker);
+
   }
 
   getCandidate():void {
@@ -106,8 +111,6 @@ export class SimulatedMeetingComponent implements OnInit {
       this.panelImage = this.dialogesForPanelist.conversation[0].statement[0].image;
       this.reference = this.dialogesForPanelist.conversation[0].statement[0].reference;
       this.speakerImage = this.dialogesForPanelist.conversation[0].statement[0].speaker_image;
-      this.answerOptions = [];
-      this.dialogSequence = [];
       this.dialogSequence.push({
         "currentDialogContent": this.currentDialogContent,
         "currentDialogSpeaker": this.currentDialogSpeaker,
@@ -115,28 +118,76 @@ export class SimulatedMeetingComponent implements OnInit {
         "nextDialogStatementKey": this.nextDialogStatementKey,
         "panelImage": this.panelImage,
         "reference": this.reference,
-        "speaker_image": this.speakerImage
+        "speaker_image": this.speakerImage,
+        "currentId": this.currentId
       })
       ;
       this.progressStep = 100 / this.dialogesForPanelist.conversation.length;
       this.progressValue = this.currentId * this.progressStep;
+      this.getSpeakerName(this.currentDialogSpeaker);
+
     });
   }
 
+  getSpeakerName(currentDialogSpeaker:number) {
+    if (this.selectedPanelist == 0) {
+      if (currentDialogSpeaker == 1) {
+        this.panelSpeakerName = "Speaker is Al Smith";
+      }
+      else if (currentDialogSpeaker == 2) {
+        this.panelSpeakerName = "Speaker is Jason";
+      }
+      else if (currentDialogSpeaker == 3) {
+        this.panelSpeakerName = "Speaker is Karen";
+      }
+      else if (currentDialogSpeaker == 0) {
+        this.panelSpeakerName = "You are the speaker";
+      }
+    }
+    else if (this.selectedPanelist == 2) {
+      if (currentDialogSpeaker == 1) {
+        this.panelSpeakerName = "Speaker is Georgia Green";
+      }
+      else if (currentDialogSpeaker == 2) {
+        this.panelSpeakerName = "Speaker is Caroline Wong";
+      }
+      else if (currentDialogSpeaker == 3) {
+        this.panelSpeakerName = "Speaker is Susan Tomie";
+      }
+      else if (currentDialogSpeaker == 0) {
+        this.panelSpeakerName = "You are the speaker";
+      }
+    } else if (this.selectedPanelist == 1) {
+      if (currentDialogSpeaker == 1) {
+        this.panelSpeakerName = "Speaker is Katherine Sloan";
+      }
+      else if (currentDialogSpeaker == 2) {
+        this.panelSpeakerName = "Speaker is Joe Wynn";
+      }
+      else if (currentDialogSpeaker == 3) {
+        this.panelSpeakerName = "Speaker is Mohammad Shaban";
+      }
+      else if (currentDialogSpeaker == 0) {
+        this.panelSpeakerName = "You are the speaker";
+      }
+    }
+
+  }
 
   clickOnNextButton():void {
+
     if (this.currentId === this.dialogesForPanelist.conversation.length) {
-      this.openTranscriptDialog();
+      this.openCompleteActivityDialog();
     }
     this.currentDialogStatementKey = this.nextDialogStatementKey;
 
     this
       .createOptionsList();
+    this.getSpeakerName(this.currentDialogSpeaker);
   }
 
   private
   createOptionsList() {
-    this.answerOptions = [];
     for (let conversation of this.dialogesForPanelist.conversation) {
       if (conversation.statementKey === this.currentDialogStatementKey) {
         this.currentId = conversation.statement[0].id;
@@ -171,15 +222,15 @@ export class SimulatedMeetingComponent implements OnInit {
   }
 
   clickOnBackButton():void {
-    console.log(this.dialogSequence);
+
     this.dialogSequence.pop();
 
     const previousDialog = this.dialogSequence.pop();
 
-    console.log(previousDialog);
     this.nextDialogStatementKey = previousDialog.nextDialogStatementKey;
     this.currentDialogStatementKey = previousDialog.currentDialogStatementKey;
     this.createOptionsList();
+    this.getSpeakerName(this.currentDialogSpeaker);
   }
 
   submitAnswer():void {
@@ -199,6 +250,7 @@ export class SimulatedMeetingComponent implements OnInit {
     ;
     this.currentDialogStatementKey = this.answer.next;
     this.createOptionsList();
+    this.getSpeakerName(this.currentDialogSpeaker);
   }
 
   openTranscriptDialog() {
@@ -222,15 +274,26 @@ export class SimulatedMeetingComponent implements OnInit {
     instance.selectedCandidate = this.candidate;
   }
 
+  openExitDialog() {
+    const dialogRef = this.dialog.open(ExitDialogComponent, {});
+  }
+
+  openCompleteActivityDialog() {
+    const dialogRef = this.dialog.open(CompleteActivityDialogComponent, {});
+    const instance = dialogRef.componentInstance;
+    this.dialogSequence.pop();
+    instance.dialogSequence = this.dialogSequence;
+    instance.name = this.candidate.name;
+    instance.currentId = this.currentId;
+    instance.maxLength = this.dialogesForPanelist.conversation.length;
+  }
+
   openCasestudyDialog() {
     const dialogRef = this.dialog.open(CaseStudyDialogComponent, {});
     const instance = dialogRef.componentInstance;
     instance.selectedCandidate = this.candidate;
   }
 
-  toggleState() {
-    this.state = this.state === 'active' ? 'inactive' : 'active';
-  }
 
   goBack() {
     this.router.navigate(['/simulated-meeting']);

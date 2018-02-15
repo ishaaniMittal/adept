@@ -7,7 +7,7 @@
     <!--class.selected will be added when we select one of the cards-->
     <div class="col-md-4 col-lg-4 " *ngFor="let activity of activities">
       <div class="activity-card">
-        <img class="activity-img" [src]=activity.image_src>
+        <img class="activity-img" alt="{{activity.name}} image" [src]=activity.image_src>
         <div class="activity-name">{{activity.name}}</div>
         <div class="activity-time"><i>{{activity.time}}</i></div>
         <hr class="divider">
@@ -20,4 +20,8 @@
     </div>
   </div>
 
+</div>
+<div class="message">
+  <p class="use-laptop">This game has a fair amount of text, therefore it has not been designed to work on phones and
+    tablets. please use a laptop or desktop to view this game.</p>
 </div>

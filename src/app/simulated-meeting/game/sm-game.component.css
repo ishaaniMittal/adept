@@ -236,7 +236,7 @@
   margin-right: 15px;
   padding-left: 0px;
   padding-right: 0px;
-  margin-top:8px;
+  margin-top: 8px;
 }
 
 .view-details {
@@ -291,7 +291,9 @@
   font-weight: 400;
   border-width: 1px;
   border-color: black;
-  box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.51), 0 6px 20px 0 rgba(164, 164, 164, 0.5);
+  background-color: white;
+  border-radius: 0;
+  left:80px;
 
 }
 
@@ -359,6 +361,7 @@
 .control-button {
   float: right;
   background-color: #0D3055;
+  height: 40px;
 
 }
 
@@ -396,6 +399,10 @@
   writing-mode: vertical-rl;
   text-align: center;
   color: white;
+}
+
+.logo:hover{
+  cursor: pointer;
 }
 
 .back-to-main-page:hover {

@@ -1,0 +1,15 @@
+<div>
+  <h2 mat-dialog-title style="display: inline">Activity Complete</h2>
+</div>
+<hr>
+<mat-dialog-content>
+  <div>
+    You have reached the end of conversation. What would you like to do?
+  </div>
+  <br>
+</mat-dialog-content>
+<div mat-dialog-actions>
+  <button class="dialog-actions" mat-button cdkFocusInitial (click)="goBack()">Exit Activity</button>
+  <button class="dialog-actions" mat-button (click)="viewTranscript()">View Transcript</button>
+
+</div>

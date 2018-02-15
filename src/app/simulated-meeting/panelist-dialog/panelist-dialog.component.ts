@@ -2,7 +2,8 @@
  * Created by imittal on 11/24/17.
  */
 
-import {Component} from "@angular/core";
+import {Component, Inject} from "@angular/core";
+import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 
 @Component({
   selector: 'panelist-dialog',
@@ -16,6 +17,14 @@ export class PanelistDialogComponent {
     "name":string,
     "image":string,
     "description":string
-  }]
+  }];
+
+  constructor(
+    public dialogRef: MatDialogRef<PanelistDialogComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any) { }
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
 
 }

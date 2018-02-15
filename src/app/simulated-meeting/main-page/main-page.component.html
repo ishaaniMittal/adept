@@ -1,8 +1,8 @@
 <div class="main-page">
-  <div class="row" style="width:100%;">
+  <div class="row" style="width:100%;height:100%;">
     <div class="col-md-3 left-panel">
       <div style="margin-left: 30px; margin-right:20px;">
-       <img src="../../../assets/logo_sm.png" class="logo">
+        <img src="../../../assets/logo_sm.png" class="logo">
         <hr style="margin-top: 20px;">
         <div style="font-size: 16px;"><b>YOU ARE: </b>Committee Member 4</div>
         <button class="button-blue" (click)="openDialog()">
@@ -10,45 +10,10 @@
         </button>
         <hr style="margin-top: 20px;">
 
-        <!--<div style="margin-top:10px;font-size: 16px;text-align: center; font-weight: 700;">CANDIDATE'S PROFILE</div>
-        <div class="candidate-card" style="margin-top: 10px; background-color: #F5F5F5">
-          <div class="row">
-            <div class="col-md-5">
-              <img class="candidate-img" src="../../../assets/candidate.png">
-            </div>
-            <div class="col-md-7">
-              <div class="candidate-name">Jamie Perez</div>
-              <div class="candidate-short-desc">PhD in Material Science and Engineering</div>
-            </div>
-          </div>
-          <div class="row view-details-left">
-            &lt;!&ndash;<div style="margin-top:18px;">
-              <ul>
-                <li>{{selectedCandidate.dossier.educational_background[0]}}</li>
-                <li>{{selectedCandidate.dossier.educational_background[1]}}</li>
-              </ul>
-            </div>&ndash;&gt;
-            <button style="background-color: #0D3055; width: 100%">
-              <span style="color: white;font-size: 16px;text-align: center">View Curriculum Vitae</span>
-            </button>
-          </div>
-          <div class="row view-details-left" style="margin-top: 12px;">
 
-            &lt;!&ndash;  <div class="truncate" style="margin-top:18px;">
-                {{selectedCandidate.career_account[0]}}
-              </div>
-&ndash;&gt;
-            <button style="background-color: #EFB211; width: 100%">
-              <span style="color: white;font-size: 16px;text-align: center;">View Case Study</span>
-            </button>
-          </div>
-
-        </div>
-        <hr style="margin-top: 20px;">
-        -->
         <button class="back-to-main-page" (click)="goBack()">
-          <span style="text-align: center;"><img src="./../../../assets/left-arrow.svg"
-                                                 style="width:20px;height:20px;"> &nbsp;BACK TO MAIN PAGE</span>
+          <span style="text-align: center;color:black"><img src="./../../../assets/left-arrow.svg"
+                                                 style="width:20px;height:20px;"> &nbsp;EXIT ACTIVITY</span>
         </button>
       </div>
     </div>
@@ -62,7 +27,7 @@
             fictional).</i>
         </div>
 
-        <div class="header">Choose a Candidate</div>
+        <div class="header">Choose a candidate</div>
         <div class="row choose-candidates">
           <!--class.selected will be added when we select one of the cards-->
 
@@ -71,7 +36,7 @@
                (click)="onSelect(candidate)">
             <div class="row candidate-card" [class.selected]="candidate===selectedCandidate">
               <div class="col-md-4">
-                <img class="candidate-img" [src]=candidate.image>
+                <img class="candidate-img" [src]=candidate.image alt="{{candidate.name}} image">
               </div>
               <div class="col-md-8">
                 <div class="candidate-name">{{candidate.name}}</div>
@@ -121,7 +86,7 @@
                 <div class="row other-panelists"
                      [class.selected]="committee_member.committee_id===selectedCommitteeMember">
                   <div class="col-md-4">
-                    <img class="candidate-img" [src]=committee_member.image>
+                    <img class="candidate-img" [src]=committee_member.image alt="{{committee_member.name}} image">
                   </div>
                   <div class="col-md-8">
                     <div class="panelist-name">{{committee_member.name}}</div>
@@ -133,21 +98,6 @@
 
           </div>
         </div>
-        <!--class.selected will be added when we select one of the cards-->
-
-        <!--<div class="col-md-4 col-lg-4 choose-candidate-card" *ngFor="let candidate of candidates"
-             [class.selected]="candidate === candidates"
-             (click)="onSelect(candidate)">
-          <div class="row">
-            <div class="col-md-5">
-              <img class="candidate-img" [src]=candidate.image>
-            </div>
-            <div class="col-md-7">
-              <div class="candidate-name">{{candidate.name}}</div>
-              <div class="candidate-short-desc">{{candidate.short_desc}}</div>
-            </div>
-          </div>
-        </div>-->
 
       </div>
     </div>

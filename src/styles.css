@@ -1,7 +1,12 @@
 html, body {
   height: 100%;
-  margin: 0;
   padding: 0;
+}
+
+#body {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* You can add global styles to this file, and also import other style files */
@@ -22,5 +27,53 @@ html, body {
 }
 
 .mat-dialog-container {
-  min-width:800px;
+  min-width: 800px;
+}
+
+.mat-progress-bar-buffer {
+  background-color: #cccccc;
+}
+
+.mat-dialog-actions {
+  float: right;
+}
+
+button {
+  font-weight: 400;
+  background-color: #0D3055;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  height: 34px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #EFB211; /* Green */
+  color: white;
+  cursor: pointer;
+}
+
+.close {
+  float: right;
+  background: none;
+  background-color: transparent;
+  border-color: transparent;
+  border: none;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.dialog-actions {
+  background-color: transparent;
+  color: black;
+}
+
+.dialog-actions:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color:black;
 }

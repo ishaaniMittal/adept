@@ -19,6 +19,8 @@ import {CvDialogComponent} from "./simulated-meeting/cv-dialog/cv-dialog.compone
 import {CaseStudyDialogComponent} from "./simulated-meeting/casestudy-dialog/casestudy-dialog.component";
 import {MatProgressBarModule} from "@angular/material";
 import {SimulatedMeetingTranscriptComponent} from "./simulated-meeting/game/transcript/sm-transcript.component";
+import {ExitDialogComponent} from "./exit/exit-component";
+import {CompleteActivityDialogComponent} from "./complete-activity/complete-activity.component";
 
 
 
@@ -31,14 +33,18 @@ import {SimulatedMeetingTranscriptComponent} from "./simulated-meeting/game/tran
     PanelistDialogComponent,
     CvDialogComponent,
     CaseStudyDialogComponent,
-    SimulatedMeetingTranscriptComponent
+    SimulatedMeetingTranscriptComponent,
+    ExitDialogComponent,
+    CompleteActivityDialogComponent
 
   ],
   entryComponents:[
     PanelistDialogComponent,
     CvDialogComponent,
     CaseStudyDialogComponent,
-    SimulatedMeetingTranscriptComponent
+    SimulatedMeetingTranscriptComponent,
+    ExitDialogComponent,
+    CompleteActivityDialogComponent
   ],
   imports: [
     AppRoutingModule,

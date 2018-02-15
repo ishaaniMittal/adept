@@ -1,4 +1,7 @@
-<h2 mat-dialog-title>{{selectedCandidate.name}} : Case Study</h2>
+<div>
+  <h2 mat-dialog-title style="display: inline">{{selectedCandidate.name}} : Case Study</h2>
+  <img class="close" (click)="onNoClick()" src="../../../assets/multiply.png">
+</div>
 <hr>
 <mat-dialog-content>
   <div>

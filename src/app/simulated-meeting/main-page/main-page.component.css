@@ -144,12 +144,15 @@
   font-weight: 400;
   border-width: 1px;
   border-color: black;
-  box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.51), 0 6px 20px 0 rgba(164, 164, 164, 0.5);
+  background-color: white;
+  border-radius: 0;
+  left:80px;
 
 }
 
 .back-to-main-page:hover {
   cursor: pointer;
+
 }
 
 .read-about-fellows {

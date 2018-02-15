@@ -1,5 +1,6 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, OnInit, Inject} from "@angular/core";
 import {SMDialog} from "../../sm-dialog";
+import {MatDialogRef, MAT_DIALOG_DATA} from "@angular/material/dialog";
 
 @Component({
   selector: 'sm-transcript',
@@ -10,7 +11,7 @@ import {SMDialog} from "../../sm-dialog";
 export class SimulatedMeetingTranscriptComponent {
   name:string;
   maxLength:number;
-  currentId;
+  currentId:number;
   dialogSequence:[{
     currentDialogContent:string,
     currentDialogSpeaker:number,
@@ -22,9 +23,16 @@ export class SimulatedMeetingTranscriptComponent {
     reference:[{
       url:string,
       desc:string
-    }],
-    clicked:boolean
+    }]
   }];
+
+  constructor(
+    public dialogRef: MatDialogRef<SimulatedMeetingTranscriptComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any) { }
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
 
 
   changeState(dialog:SMDialog) {

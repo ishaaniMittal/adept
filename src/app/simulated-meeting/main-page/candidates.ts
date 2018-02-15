@@ -225,7 +225,7 @@ export const CANDIDATES:Candidate[] = [
       {
         "committee_id": 3,
         "name": "Susan Tomel",
-        "image": "../../../assets/ST.png",
+        "image": "../../../assets/susan-tomei.png",
         "description": "moderately experienced member of RPT"
       }
     ]

@@ -1,0 +1,14 @@
+<div>
+  <h2 mat-dialog-title style="display: inline">Exit Activity?</h2>
+</div>
+<hr>
+<mat-dialog-content>
+  <div>
+    All progress will be lost. Are you sure, you want to leave the activity?
+  </div>
+  <br>
+</mat-dialog-content>
+<div mat-dialog-actions>
+  <button class="dialog-actions" mat-button (click)="onNoClick()">No</button>
+  <button class="dialog-actions" mat-button cdkFocusInitial (click)="goBack()">Yes</button>
+</div>

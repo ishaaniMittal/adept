@@ -20,6 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.css",
+        "adept-style-theme.scss",
         "./app/css/gt3-php.css",
         "./app/css/gt_fonts.css",
         "./app/css/gt_general.css",
