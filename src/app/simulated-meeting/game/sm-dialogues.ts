@@ -2611,7 +2611,7 @@ export const SMDIALOGUES:SMDialogue[] = [
           "next": "B3",
           "image": "../../../assets/patty/patty_panel_2.png",
           "speaker_image": "../../../assets/CW.png",
-          "text": "She has number of reasonable publications in good journals over six years. I guess we don't count pregnancy year, but shouldn't we count the next year?",
+          "text": "She has a number of reasonable publications in good journals over six years. I guess we don't count pregnancy year, but shouldn't we count the next year?",
           "reference": [{
             "url": "",
             "desc": "Committee members need to calibrate productivity during the period of time on the tenure clock as opposed to chronological time."

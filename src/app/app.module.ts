@@ -21,6 +21,13 @@ import {MatProgressBarModule} from "@angular/material";
 import {SimulatedMeetingTranscriptComponent} from "./simulated-meeting/game/transcript/sm-transcript.component";
 import {ExitDialogComponent} from "./exit/exit-component";
 import {CompleteActivityDialogComponent} from "./complete-activity/complete-activity.component";
+import {NYCMainPageService} from "./nyc/main-page/nyc-main-page.service";
+import {NYCMainPageComponent} from "./nyc/main-page/nyc-main-page.component";
+import {NYCTranscriptComponent} from "./nyc/game/transcript/nyc-transcript.component";
+import {NYCGameService} from "./nyc/game/nyc-game.service";
+import {NYCComponent} from "./nyc/game/nyc-game.component";
+import {ExplanationDialog} from "./nyc/game/explanationDialog/explanation-dialog.component";
+import {FinalDialog} from "./nyc/game/final-dialog/final-dialog.component";
 
 
 
@@ -35,7 +42,13 @@ import {CompleteActivityDialogComponent} from "./complete-activity/complete-acti
     CaseStudyDialogComponent,
     SimulatedMeetingTranscriptComponent,
     ExitDialogComponent,
-    CompleteActivityDialogComponent
+    CompleteActivityDialogComponent,
+    NYCMainPageComponent,
+    NYCTranscriptComponent,
+    NYCComponent,
+    ExplanationDialog,
+    FinalDialog
+
 
   ],
   entryComponents:[
@@ -44,7 +57,10 @@ import {CompleteActivityDialogComponent} from "./complete-activity/complete-acti
     CaseStudyDialogComponent,
     SimulatedMeetingTranscriptComponent,
     ExitDialogComponent,
-    CompleteActivityDialogComponent
+    CompleteActivityDialogComponent,
+    ExplanationDialog,
+    NYCTranscriptComponent,
+    FinalDialog
   ],
   imports: [
     AppRoutingModule,
@@ -55,7 +71,7 @@ import {CompleteActivityDialogComponent} from "./complete-activity/complete-acti
     BrowserAnimationsModule,
     MatProgressBarModule
   ],
-  providers: [ActivitiesService, MainPageService, SMGameService],
+  providers: [ActivitiesService, MainPageService, SMGameService, NYCMainPageService, NYCGameService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

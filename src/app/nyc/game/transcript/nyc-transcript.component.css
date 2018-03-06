@@ -14,6 +14,11 @@
   box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2), 0 1px 0px 0 rgba(0, 0, 0, 0.19);
   position: relative;
   border-color: #0D3055;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width:100%;
 }
 
 .dialog-committee {
@@ -48,6 +53,7 @@
 
 .dialog-content-transcript {
   padding-right:12px;
+  padding-top:10px;
 }
 
 .sub-heading {
@@ -62,4 +68,9 @@
   font-size: 12px;
   padding-bottom: 10px;
   padding-top: 10px;
+}
+
+.question-response {
+  color: #969696;
+  padding-bottom: 10px;
 }

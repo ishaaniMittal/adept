@@ -13,22 +13,28 @@ import {Router, ActivatedRoute} from "@angular/router";
 
 export class ExitDialogComponent {
 
-  router:Router;
-  route:ActivatedRoute;
+  router: Router;
+  route: ActivatedRoute;
+  activity: number;
 
-  constructor(public dialogRef:MatDialogRef<ExitDialogComponent>,
-              @Inject(MAT_DIALOG_DATA) public data:any, router:Router, route:ActivatedRoute) {
+  constructor(public dialogRef: MatDialogRef<ExitDialogComponent>,
+              @Inject(MAT_DIALOG_DATA) public data: any, router: Router, route: ActivatedRoute) {
     this.router = router;
     this.route = route;
   }
 
-  onNoClick():void {
+  onNoClick(): void {
     this.dialogRef.close();
   }
 
-  goBack():void {
+  goBack(): void {
     this.onNoClick();
-    this.router.navigate(['/simulated-meeting']);
+    if (this.activity == 1) {
+      this.router.navigate(['/simulated-meeting']);
+    }
+    else if (this.activity == 2) {
+      this.router.navigate(['/nyc']);
+    }
   }
 
 }

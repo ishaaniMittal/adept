@@ -1,0 +1,79 @@
+<div class="main-page">
+  <div class="row left-panel-container">
+    <div class="col-md-3 left-panel">
+      <div class="left-panel-child">
+        <img src="../../../assets/nyc-logo.png" class="logo">
+        <hr class="hr-style">
+
+
+        <button class="back-to-main-page" (click)="goBack()">
+          <span class="exit-activity-container"><img src="./../../../assets/left-arrow.svg"
+                                                     class="exit-activity-icon"> &nbsp;EXIT ACTIVITY</span>
+        </button>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="right-panel">
+        <div class="activity-instruction">Strategize about academic career paths by making decisions affecting mentoring
+          and progress toward promotion/tenure. Reading the career account associated with the character you chose could
+          help you in navigating through the questions.
+        </div>
+
+
+        <div class="header">Progress Measuring Parameters</div>
+
+        <div class="parameters">
+          <b>Research: </b> scholarship, creativity, funding, impact, reputation
+          <br>
+          <b>Teaching: </b> student responses, curricular development, pedagogical innovations
+          <br>
+          <b>Service: </b> to unit, college, institute; to local, national, and international organizations
+          <br>
+          <b>Allies: </b> relationships with colleagues, disciplinary peers, peers in other fields
+          <br>
+          <b>Health: </b> physical, mental, and emotional wellness, including stress
+          <br>
+        </div>
+
+        <div class="header">Choose a candidate</div>
+        <div class="row choose-candidates">
+          <!--class.selected will be added when we select one of the cards-->
+
+          <div class="col-md-4 col-lg-4 choose-candidate-card"
+               *ngFor="let candidate of candidates"
+               (click)="onSelect(candidate)">
+            <div class="row candidate-card" [class.selected]="candidate===selectedCandidate">
+              <div class="col-md-4">
+                <img class="candidate-img" [src]=candidate.image alt="{{candidate.name}} image">
+              </div>
+              <div class="col-md-8">
+                <div class="candidate-name">{{candidate.name}}</div>
+                <div class="candidate-short-desc">{{candidate.short_desc}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header">Details of case</div>
+        <br>
+        <div class="details-case">
+          <div class="row">
+            <div *ngIf="selectedCandidate!=null" class="col-md-5 col-lg-5 view-details" (click)="openCasestudyDialog()">
+              <div class="">
+                <div class="button case-study-heading">
+                  <span class="case-study-heading-text">View Case Study</span>
+                </div>
+                <div class="truncate">
+                  {{selectedCandidate.career_account[0]}}
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="play-game" (click)="goToNextPage()">Play Game</button>
+
+      </div>
+    </div>
+  </div>
+</div>

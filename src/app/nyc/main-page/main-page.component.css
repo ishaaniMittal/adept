@@ -78,6 +78,7 @@
 .details-case {
   background-color: #F5F5F5;
   margin-top: -30px;
+  margin-bottom: 30px;
 
 }
 
@@ -93,6 +94,7 @@
 .view-details {
   background-color: white;
   margin-top: 18px;
+  margin-bottom: 18px;
   font-size: 12px;
   margin-left: 48px;
   padding-left: 0px;
@@ -138,14 +140,14 @@
 }
 
 .back-to-main-page {
+  width: 100%;
   font-size: 16px;
   font-weight: 400;
   border-width: 1px;
   border-color: black;
   background-color: white;
   border-radius: 0;
-  margin-bottom: 10px;
-  width: 100%;
+
 }
 
 .back-to-main-page:hover {
@@ -244,4 +246,11 @@
 
 .committee-member-snippet {
   margin-right: 0px;
+}
+
+.parameters {
+  background-color: #F5F5F5;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 10px;
 }

@@ -1,0 +1,20 @@
+<div>
+  <img class="close" (click)="onNoClick()" src="../../../assets/multiply.png">
+</div>
+<h2 mat-dialog-title>Navigating Your Career Transcript: {{name}}</h2>
+<hr>
+
+<mat-dialog-content>
+  <div>
+    <div class="row" *ngFor="let question of questions">
+
+      <div class="dialog">
+        <p class="dialog-content-transcript">{{question.prompt}}</p>
+        <div class="question-response"><i>{{question.response}}</i>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-dialog-content>
+
+

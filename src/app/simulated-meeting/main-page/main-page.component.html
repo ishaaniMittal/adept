@@ -1,19 +1,19 @@
 <div class="main-page">
-  <div class="row" style="width:100%;height:100%;">
+  <div class="row left-panel-container">
     <div class="col-md-3 left-panel">
-      <div style="margin-left: 30px; margin-right:20px;">
+      <div class="left-panel-child">
         <img src="../../../assets/logo_sm.png" class="logo">
-        <hr style="margin-top: 20px;">
-        <div style="font-size: 16px;"><b>YOU ARE: </b>Committee Member 4</div>
+        <hr class="hr-style">
+        <div><b>YOU ARE: </b>Committee Member 4</div>
         <button class="button-blue" (click)="openDialog()">
           COMMITTEE MEMBERS' BIO
         </button>
-        <hr style="margin-top: 20px;">
+        <hr class="hr-style">
 
 
         <button class="back-to-main-page" (click)="goBack()">
-          <span style="text-align: center;color:black"><img src="./../../../assets/left-arrow.svg"
-                                                 style="width:20px;height:20px;"> &nbsp;EXIT ACTIVITY</span>
+          <span class="exit-activity-container"><img src="./../../../assets/left-arrow.svg"
+                                                     class="exit-activity-icon"> &nbsp;EXIT ACTIVITY</span>
         </button>
       </div>
     </div>
@@ -51,55 +51,55 @@
           <div class="row">
             <div *ngIf="selectedCandidate!=null" class="col-md-5 col-lg-5 view-details" (click)="openCvDialog()">
               <div class="">
-                <div class="button" style="background-color: #0D3055;">
-                  <span style="color: white;font-size: 16px;margin-left:10px;">View Curriculum Vitae</span>
+                <div class="button" class="cv-heading">
+                  <span class="cv-heading-text">View Curriculum Vitae</span>
                 </div>
-                <div style="margin-top:18px;">
+                <div class="cv-snippet">
 
-                  <ul>
-                    <li>{{selectedCandidate.dossier.educational_background[0]}}</li>
-                    <li>{{selectedCandidate.dossier.educational_background[1]}}</li>
-                  </ul>
-
-                </div>
+                <ul>
+                  <li>{{selectedCandidate.dossier.educational_background[0]}}</li>
+                  <li>{{selectedCandidate.dossier.educational_background[1]}}</li>
+                </ul>
 
               </div>
-            </div>
-            <div *ngIf="selectedCandidate!=null" class="col-md-5 col-lg-5 view-details" (click)="openCasestudyDialog()">
-              <div class="">
-                <div class="button" style="background-color: #EFB211;">
-                  <span style="color: white;font-size: 16px;text-align: center;margin-left:10px;">View Case Study</span>
-                </div>
-                <div class="truncate" style="margin-top:18px;">
-                  {{selectedCandidate.career_account[0]}}
-                </div>
 
-              </div>
             </div>
           </div>
-          <div class="read-about-fellows" *ngIf="selectedCandidate!=null">
-            <div class="header" style="margin-top: 20px;">Read about your fellow committee members</div>
-            <div class="row" style="margin-right:0px;">
-              <div class="col-md-4 col-lg-4"
-                   *ngFor="let committee_member of selectedCandidate.committee_members"
-                   (click)="setCommitteeMember(committee_member.committee_id)">
-                <div class="row other-panelists"
-                     [class.selected]="committee_member.committee_id===selectedCommitteeMember">
-                  <div class="col-md-4">
-                    <img class="candidate-img" [src]=committee_member.image alt="{{committee_member.name}} image">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="panelist-name">{{committee_member.name}}</div>
-                  </div>
-                </div>
+          <div *ngIf="selectedCandidate!=null" class="col-md-5 col-lg-5 view-details" (click)="openCasestudyDialog()">
+            <div class="">
+              <div class="button case-study-heading">
+                <span class="case-study-heading-text">View Case Study</span>
               </div>
-            </div>
-            <button class="play-game" (click)="goToNextPage()">Play Game</button>
+              <div class="truncate">
+                {{selectedCandidate.career_account[0]}}
+              </div>
 
+            </div>
           </div>
         </div>
+        <div class="read-about-fellows" *ngIf="selectedCandidate!=null">
+          <div class="header">Click on any committee member to read about all of them</div>
+          <div class="row committee-member-snippet">
+            <div class="col-md-4 col-lg-4"
+                 *ngFor="let committee_member of selectedCandidate.committee_members"
+                 (click)="setCommitteeMember(committee_member.committee_id)">
+              <div class="row other-panelists"
+                   [class.selected]="committee_member.committee_id===selectedCommitteeMember">
+                <div class="col-md-4">
+                  <img class="candidate-img" [src]=committee_member.image alt="{{committee_member.name}} image">
+                </div>
+                <div class="col-md-8">
+                  <div class="panelist-name">{{committee_member.name}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="play-game" (click)="goToNextPage()">Play Game</button>
 
+        </div>
       </div>
+
     </div>
   </div>
+</div>
 </div>

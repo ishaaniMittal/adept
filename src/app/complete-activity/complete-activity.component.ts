@@ -32,6 +32,7 @@ export class CompleteActivityDialogComponent {
 
   router:Router;
   route:ActivatedRoute;
+  completed: boolean;
 
   constructor(public dialogRef:MatDialogRef<CompleteActivityDialogComponent>,
               @Inject(MAT_DIALOG_DATA) public data:any, router:Router, route:ActivatedRoute,public dialog:MatDialog) {
@@ -50,6 +51,7 @@ export class CompleteActivityDialogComponent {
     instance.name = this.name;
     instance.currentId = this.currentId;
     instance.maxLength = this.maxLength;
+    instance.completed = this.completed;
   }
 
   goBack():void {

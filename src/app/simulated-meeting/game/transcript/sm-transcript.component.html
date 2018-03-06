@@ -2,7 +2,7 @@
   <img class="close" (click)="onNoClick()" src="../../../assets/multiply.png">
 </div>
 <h2 mat-dialog-title>Simulated Meeting Transcript: {{name}}</h2>
-<h5 style="font-size:12px;font-weight:300;"><i>Click on </i><img style="width:12px;" src="../../../../assets/info.png"><i> to view references.</i>
+<h5 class="sub-heading"><i>Click on </i><img class="sub-heading-icon" src="../../../../assets/info.png"><i> to view references.</i>
 </h5>
 <hr>
 
@@ -13,16 +13,13 @@
       <div *ngIf="dialog.currentDialogSpeaker!=0" class="col-md-1">
         <img [src]=dialog.speaker_image class="image">
       </div>
-      <div *ngIf="dialog.currentDialogSpeaker!=0" class="col-md-8 dialog" style="border-color: #0D3055"
+      <div *ngIf="dialog.currentDialogSpeaker!=0" class="col-md-8 dialog"
            (click)="changeState(dialog)">
         <p class="dialog-content-transcript">{{dialog.currentDialogContent}}</p>
-        <!---->
         <img *ngIf="dialog.reference[0].desc.length!=0" src="../../../../assets/info.png"
              class="info-icon">
 
-        <div *ngIf="dialog.clicked==true" style="font-size: 12px;
-    padding-bottom: 10px;
-    padding-top: 10px;">
+        <div *ngIf="dialog.clicked==true" class="references">
           <div *ngFor="let reference of dialog.reference">
 
 
@@ -33,7 +30,7 @@
         </div>
       </div>
 
-      <div *ngIf="dialog.currentDialogSpeaker==0" class="offset-md-5 col-md-6 dialog" style="border-color: #EFB211">
+      <div *ngIf="dialog.currentDialogSpeaker==0" class="offset-md-5 col-md-6 dialog-committee">
         {{dialog.currentDialogContent}}
       </div>
       <div *ngIf="dialog.currentDialogSpeaker==0" class=" col-md-1">

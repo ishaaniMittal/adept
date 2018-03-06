@@ -1,6 +1,7 @@
 import {Component, OnInit, Inject} from "@angular/core";
 import {SMDialog} from "../../sm-dialog";
 import {MatDialogRef, MAT_DIALOG_DATA} from "@angular/material/dialog";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'sm-transcript',
@@ -25,12 +26,21 @@ export class SimulatedMeetingTranscriptComponent {
       desc:string
     }]
   }];
+  completed: boolean;
+  private router: Router;
+  private route: ActivatedRoute;
 
   constructor(
     public dialogRef: MatDialogRef<SimulatedMeetingTranscriptComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any) { }
+    @Inject(MAT_DIALOG_DATA) public data: any, router:Router, route: ActivatedRoute) { 
+    this.router = router;
+    this.route = route;
+  }
 
   onNoClick(): void {
+    if(this.completed == true){
+      this.router.navigate(['/simulated-meeting']);
+    }
     this.dialogRef.close();
   }
 

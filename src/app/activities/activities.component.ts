@@ -34,7 +34,7 @@ export class ActivitiesComponent implements OnInit {
     if (activity.activityId == 1) {
       this.router.navigate(['/simulated-meeting']);
     } else if (activity.activityId == 2) {
-      this.router.navigate(['/navigate-your-career']);
+      this.router.navigate(['/nyc']);
     } else {
       this.router.navigate(['/annotated-vita']);
     }

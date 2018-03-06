@@ -20,69 +20,72 @@ import {CompleteActivityDialogComponent} from "../../complete-activity/complete-
 })
 
 export class SimulatedMeetingComponent implements OnInit {
-  progressValue:number;
-  progressStep:number;
-  panelSpeakerName:string;
-  answer:{
-    "statementKey":string;
-    "speaker":number;
-    "next":string;
-    "text":string;
+  progressValue: number;
+  progressStep: number;
+  panelSpeakerName: string;
+  answer: {
+    "statementKey": string;
+    "speaker": number;
+    "next": string;
+    "text": string;
   };
-  panelImage:string;
-  speakerImage:string;
-  candidates:Candidate[];
-  selectedCandidate:Candidate;
-  router:Router;
-  selectedCommitteeMember:number;
-  dialogesForPanelist:SMDialogue;
-  dialoges:SMDialogue[];
-  selectedPanelist:number;
-  dialogSequence:[{
-    currentDialogContent:string,
-    currentDialogSpeaker:number,
-    currentDialogStatementKey:string,
-    nextDialogStatementKey:string,
-    panelImage:string,
-    speaker_image:string,
-    currentId:number,
-    reference:[{
-      url:string,
-      desc:string
+  panelImage: string;
+  speakerImage: string;
+  candidates: Candidate[];
+  selectedCandidate: Candidate;
+  router: Router;
+  selectedCommitteeMember: number;
+  dialogesForPanelist: SMDialogue;
+  dialoges: SMDialogue[];
+  selectedPanelist: number;
+  dialogSequence: [{
+    currentDialogContent: string,
+    currentDialogSpeaker: number,
+    currentDialogStatementKey: string,
+    nextDialogStatementKey: string,
+    panelImage: string,
+    speaker_image: string,
+    currentId: number,
+    reference: [{
+      url: string,
+      desc: string
     }]
   }];
-  currentId:number;
-  currentDialogContent:string;
-  currentDialogSpeaker:number;
-  currentDialogStatementKey:string;
-  nextDialogStatementKey:string;
-  reference:[
-    {url:string,
-      desc:string}
-    ];
-  service:SMGameService;
-  answerOptions:[
+  currentId: number;
+  currentDialogContent: string;
+  currentDialogSpeaker: number;
+  currentDialogStatementKey: string;
+  nextDialogStatementKey: string;
+  reference: [
     {
-      "statementKey":string;
-      "speaker":number;
-      "next":string;
-      "text":string;
+      url: string,
+      desc: string
+    }
+    ];
+  service: SMGameService;
+  answerOptions: [
+    {
+      "statementKey": string;
+      "speaker": number;
+      "next": string;
+      "text": string;
     }];
-  id:number;
-  route:ActivatedRoute;
-  candidateService:MainPageService;
-  candidate:Candidate;
+  id: number;
+  route: ActivatedRoute;
+  candidateService: MainPageService;
+  candidate: Candidate;
+  private clicked: boolean;
 
-  constructor(service:SMGameService, router:Router, route:ActivatedRoute, candidateService:MainPageService,
-              public dialog:MatDialog) {
+  constructor(service: SMGameService, router: Router, route: ActivatedRoute, candidateService: MainPageService,
+              public dialog: MatDialog) {
     this.router = router;
     this.route = route;
     this.candidateService = candidateService;
     this.service = service;
   }
 
-  ngOnInit():void {
-
+  ngOnInit(): void {
+    this.clicked = false;
     this.progressValue = 0;
     this.id = +this.route.snapshot.paramMap.get('id');
     this.selectedPanelist = this.id - 1;
@@ -92,15 +95,15 @@ export class SimulatedMeetingComponent implements OnInit {
 
   }
 
-  getCandidate():void {
-    this.candidateService.getCandidates().then(candidates=> {
+  getCandidate(): void {
+    this.candidateService.getCandidates().then(candidates => {
       this.candidate = candidates[this.selectedPanelist];
     });
 
   }
 
-  getDialoguesForPanelist():void {
-    this.service.getDialogues().then(dialoges=> {
+  getDialoguesForPanelist(): void {
+    this.service.getDialogues().then(dialoges => {
       this.dialoges = dialoges;
       this.dialogesForPanelist = this.dialoges[this.selectedPanelist];
       this.currentId = this.dialogesForPanelist.conversation[0].statement[0].id;
@@ -111,6 +114,20 @@ export class SimulatedMeetingComponent implements OnInit {
       this.panelImage = this.dialogesForPanelist.conversation[0].statement[0].image;
       this.reference = this.dialogesForPanelist.conversation[0].statement[0].reference;
       this.speakerImage = this.dialogesForPanelist.conversation[0].statement[0].speaker_image;
+      this.dialogSequence = [{
+        currentDialogContent: "",
+        currentDialogSpeaker: undefined,
+        currentDialogStatementKey: undefined,
+        nextDialogStatementKey: undefined,
+        panelImage: undefined,
+        speaker_image: undefined,
+        currentId: undefined,
+        reference: [{
+          url: undefined,
+          desc: undefined
+        }]
+      }];
+      this.dialogSequence.pop();
       this.dialogSequence.push({
         "currentDialogContent": this.currentDialogContent,
         "currentDialogSpeaker": this.currentDialogSpeaker,
@@ -129,7 +146,7 @@ export class SimulatedMeetingComponent implements OnInit {
     });
   }
 
-  getSpeakerName(currentDialogSpeaker:number) {
+  getSpeakerName(currentDialogSpeaker: number) {
     if (this.selectedPanelist == 0) {
       if (currentDialogSpeaker == 1) {
         this.panelSpeakerName = "Speaker is Al Smith";
@@ -174,7 +191,7 @@ export class SimulatedMeetingComponent implements OnInit {
 
   }
 
-  clickOnNextButton():void {
+  clickOnNextButton(): void {
 
     if (this.currentId === this.dialogesForPanelist.conversation.length) {
       this.openCompleteActivityDialog();
@@ -186,7 +203,6 @@ export class SimulatedMeetingComponent implements OnInit {
     this.getSpeakerName(this.currentDialogSpeaker);
   }
 
-  private
   createOptionsList() {
     for (let conversation of this.dialogesForPanelist.conversation) {
       if (conversation.statementKey === this.currentDialogStatementKey) {
@@ -198,6 +214,13 @@ export class SimulatedMeetingComponent implements OnInit {
         this.panelImage = conversation.statement[0].image;
         this.reference = conversation.statement[0].reference;
         this.speakerImage = conversation.statement[0].speaker_image;
+        this.answerOptions = [{
+          "statementKey": "",
+          "speaker": undefined,
+          "next": "",
+          "text": ""
+        }];
+        this.answerOptions.pop();
         if (conversation.statement.length != 1) {
           this.currentDialogContent = null;
           for (let i of conversation.statement) {
@@ -221,7 +244,7 @@ export class SimulatedMeetingComponent implements OnInit {
     ;
   }
 
-  clickOnBackButton():void {
+  clickOnBackButton(): void {
 
     this.dialogSequence.pop();
 
@@ -233,24 +256,33 @@ export class SimulatedMeetingComponent implements OnInit {
     this.getSpeakerName(this.currentDialogSpeaker);
   }
 
-  submitAnswer():void {
-    this.currentDialogContent = this.answer.text;
+  showError() {
+    return this.answer == null && this.clicked == true;
+  }
 
-    this.dialogSequence.pop();
-    this.dialogSequence.push({
-      "currentDialogContent": this.currentDialogContent,
-      "currentDialogSpeaker": 0,
-      "currentDialogStatementKey": this.currentDialogStatementKey,
-      "nextDialogStatementKey": this.nextDialogStatementKey,
-      "panelImage": this.panelImage,
-      "currentId": this.currentId,
-      "reference": this.reference,
-      "speaker_image": this.speakerImage
-    })
-    ;
-    this.currentDialogStatementKey = this.answer.next;
-    this.createOptionsList();
-    this.getSpeakerName(this.currentDialogSpeaker);
+  submitAnswer(): void {
+    this.clicked = true;
+    if (this.answer != null) {
+      this.currentDialogContent = this.answer.text;
+
+      this.dialogSequence.pop();
+      this.dialogSequence.push({
+        "currentDialogContent": this.currentDialogContent,
+        "currentDialogSpeaker": 0,
+        "currentDialogStatementKey": this.currentDialogStatementKey,
+        "nextDialogStatementKey": this.nextDialogStatementKey,
+        "panelImage": this.panelImage,
+        "currentId": this.currentId,
+        "reference": this.reference,
+        "speaker_image": this.speakerImage
+      })
+      ;
+      this.currentDialogStatementKey = this.answer.next;
+      this.createOptionsList();
+      this.getSpeakerName(this.currentDialogSpeaker);
+      this.clicked = false;
+      this.answer = null;
+    }
   }
 
   openTranscriptDialog() {
@@ -276,12 +308,15 @@ export class SimulatedMeetingComponent implements OnInit {
 
   openExitDialog() {
     const dialogRef = this.dialog.open(ExitDialogComponent, {});
+    const instance = dialogRef.componentInstance;
+    instance.activity = 1;
   }
 
   openCompleteActivityDialog() {
     const dialogRef = this.dialog.open(CompleteActivityDialogComponent, {});
     const instance = dialogRef.componentInstance;
     this.dialogSequence.pop();
+    instance.completed = true;
     instance.dialogSequence = this.dialogSequence;
     instance.name = this.candidate.name;
     instance.currentId = this.currentId;
